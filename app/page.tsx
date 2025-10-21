@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import {
   Phone,
   Clock,
@@ -174,9 +175,98 @@ const stats = [
 
 const heroImage = "/hero-background.png";
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Person", "Organization"],
+      "@id": "https://euromotors.cz/#person",
+      name: "shopshop.cz",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://euromotors.cz/#website",
+      url: "https://euromotors.cz",
+      name: "shopshop.cz",
+      publisher: {
+        "@id": "https://euromotors.cz/#person",
+      },
+      inLanguage: "cs",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://euromotors.cz/?s={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://euromotors.cz/#webpage",
+      url: "https://euromotors.cz/",
+      name: "Kompletní opravy a údržba vozidel | Autoservis EURO-MOTORS",
+      datePublished: "2024-03-11T12:45:46+01:00",
+      dateModified: "2024-11-15T20:31:40+01:00",
+      about: {
+        "@id": "https://euromotors.cz/#person",
+      },
+      isPartOf: {
+        "@id": "https://euromotors.cz/#website",
+      },
+      inLanguage: "cs",
+    },
+    {
+      "@type": "Person",
+      "@id": "https://euromotors.cz/author/euromotorsofficial/",
+      name: "euromotorsofficial",
+      url: "https://euromotors.cz/author/euromotorsofficial/",
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://secure.gravatar.com/avatar/4ca98ab863b2961f5194456c9aaaf4c0c834c1e3cb2e30c2cc4747c35c8e04c4?s=96&d=mm&r=g",
+        url: "https://secure.gravatar.com/avatar/4ca98ab863b2961f5194456c9aaaf4c0c834c1e3cb2e30c2cc4747c35c8e04c4?s=96&d=mm&r=g",
+        caption: "euromotorsofficial",
+        inLanguage: "cs",
+      },
+    },
+    {
+      "@type": "Article",
+      headline: "Kompletní opravy a údržba vozidel | Autoservis EURO-MOTORS",
+      keywords: [
+        "opravy a údržba vozidel",
+        "autoservis",
+        "autoopravna",
+        "autoservis praha",
+        "spolehlivý autoservis",
+      ],
+      datePublished: "2024-03-11T12:45:46+01:00",
+      dateModified: "2024-11-15T20:31:40+01:00",
+      author: {
+        "@id": "https://euromotors.cz/author/euromotorsofficial/",
+        name: "euromotorsofficial",
+      },
+      publisher: {
+        "@id": "https://euromotors.cz/#person",
+      },
+      description:
+        "V Praze 10 provádíme kompletní opravy a údržbu osobních i užitkových vozů všech značek. Zaručujeme vysokou kvalitu práce! Obraťte se na náš autoservis ještě dnes!",
+      name: "Kompletní opravy a údržba vozidel | Autoservis EURO-MOTORS",
+      "@id": "https://euromotors.cz/#richSnippet",
+      isPartOf: {
+        "@id": "https://euromotors.cz/#webpage",
+      },
+      inLanguage: "cs",
+      mainEntityOfPage: {
+        "@id": "https://euromotors.cz/#webpage",
+      },
+    },
+  ],
+} as const;
+
 export default function Home() {
   return (
-    <div className="bg-white text-slate-900">
+    <>
+      <Script id="euromotors-structured-data" type="application/ld+json" strategy="beforeInteractive">
+        {JSON.stringify(structuredData)}
+      </Script>
+      <div className="bg-white text-slate-900">
       <AnnouncementBar />
       <Header />
       <main className="flex flex-col">
@@ -189,7 +279,8 @@ export default function Home() {
         <Contact />
       </main>
       <SiteFooter />
-    </div>
+      </div>
+    </>
   );
 }
 
