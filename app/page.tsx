@@ -1,103 +1,675 @@
+import Link from "next/link";
 import Image from "next/image";
+import {
+  Phone,
+  Clock,
+  MapPin,
+  ArrowRight,
+  Wrench,
+  ShieldCheck,
+  Sparkles,
+  ChevronRight,
+} from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Separator } from "@/components/ui/separator";
+
+const navLinks = [
+  { label: "Služby", href: "#services" },
+  { label: "O nás", href: "#about" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Kontakt", href: "#contact" },
+];
+
+const serviceGroups = [
+  {
+    title: "Prohlídky a kontroly",
+    description:
+      "Komplexní diagnostika vozidla a kontrola všech systémů před delší cestou nebo nákupem.",
+    items: [
+      "Počítačová diagnostika",
+      "Kontrola podvozku",
+      "Předkupní inspekce",
+    ],
+  },
+  {
+    title: "Pravidelný servis",
+    description:
+      "Servisní intervaly držíme krátké a transparentní, aby vůz zůstal v perfektní kondici.",
+    items: [
+      "Výměna oleje a filtrů",
+      "Servis klimatizace",
+      "Údržba brzdových systémů",
+    ],
+  },
+  {
+    title: "Mechanické opravy",
+    description:
+      "Specializované práce na motorech, převodovkách i dalších klíčových komponentách vozidla.",
+    items: [
+      "Opravy motorů a turbodmychadel",
+      "Servis převodovek",
+      "Renovace podvozku",
+    ],
+  },
+  {
+    title: "Autoelektrika",
+    description:
+      "Diagnostika a řešení složitých elektrických závad včetně moderních asistenčních systémů.",
+    items: [
+      "Opravy elektroinstalace",
+      "Odstranění chybových hlášek",
+      "Montáže příslušenství",
+    ],
+  },
+  {
+    title: "Karosárna a lakovna",
+    description:
+      "Kompletní péče o karoserii od drobných promáčklin až po rozsáhlé opravy po nehodách.",
+    items: [
+      "Opravy karoserie",
+      "Lakování dílů a celků",
+      "Vyřízení pojistných událostí",
+    ],
+  },
+  {
+    title: "Detailing",
+    description:
+      "Profesionální čištění interiéru i exteriéru, ochranné povlaky a kosmetika vozidel.",
+    items: [
+      "Keramická ochrana laku",
+      "Leštění karoserie",
+      "Čištění interiéru",
+    ],
+  },
+];
+
+const faqs = [
+  {
+    question: "Mohu naplánovat návštěvu mimo otevírací dobu?",
+    answer:
+      "Po telefonické domluvě se snažíme vyjít vstříc i mimo standardní provozní čas. Zavolejte nám a domluvíme konkrétní termín.",
+  },
+  {
+    question: "Jak probíhá kalkulace ceny opravy?",
+    answer:
+      "Nejprve provedeme diagnostiku a připravíme cenový odhad včetně dílů i práce. O každé změně jste předem informováni a schvalujete ji.",
+  },
+  {
+    question: "Zajišťujete náhradní vozidlo?",
+    answer:
+      "U vybraných typů servisních zásahů nabízíme krátkodobé zapůjčení náhradního vozu. Dostupnost ověříme při objednání.",
+  },
+  {
+    question: "Mohu přivézt vlastní autodíly?",
+    answer:
+      "Používáme ověřené komponenty s jasným původem, abychom mohli ručit za kvalitu i záruku. Vlastní díly proto nepřijímáme.",
+  },
+];
+
+const contactCards = [
+  {
+    title: "Autoservis & Pneuservis",
+    phone: "+420 775 230 403",
+    actionLabel: "Zavolejte hned",
+  },
+  {
+    title: "Lakovna & Karosárna",
+    phone: "+420 775 328 223",
+    actionLabel: "Objednat termín",
+  },
+];
+
+const heroHighlights = [
+  {
+    icon: Clock,
+    label: "Po–Pá 09:00–19:00",
+    description: "Servisní termíny bez zbytečného čekání",
+  },
+  {
+    icon: MapPin,
+    label: "Edisonova 8, Praha 10",
+    description: "Snadné parkování a dobíjení elektromobilů",
+  },
+  {
+    icon: Phone,
+    label: "+420 775 230 403",
+    description: "Okamžité objednání nebo konzultace",
+  },
+];
+
+const brandNames = [
+  "Audi",
+  "BMW",
+  "Mercedes-Benz",
+  "Škoda",
+  "Volkswagen",
+  "Porsche",
+  "Jaguar",
+  "Toyota",
+  "Ford",
+  "Kia",
+];
+
+const stats = [
+  { figure: "15+", label: "let zkušeností" },
+  { figure: "1 200+", label: "servisů ročně" },
+  { figure: "4.8★", label: "hodnocení zákazníků" },
+];
+
+const heroImage = "/hero-background.png";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="bg-white text-slate-900">
+      <AnnouncementBar />
+      <Header />
+      <main className="flex flex-col">
+        <Hero />
+        <BrandStrip />
+        <Services />
+        <About />
+        <Quality />
+        <Faq />
+        <Contact />
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
+
+function AnnouncementBar() {
+  return (
+    <div className="bg-slate-900 text-white">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-2 text-sm">
+        <div className="flex items-center gap-2 font-medium">
+          <ShieldCheck className="h-4 w-4 text-emerald-400" />
+          Certifikovaný autoservis EURO MOTORS
+        </div>
+        <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-2">
+            <Clock className="h-4 w-4 text-emerald-300" />
+            Po–Pá 09:00–19:00
+          </div>
+          <Separator className="hidden h-4 w-px bg-white/30 md:block" decorative={true} />
+          <Link
+            href="tel:+420775230403"
+            className="flex items-center gap-2 text-emerald-300 transition hover:text-emerald-100"
+          >
+            <Phone className="h-4 w-4" />
+            +420 775 230 403
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 py-4">
+        <Link href="/" className="flex items-center gap-3 font-semibold">
+          <Image
+            src="/logo.svg"
+            alt="EURO MOTORS logo"
+            width={44}
+            height={44}
+            className="h-20 w-20"
+            priority
+          />
+        </Link>
+        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-slate-600 transition hover:text-slate-900"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="hidden items-center gap-3 md:flex">
+          <Button asChild size="sm">
+            <Link href="tel:+420775230403" className="flex items-center gap-2">
+              <Phone className="h-5 w-5" />
+              Objednat servis
+            </Link>
+          </Button>
+        </div>
+        <div className="md:hidden">
+          <Button asChild variant="secondary" size="icon" aria-label="Zavolat do servisu">
+            <Link href="tel:+420775230403">
+              <Phone className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function Hero() {
+  return (
+    <section
+      id="hero"
+      className="page-section relative overflow-hidden bg-red-900 text-white"
+    >
+      <div className="absolute inset-0">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src={heroImage}
+          alt="Autoservis v provozu"
+          fill
+          className="object-cover opacity-60"
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 bg-slate-950/70" aria-hidden="true" />
+      </div>
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 py-24 md:py-32">
+        <div className="max-w-2xl space-y-6">
+          <Badge className="bg-white/10 text-white backdrop-blur-sm">
+            Kompletní péče o osobní i firemní vozidla
+          </Badge>
+          <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
+            EURO MOTORS – spolehlivá péče o váš vůz v Praze
+          </h1>
+          <p className="text-lg text-slate-200">
+            Přesný servis, transparentní komunikace a maximální důraz na bezpečnost.
+            Postaráme se o pravidelnou údržbu, složité opravy i přípravu na STK.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button asChild size="lg">
+              <Link href="tel:+420775230403" className="flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Zavolejte teď
+              </Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg">
+              <Link href="#services" className="flex items-center gap-2">
+                <ChevronRight className="h-5 w-5" />
+                Zobrazit služby
+              </Link>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {heroHighlights.map((item) => (
+            <Card
+              key={item.label}
+              className="border-white/10 bg-white/5 backdrop-blur"
+            >
+              <CardHeader className="space-y-3">
+                <div className="h-10 w-10 rounded-2xl bg-white/10 text-white">
+                  <item.icon className="h-10 w-10 p-2" />
+                </div>
+                <CardTitle className="text-base text-white">
+                  {item.label}
+                </CardTitle>
+                <CardDescription className="text-slate-200">
+                  {item.description}
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BrandStrip() {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <div className="mx-auto max-w-6xl overflow-hidden px-6 py-10">
+        <div className="relative flex gap-12 whitespace-nowrap text-base font-semibold uppercase tracking-[0.3em] text-slate-400">
+          <div className="animate-marquee flex gap-12">
+            {[...brandNames, ...brandNames].map((brand, index) => (
+              <span key={`${brand}-${index}`}>{brand}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Services() {
+  return (
+    <section id="services" className="page-section bg-white">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="flex flex-col gap-4">
+          <Badge variant="soft" className="w-fit">
+            Naše služby
+          </Badge>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl space-y-4">
+              <h2 className="text-3xl font-semibold sm:text-4xl">
+                Kompletní servis od rychlých úkonů až po složité opravy
+              </h2>
+              <p className="text-lg text-slate-600">
+                Kombinujeme zkušené mechaniky, moderní diagnostiku a transparentní komunikaci.
+                Vyberte si z přehledných servisních balíčků nebo sestavíme řešení na míru.
+              </p>
+            </div>
+            <Button asChild variant="outline" className="w-fit">
+              <Link href="tel:+420775230403" className="flex items-center gap-2">
+                <ArrowRight className="h-4 w-4" />
+                Rezervovat termín
+              </Link>
+            </Button>
+          </div>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {serviceGroups.map((service) => (
+            <Card key={service.title} className="h-full">
+              <CardHeader>
+                <CardTitle>{service.title}</CardTitle>
+                <CardDescription>{service.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-sm text-slate-600">
+                  {service.items.map((item) => (
+                    <li key={item} className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+              <CardFooter className="pt-0">
+                <Button asChild variant="ghost" className="px-0 text-emerald-600">
+                  <Link href="#contact" className="flex items-center">
+                    Detail služby
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function About() {
+  return (
+    <section
+      id="about"
+      className="page-section border-y border-slate-200 bg-slate-50"
+    >
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div className="space-y-6">
+            <Badge variant="soft" className="w-fit">
+              O nás
+            </Badge>
+            <h2 className="text-3xl font-semibold sm:text-4xl">
+              Věrní kvalitě, férovým cenám a osobnímu přístupu
+            </h2>
+            <p className="text-lg text-slate-600">
+              EURO MOTORS je rodinný autoservis, který staví na otevřené komunikaci a dlouhodobých vztazích se zákazníky.
+              Každou zakázku řešíme individuálně a doporučujeme jen to, co je pro stav vozidla skutečně přínosné.
+            </p>
+            <div className="grid gap-6 sm:grid-cols-3">
+              {stats.map((item) => (
+                <div key={item.label} className="rounded-3xl bg-white p-6 text-center shadow-sm">
+                  <div className="text-3xl font-semibold text-slate-900">
+                    {item.figure}
+                  </div>
+                  <div className="text-sm uppercase tracking-wide text-slate-500">
+                    {item.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600">
+              <div className="flex items-center gap-2">
+                <Wrench className="h-4 w-4 text-emerald-500" />
+                Špičkové vybavení dílny
+              </div>
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-emerald-500" />
+                Záruka na práci i díly
+              </div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-emerald-500" />
+                Prémiová péče o detail
+              </div>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-slate-900">
+            <Image
+              src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80"
+              alt="Mechanici v dílně"
+              width={900}
+              height={700}
+              className="h-full w-full object-cover opacity-90"
+            />
+            <div className="absolute inset-0 bg-linear-to-tr from-slate-900/70 via-slate-900/20 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-black/40 px-6 py-5 text-sm text-white backdrop-blur">
+              „Naším cílem je, aby každý zákazník odjížděl s pocitem jistoty a bezpečí.“
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Quality() {
+  return (
+    <section className="page-section bg-slate-900 text-white">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div className="space-y-6">
+            <Badge className="bg-white/10 text-white">
+              Proč si vybrat nás
+            </Badge>
+            <h2 className="text-3xl font-semibold sm:text-4xl">
+              Transparentní servisní proces a prémiová zákaznická péče
+            </h2>
+            <p className="text-lg text-slate-200">
+              O průběhu opravy jste vždy informováni. Sdílíme fotografie, vysvětlujeme postupy a navrhujeme udržitelné řešení pro dlouhou životnost vozu.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {["Digitální servisní kniha", "Originální nebo prémiové díly", "Pick-up & drop-off služba", "Garance ceny před zahájením"]
+                .map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-3xl bg-white/10 p-5 text-sm text-slate-100"
+                  >
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-200">
+                      <ShieldCheck className="h-4 w-4" />
+                    </span>
+                    {item}
+                  </div>
+                ))}
+            </div>
+          </div>
+          <Card className="border-white/10 bg-white/5 backdrop-blur">
+            <CardHeader>
+              <CardTitle className="text-white">Co očekávat po objednání</CardTitle>
+              <CardDescription className="text-slate-200">
+                Jednoduchý proces, který šetří váš čas.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ol className="space-y-5 text-sm text-slate-200">
+                {[
+                  "Zavoláte nebo vyplníte kontaktní formulář a domluvíme termín.",
+                  "Technik provede diagnostiku a společně odsouhlasíme rozsah prací.",
+                  "Po dokončení servisu předáme vůz čistý a připravený k jízdě.",
+                ].map((step, index) => (
+                  <li key={index} className="flex gap-4">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-base font-semibold text-emerald-200">
+                      0{index + 1}
+                    </span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </CardContent>
+            <CardFooter className="border-t border-white/10">
+              <Button asChild variant="secondary" className="mt-4 bg-white text-slate-900 hover:bg-slate-100">
+                <Link href="tel:+420775230403" className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  Domluvte si termín
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Faq() {
+  return (
+    <section id="faq" className="page-section bg-white">
+      <div className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mb-10 flex flex-col items-start gap-4">
+          <Badge variant="soft">Nejčastější dotazy</Badge>
+          <h2 className="text-3xl font-semibold sm:text-4xl">
+            Odpovědi, které vám pomohou před návštěvou servisu
+          </h2>
+          <p className="text-lg text-slate-600">
+            Pokud nenajdete odpověď na svou otázku, ozvěte se nám telefonicky nebo e-mailem a rádi poradíme.
+          </p>
+        </div>
+        <Accordion type="single" collapsible className="space-y-3">
+          {faqs.map((item) => (
+            <AccordionItem key={item.question} value={item.question} className="rounded-3xl bg-slate-50 px-6">
+              <AccordionTrigger className="py-5 text-left text-lg font-medium text-slate-800">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-base leading-relaxed text-slate-600">
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+}
+
+function Contact() {
+  return (
+    <section id="contact" className="page-section border-t border-slate-200 bg-slate-50">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="space-y-6">
+            <Badge variant="soft" className="w-fit">
+              Kontakt
+            </Badge>
+            <h2 className="text-3xl font-semibold sm:text-4xl">
+              Jsme připraveni se postarat o vaše vozidlo
+            </h2>
+            <p className="text-lg text-slate-600">
+              Objednejte se telefonicky nebo využijte online formulář. Rádi vám poradíme s výběrem správné služby a připravíme nezávaznou kalkulaci.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {contactCards.map((card) => (
+                <Card key={card.title} className="bg-white">
+                  <CardHeader>
+                    <CardTitle>{card.title}</CardTitle>
+                    <CardDescription>
+                      <Link href={`tel:${card.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2 text-lg text-slate-700 hover:text-emerald-600">
+                        <Phone className="h-4 w-4" />
+                        {card.phone}
+                      </Link>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardFooter>
+                    <Button asChild variant="outline" className="w-full">
+                      <Link href={`tel:${card.phone.replace(/\s+/g, "")}`}>{card.actionLabel}</Link>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
+            <div className="grid gap-6 sm:grid-cols-3">
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Adresa
+                </span>
+                <p className="text-sm text-slate-700">
+                  Edisonova 8<br />
+                  109 00 Praha – Petrovice
+                </p>
+              </div>
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Otevírací doba
+                </span>
+                <p className="text-sm text-slate-700">
+                  Pondělí–Pátek<br />
+                  09:00 – 19:00
+                </p>
+              </div>
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  E-mail
+                </span>
+                <Link
+                  href="mailto:info@euromotors.cz"
+                  className="text-sm text-slate-700 hover:text-emerald-600"
+                >
+                  info@euromotors.cz
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-sm">
+            <iframe
+              title="Mapa umístění EURO MOTORS"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.116365719955!2d14.557463277373112!3d50.04746697152078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b941115171539%3A0x3729a6d019acd07c!2sEdisonova%208%2C%20109%2000%20Praha%2010-Petrovice!5e0!3m2!1scs!2scz!4v1729084800000!5m2!1scs!2scz"
+              className="h-[420px] w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-slate-200 bg-white">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-2">
+          <span className="font-semibold text-slate-900">EURO MOTORS</span>
+          <span>2019 – {new Date().getFullYear()} © EURO MOTORS</span>
+          <Link href="/gdpr" className="hover:text-emerald-600">
+            Zásady ochrany osobních údajů
+          </Link>
+        </div>
+        <div className="flex flex-col gap-2 text-slate-500">
+          <span>Při návštěvě servisu nabízíme čekací zónu s Wi-Fi a občerstvením.</span>
+          <span>Vyvinuto v Next.js, Tailwind CSS a shadcn/ui.</span>
+        </div>
+      </div>
+    </footer>
   );
 }
