@@ -29,6 +29,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import { CurrentAvailability } from "@/components/current-availability";
 
 const navLinks = [
   { label: "Služby", href: "#services" },
@@ -167,10 +168,30 @@ const brandNames = [
   "Kia",
 ];
 
+const brandMarqueeItems = brandNames.flatMap((brand) => [
+  { label: brand, id: `${brand}-primary` },
+  { label: brand, id: `${brand}-clone` },
+]);
+
 const stats = [
   { figure: "15+", label: "let zkušeností" },
   { figure: "1 200+", label: "servisů ročně" },
   { figure: "4.8★", label: "hodnocení zákazníků" },
+];
+
+const bookingSteps = [
+  {
+    id: "step-contact",
+    text: "Zavoláte nebo vyplníte kontaktní formulář a domluvíme termín.",
+  },
+  {
+    id: "step-diagnostics",
+    text: "Technik provede diagnostiku a společně odsouhlasíme rozsah prací.",
+  },
+  {
+    id: "step-hand-over",
+    text: "Po dokončení servisu předáme vůz čistý a připravený k jízdě.",
+  },
 ];
 
 const heroImage = "/hero-background.png";
@@ -267,20 +288,28 @@ export default function Home() {
         {JSON.stringify(structuredData)}
       </Script>
       <div className="bg-white text-slate-900">
-      <AnnouncementBar />
-      <Header />
-      <main className="flex flex-col">
-        <Hero />
-        <BrandStrip />
-        <Services />
-        <About />
-        <Quality />
-        <Faq />
-        <Contact />
-      </main>
-      <SiteFooter />
+        <SiteHeader />
+        <main className="flex flex-col">
+          <Hero />
+          <BrandStrip />
+          <Services />
+          <About />
+          <Quality />
+          <Faq />
+          <Contact />
+        </main>
+        <SiteFooter />
       </div>
     </>
+  );
+}
+
+function SiteHeader() {
+  return (
+    <div className="sticky top-0 z-50">
+      <AnnouncementBar />
+      <Header />
+    </div>
   );
 }
 
@@ -313,17 +342,21 @@ function AnnouncementBar() {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 py-4">
+    <header className="w-full border-b border-slate-200 bg-white/90 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
         <Link href="/" className="flex items-center gap-3 font-semibold">
           <Image
             src="/logo.svg"
             alt="EURO MOTORS logo"
             width={44}
             height={44}
-            className="h-20 w-20"
+            className="h-11 w-11"
             priority
           />
+          <div className="flex flex-col leading-none">
+            <span className="text-base">EURO MOTORS</span>
+            <span className="text-xs text-slate-500">Autoservis Praha</span>
+          </div>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -337,7 +370,8 @@ function Header() {
           ))}
         </nav>
         <div className="hidden items-center gap-3 md:flex">
-          <Button asChild size="sm">
+          <Badge className="bg-emerald-100 text-emerald-700">15 let praxe</Badge>
+          <Button asChild size="lg">
             <Link href="tel:+420775230403" className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
               Objednat servis
@@ -360,7 +394,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="page-section relative overflow-hidden bg-red-900 text-white"
+      className="page-section relative overflow-hidden bg-slate-900 text-white"
     >
       <div className="absolute inset-0">
         <Image
@@ -398,6 +432,7 @@ function Hero() {
               </Link>
             </Button>
           </div>
+          <CurrentAvailability className="max-w-md" />
         </div>
         <div className="grid gap-6 sm:grid-cols-3">
           {heroHighlights.map((item) => (
@@ -430,8 +465,8 @@ function BrandStrip() {
       <div className="mx-auto max-w-6xl overflow-hidden px-6 py-10">
         <div className="relative flex gap-12 whitespace-nowrap text-base font-semibold uppercase tracking-[0.3em] text-slate-400">
           <div className="animate-marquee flex gap-12">
-            {[...brandNames, ...brandNames].map((brand, index) => (
-              <span key={`${brand}-${index}`}>{brand}</span>
+            {brandMarqueeItems.map((item) => (
+              <span key={item.id}>{item.label}</span>
             ))}
           </div>
         </div>
@@ -603,16 +638,12 @@ function Quality() {
             </CardHeader>
             <CardContent>
               <ol className="space-y-5 text-sm text-slate-200">
-                {[
-                  "Zavoláte nebo vyplníte kontaktní formulář a domluvíme termín.",
-                  "Technik provede diagnostiku a společně odsouhlasíme rozsah prací.",
-                  "Po dokončení servisu předáme vůz čistý a připravený k jízdě.",
-                ].map((step, index) => (
-                  <li key={index} className="flex gap-4">
+                {bookingSteps.map((step, index) => (
+                  <li key={step.id} className="flex gap-4">
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-base font-semibold text-emerald-200">
                       0{index + 1}
                     </span>
-                    <span>{step}</span>
+                    <span>{step.text}</span>
                   </li>
                 ))}
               </ol>

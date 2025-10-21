@@ -1,0 +1,36 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignore": [
+      "node_modules",
+      ".next",
+      "euromotors.autoservis/**"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "style": {
+        "useNodeAssertStrict": "off"
+      }
+    }
+  },
+  "javascript": {
+    "globals": [
+      "React",
+      "JSX"
+    ],
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  }
+}
