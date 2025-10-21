@@ -36,6 +36,7 @@ const navLinks = [
   { label: "O nás", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Kontakt", href: "#contact" },
+  // { label: "Blog", href: "/blog" },
 ];
 
 const serviceGroups = [
