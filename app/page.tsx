@@ -28,79 +28,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Separator } from "@/components/ui/separator";
 import { CurrentAvailability } from "@/components/current-availability";
-
-const navLinks = [
-  { label: "Služby", href: "#services" },
-  { label: "O nás", href: "#about" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Kontakt", href: "#contact" },
-  // { label: "Blog", href: "/blog" },
-];
-
-const serviceGroups = [
-  {
-    title: "Prohlídky a kontroly",
-    description:
-      "Komplexní diagnostika vozidla a kontrola všech systémů před delší cestou nebo nákupem.",
-    items: [
-      "Počítačová diagnostika",
-      "Kontrola podvozku",
-      "Předkupní inspekce",
-    ],
-  },
-  {
-    title: "Pravidelný servis",
-    description:
-      "Servisní intervaly držíme krátké a transparentní, aby vůz zůstal v perfektní kondici.",
-    items: [
-      "Výměna oleje a filtrů",
-      "Servis klimatizace",
-      "Údržba brzdových systémů",
-    ],
-  },
-  {
-    title: "Mechanické opravy",
-    description:
-      "Specializované práce na motorech, převodovkách i dalších klíčových komponentách vozidla.",
-    items: [
-      "Opravy motorů a turbodmychadel",
-      "Servis převodovek",
-      "Renovace podvozku",
-    ],
-  },
-  {
-    title: "Autoelektrika",
-    description:
-      "Diagnostika a řešení složitých elektrických závad včetně moderních asistenčních systémů.",
-    items: [
-      "Opravy elektroinstalace",
-      "Odstranění chybových hlášek",
-      "Montáže příslušenství",
-    ],
-  },
-  {
-    title: "Karosárna a lakovna",
-    description:
-      "Kompletní péče o karoserii od drobných promáčklin až po rozsáhlé opravy po nehodách.",
-    items: [
-      "Opravy karoserie",
-      "Lakování dílů a celků",
-      "Vyřízení pojistných událostí",
-    ],
-  },
-  {
-    title: "Detailing",
-    description:
-      "Profesionální čištění interiéru i exteriéru, ochranné povlaky a kosmetika vozidel.",
-    items: [
-      "Keramická ochrana laku",
-      "Leštění karoserie",
-      "Čištění interiéru",
-    ],
-  },
-];
+import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+import { getServices } from "@/lib/services";
 
 const faqs = [
   {
@@ -171,7 +101,7 @@ const brandNames = [
 
 const brandMarqueeItems = brandNames.flatMap((brand) => [
   { label: brand, id: `${brand}-primary` },
-  { label: brand, id: `${brand}-clone` },
+  // { label: brand, id: `${brand}-clone` },
 ]);
 
 const stats = [
@@ -305,92 +235,6 @@ export default function Home() {
   );
 }
 
-function SiteHeader() {
-  return (
-    <div className="sticky top-0 z-50">
-      <AnnouncementBar />
-      <Header />
-    </div>
-  );
-}
-
-function AnnouncementBar() {
-  return (
-    <div className="bg-slate-900 text-white">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-2 text-sm">
-        <div className="flex items-center gap-2 font-medium">
-          <ShieldCheck className="h-4 w-4 text-emerald-400" />
-          Certifikovaný autoservis EURO MOTORS
-        </div>
-        <div className="flex flex-wrap items-center gap-4">
-          <div className="flex items-center gap-2">
-            <Clock className="h-4 w-4 text-emerald-300" />
-            Po–Pá 09:00–19:00
-          </div>
-          <Separator className="hidden h-4 w-px bg-white/30 md:block" decorative={true} />
-          <Link
-            href="tel:+420775230403"
-            className="flex items-center gap-2 text-emerald-300 transition hover:text-emerald-100"
-          >
-            <Phone className="h-4 w-4" />
-            +420 775 230 403
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="w-full border-b border-slate-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
-        <Link href="/" className="flex items-center gap-3 font-semibold">
-          <Image
-            src="/logo.svg"
-            alt="EURO MOTORS logo"
-            width={44}
-            height={44}
-            className="h-11 w-11"
-            priority
-          />
-          <div className="flex flex-col leading-none">
-            <span className="text-base">EURO MOTORS</span>
-            <span className="text-xs text-slate-500">Autoservis Praha</span>
-          </div>
-        </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-slate-600 transition hover:text-slate-900"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="hidden items-center gap-3 md:flex">
-          <Badge className="bg-emerald-100 text-emerald-700">15 let praxe</Badge>
-          <Button asChild size="lg">
-            <Link href="tel:+420775230403" className="flex items-center gap-2">
-              <Phone className="h-5 w-5" />
-              Objednat servis
-            </Link>
-          </Button>
-        </div>
-        <div className="md:hidden">
-          <Button asChild variant="secondary" size="icon" aria-label="Zavolat do servisu">
-            <Link href="tel:+420775230403">
-              <Phone className="h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 function Hero() {
   return (
     <section
@@ -477,6 +321,22 @@ function BrandStrip() {
 }
 
 function Services() {
+  const services = getServices();
+  const groups: Array<{ label: string; services: typeof services }> = [];
+  const registry = new Map<string, number>();
+
+  for (const service of services) {
+    const label = service.subtitle?.trim() || "Další služby";
+    const currentIndex = registry.get(label);
+
+    if (currentIndex === undefined) {
+      groups.push({ label, services: [service] });
+      registry.set(label, groups.length - 1);
+    } else {
+      groups[currentIndex]?.services.push(service);
+    }
+  }
+
   return (
     <section id="services" className="page-section bg-white">
       <div className="mx-auto max-w-6xl px-6 py-20">
@@ -502,33 +362,59 @@ function Services() {
             </Button>
           </div>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {serviceGroups.map((service) => (
-            <Card key={service.title} className="h-full">
-              <CardHeader>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+        <div className="mt-12 space-y-12">
+          {services.length === 0 ? (
+            <Card className="col-span-full border-dashed border-slate-300 text-center">
+              <CardHeader className="items-center text-center">
+                <CardTitle className="text-xl">Nabídku právě připravujeme</CardTitle>
+                <CardDescription>
+                  Přidejte prosím data do proměnné <code>SERVICES_JSON</code> v souboru .env.
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-sm text-slate-600">
-                  {service.items.map((item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter className="pt-0">
-                <Button asChild variant="ghost" className="px-0 text-emerald-600">
-                  <Link href="#contact" className="flex items-center">
-                    Detail služby
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardFooter>
             </Card>
-          ))}
+          ) : (
+            groups.map((group) => {
+              const key = group.label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+              const heading = group.label.toUpperCase();
+
+              return (
+                <div key={key} className="space-y-6">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <h3 className="text-sm font-semibold tracking-[0.3em] text-emerald-600">
+                      {heading}
+                    </h3>
+                    <span className="text-sm text-slate-500">
+                      Vyberte si konkrétní servisní zásah a zjistěte více detailů.
+                    </span>
+                  </div>
+                  <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+                    {group.services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        href={`/services/${service.slug}`}
+                        className="group block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                      >
+                        <Card className="grid h-full grid-cols-[1fr_auto] items-end gap-4 border-slate-200/70 bg-white/80 p-4 shadow-none transition duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-white">
+                          <div className="flex flex-col gap-1">
+                            <CardTitle className="text-base font-semibold text-slate-900">
+                              {service.title}
+                            </CardTitle>
+                            <span className="text-sm font-medium text-slate-600">
+                              {service.price}
+                            </span>
+                          </div>
+                          <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.25em] text-emerald-600">
+                            detail
+                            <ChevronRight className="h-3 w-3 transition duration-200 group-hover:translate-x-1" />
+                          </span>
+                        </Card>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })
+          )}
         </div>
       </div>
     </section>
@@ -777,22 +663,3 @@ function Contact() {
   );
 }
 
-function SiteFooter() {
-  return (
-    <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-        <div className="flex flex-col gap-2">
-          <span className="font-semibold text-slate-900">EURO MOTORS</span>
-          <span>2019 – {new Date().getFullYear()} © EURO MOTORS</span>
-          <Link href="/gdpr" className="hover:text-emerald-600">
-            Zásady ochrany osobních údajů
-          </Link>
-        </div>
-        <div className="flex flex-col gap-2 text-slate-500">
-          <span>Při návštěvě servisu nabízíme čekací zónu s Wi-Fi a občerstvením.</span>
-          <span>Vyvinuto v Next.js, Tailwind CSS a shadcn/ui.</span>
-        </div>
-      </div>
-    </footer>
-  );
-}
