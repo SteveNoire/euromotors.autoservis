@@ -1,0 +1,167 @@
+{
+  "services": {
+    "badge": "Naše služby",
+    "headline": "Kompletní servis od rychlých úkonů až po složité opravy",
+    "description": "Kombinujeme zkušené mechaniky, moderní diagnostiku a transparentní komunikaci. Vyberte si z přehledných servisních balíčků nebo sestavíme řešení na míru.",
+    "cta": "Rezervovat termín",
+    "empty": {
+      "title": "Nabídku právě připravujeme",
+      "subtitlePrefix": "Přidejte prosím data do proměnné",
+      "subtitleSuffix": "v souboru .env."
+    },
+    "helper": "Vyberte si konkrétní servisní zásah a zjistěte více detailů.",
+    "priceLabel": "Cena",
+    "detailCta": "Detail služby",
+    "items": [
+      {
+        "slug": "vymena-oleje",
+        "title": "Výměna oleje",
+        "subtitle": "Pravidelná údržba",
+        "description": "Rychlá výměna motorového oleje, filtru a základní kontrola provozních kapalin podle doporučení výrobce.",
+        "price": "od 595 Kč"
+      },
+      {
+        "slug": "vymena-kotoucu-a-desticek",
+        "title": "Výměna kotoučů a destiček",
+        "subtitle": "Pravidelná údržba",
+        "description": "Precizní výměna brzdových kotoučů a destiček se zabroušením dosedacích ploch a odvzdušněním systému.",
+        "price": "od 795 Kč"
+      },
+      {
+        "slug": "vymena-oleje-v-prevodovce",
+        "title": "Výměna oleje v převodovce",
+        "subtitle": "Pravidelná údržba",
+        "description": "Kompletní obměna převodového oleje, kontrola těsnosti a diagnostika řazení pro plynulý chod převodovky.",
+        "price": "od 1 495 Kč"
+      },
+      {
+        "slug": "pneuservis",
+        "title": "Pneuservis",
+        "subtitle": "Pravidelná údržba",
+        "description": "Montáž a vyvážení pneumatik, opravy defektů a sezónní přezutí s uskladněním na přání.",
+        "price": "od 895 Kč"
+      },
+      {
+        "slug": "geometrie-kol",
+        "title": "Geometrie kol",
+        "subtitle": "Pravidelná údržba",
+        "description": "Laserové seřízení sbíhavosti a odklonu náprav pro stabilní jízdní vlastnosti a rovnoměrné opotřebení pneumatik.",
+        "price": "od 2 295 Kč"
+      },
+      {
+        "slug": "servis-klimatizace",
+        "title": "Servis klimatizace",
+        "subtitle": "Pravidelná údržba",
+        "description": "Diagnostika klimatizačního okruhu, doplnění chladiva a dezinfekce rozvodů pro zdravé klima v kabině.",
+        "price": "od 1 295 Kč"
+      },
+      {
+        "slug": "diagnostika",
+        "title": "Diagnostika",
+        "subtitle": "V případě poruchy",
+        "description": "Pokročilá diagnostika řídicích jednotek s měřením reálných hodnot a jasným plánem následných oprav.",
+        "price": "od 995 Kč"
+      },
+      {
+        "slug": "mechanicke-opravy",
+        "title": "Mechanické opravy",
+        "subtitle": "V případě poruchy",
+        "description": "Opravy podvozkových, motorových a výfukových celků s použitím kvalitních dílů a zárukou na práci.",
+        "price": "od 895 Kč"
+      },
+      {
+        "slug": "generalni-opravy-motoru",
+        "title": "Generální opravy motorů",
+        "subtitle": "V případě poruchy",
+        "description": "Kompletní repase motorů včetně měření tolerance dílů, obrábění a řízeného záběhu po montáži.",
+        "price": "Konzultace zdarma"
+      },
+      {
+        "slug": "karosarske-prace",
+        "title": "Karosářské práce",
+        "subtitle": "Nehoda nebo vandal?",
+        "description": "Rovnání karoserie na stolici, výměny poškozených panelů a příprava pro lakování v tovární kvalitě.",
+        "price": "Konzultace zdarma"
+      },
+      {
+        "slug": "vymena-autoskel",
+        "title": "Výměna autoskel",
+        "subtitle": "Nehoda nebo vandal?",
+        "description": "Rychlá výměna čelních, bočních i zadních skel s kalibrací kamer a asistenčních systémů.",
+        "price": "od 2 995 Kč"
+      },
+      {
+        "slug": "lakovani-dilu",
+        "title": "Lakování dílů",
+        "subtitle": "Nehoda nebo vandal?",
+        "description": "Profesionální lakování jednotlivých dílů i celých karoserií v bezprašné kabině s přesným mícháním odstínu.",
+        "price": "od 2 995 Kč"
+      },
+      {
+        "slug": "technicka-kontrola-stk",
+        "title": "Technická kontrola (STK)",
+        "subtitle": "Prohlídky a kontroly",
+        "description": "Příprava vozu na STK, zajištění emisí i kontroly a rychlé odstranění zjištěných závad.",
+        "price": "od 3 495 Kč"
+      },
+      {
+        "slug": "sezonni-prohlidka-vozu",
+        "title": "Sezónní prohlídka vozu",
+        "subtitle": "Prohlídky a kontroly",
+        "description": "Komplexní checklist kapalin, brzd, podvozku a elektroinstalace, aby byl vůz připraven na sezónu.",
+        "price": "795 Kč"
+      },
+      {
+        "slug": "prohlidka-pred-koupi",
+        "title": "Prohlídka před koupí",
+        "subtitle": "Prohlídky a kontroly",
+        "description": "Detailní prověření ojetého vozu na zvedáku, diagnostika a fotodokumentace pro jistotu při nákupu.",
+        "price": "1 995 Kč"
+      },
+      {
+        "slug": "vibracni-test-podvozku",
+        "title": "Vibrační test podvozku",
+        "subtitle": "Další služby",
+        "description": "Vibrační test odhalí vůle tlumičů, silentbloků a ložisek a poskytne přehledný protokol měření.",
+        "price": "od 2 295 Kč"
+      },
+      {
+        "slug": "servis-firemnich-vozu",
+        "title": "Servis firemních vozů",
+        "subtitle": "Další služby",
+        "description": "Flotilový servis se smluvními cenami, reporty nákladů a možností odvozu či přistavení vozidel.",
+        "price": "sleva až 15 %"
+      },
+      {
+        "slug": "oprava-strech-kabrioletu",
+        "title": "Oprava střech kabrioletů",
+        "subtitle": "Další služby",
+        "description": "Specializované opravy látkových i pevných kabrioletových střech, seřízení mechaniky a impregnace povrchu.",
+        "price": "od 2 995 Kč"
+      },
+      {
+        "slug": "vymena-oleje-v-manualni-prevodovce",
+        "title": "Výměna oleje v manuální převodovce",
+        "subtitle": "Další služby",
+        "description": "Výplach a výměna oleje v manuálních převodovkách včetně kontroly synchronů a těsnění vík.",
+        "price": "od 1 495 Kč"
+      },
+      {
+        "slug": "plneni-klimatizace",
+        "title": "Plnění klimatizace",
+        "subtitle": "Další služby",
+        "description": "Plnění klimatizace s přesným dávkováním chladiva, vakuováním okruhu a tlakovou zkouškou těsnosti.",
+        "price": "od 3,90 Kč/g"
+      }
+    ]
+  },
+  "serviceDetail": {
+    "back": "Zpět na přehled služeb",
+    "badge": "Servisní nabídka",
+    "priceHeading": "Cena služby",
+    "primaryCta": "Rezervovat termín",
+    "secondaryCta": "Kontaktovat poradce",
+    "notFoundTitle": "Služba nenalezena | EURO MOTORS",
+    "notFoundDescription": "Požadovaná servisní nabídka nebyla nalezena."
+  }
+}

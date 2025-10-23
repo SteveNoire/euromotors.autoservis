@@ -8,25 +8,31 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { getServiceBySlug, getServices } from "@/lib/services";
+import { getTranslator, resolveLocale } from "@/lib/i18n";
+import { buildLocaleHref, extractLocale, type RouteSearchParams } from "@/lib/i18n/routing";
 
 type ServicePageProps = {
   params: Promise<{
     slug: string;
   }>;
+  searchParams?: RouteSearchParams;
 };
 
 export function generateStaticParams() {
   return getServices().map((service) => ({ slug: service.slug }));
 }
 
-export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: ServicePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const service = getServiceBySlug(slug);
+  const currentSearchParams = searchParams ?? {};
+  const locale = resolveLocale(extractLocale(currentSearchParams));
+  const service = getServiceBySlug(slug, locale);
+  const t = getTranslator(locale);
 
   if (!service) {
     return {
-      title: "Služba nenalezena | EURO MOTORS",
-      description: "Požadovaná servisní nabídka nebyla nalezena.",
+      title: t("serviceDetail.notFoundTitle"),
+      description: t("serviceDetail.notFoundDescription"),
     };
   }
 
@@ -34,18 +40,27 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     title: `${service.title} | EURO MOTORS`,
     description: service.subtitle || service.description,
     alternates: {
-      canonical: `/services/${service.slug}`,
+      canonical: buildLocaleHref(`/services/${service.slug}`, currentSearchParams, locale),
     },
   };
 }
 
-export default async function ServiceDetailPage({ params }: ServicePageProps) {
+export default async function ServiceDetailPage({ params, searchParams }: ServicePageProps) {
   const { slug } = await params;
-  const service = getServiceBySlug(slug);
+  const currentSearchParams = searchParams ?? {};
+  const locale = resolveLocale(extractLocale(currentSearchParams));
+  const service = getServiceBySlug(slug, locale);
+  const t = getTranslator(locale);
 
   if (!service) {
     notFound();
   }
+
+  const homeHref = buildLocaleHref("/", currentSearchParams, locale);
+  const servicesHref = `${homeHref}#services`;
+  const contactHref = `${homeHref}#contact`;
+
+  const headerPathname = `/services/${slug}`;
 
   const descriptionParagraphs = service.description
     .split(/\n{2,}/)
@@ -68,21 +83,21 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
   return (
     <div className="bg-white text-slate-900">
-      <SiteHeader />
+      <SiteHeader locale={locale} pathname={headerPathname} searchParams={currentSearchParams} />
       <main className="flex flex-col">
         <section className="page-section border-b border-slate-200 bg-slate-50">
           <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
             <Link
-              href="/#services"
+              href={servicesHref}
               className="mb-8 inline-flex items-center gap-2 text-sm text-slate-500 transition hover:text-slate-900"
             >
               <ArrowLeft className="h-4 w-4" />
-              Zpět na přehled služeb
+              {t("serviceDetail.back")}
             </Link>
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge variant="soft" className="w-fit">
-                  Servisní nabídka
+                  {t("serviceDetail.badge")}
                 </Badge>
                 <h1 className="text-4xl font-semibold sm:text-5xl">
                   {service.title}
@@ -93,7 +108,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               </div>
               <Card className="border-emerald-500/30 bg-white shadow-lg shadow-emerald-500/5">
                 <CardHeader className="gap-4">
-                  <CardTitle className="text-2xl">Cena služby</CardTitle>
+                  <CardTitle className="text-2xl">{t("serviceDetail.priceHeading")}</CardTitle>
                   <p className="text-3xl font-semibold text-slate-900">{service.price}</p>
                 </CardHeader>
                 <CardContent className="space-y-4 text-base leading-relaxed text-slate-700">
@@ -110,11 +125,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 <Button asChild size="lg">
                   <Link href="tel:+420775230403" className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    Rezervovat termín
+                    {t("serviceDetail.primaryCta")}
                   </Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/#contact">Kontaktovat poradce</Link>
+                  <Link href={contactHref}>{t("serviceDetail.secondaryCta")}</Link>
                 </Button>
               </div>
             </div>

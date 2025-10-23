@@ -1,0 +1,167 @@
+{
+  "services": {
+    "badge": "Our Services",
+    "headline": "Complete care from quick fixes to complex repairs",
+    "description": "We combine experienced technicians, modern diagnostics and transparent communication. Choose from clear service packages or ask for a tailored plan.",
+    "cta": "Book an appointment",
+    "empty": {
+      "title": "Service list is being prepared",
+      "subtitlePrefix": "Please add data to the",
+      "subtitleSuffix": "variable in the .env file."
+    },
+    "helper": "Pick the service you need to see all details.",
+    "priceLabel": "Price",
+    "detailCta": "Service detail",
+    "items": [
+      {
+        "slug": "vymena-oleje",
+        "title": "Oil change",
+        "subtitle": "Regular maintenance",
+        "description": "Fast engine oil replacement, new filter and a basic fluid check according to the manufacturer guidance.",
+        "price": "from CZK 595"
+      },
+      {
+        "slug": "vymena-kotoucu-a-desticek",
+        "title": "Brake discs and pads replacement",
+        "subtitle": "Regular maintenance",
+        "description": "Precise replacement of discs and pads including cleaning of contact surfaces and brake system bleeding.",
+        "price": "from CZK 795"
+      },
+      {
+        "slug": "vymena-oleje-v-prevodovce",
+        "title": "Transmission oil change",
+        "subtitle": "Regular maintenance",
+        "description": "Complete exchange of transmission oil, leak inspection and shifting diagnostics for smooth operation.",
+        "price": "from CZK 1,495"
+      },
+      {
+        "slug": "pneuservis",
+        "title": "Tyre service",
+        "subtitle": "Regular maintenance",
+        "description": "Tyre fitting and balancing, puncture repairs and seasonal tyre change with optional storage.",
+        "price": "from CZK 895"
+      },
+      {
+        "slug": "geometrie-kol",
+        "title": "Wheel alignment",
+        "subtitle": "Regular maintenance",
+        "description": "Laser adjustment of toe and camber for stable handling and even tyre wear.",
+        "price": "from CZK 2,295"
+      },
+      {
+        "slug": "servis-klimatizace",
+        "title": "A/C service",
+        "subtitle": "Regular maintenance",
+        "description": "Air conditioning diagnostics, refrigerant refill and system disinfection for a healthy cabin climate.",
+        "price": "from CZK 1,295"
+      },
+      {
+        "slug": "diagnostika",
+        "title": "Diagnostics",
+        "subtitle": "When something fails",
+        "description": "Advanced control unit diagnostics with live data reading and a clear repair plan.",
+        "price": "from CZK 995"
+      },
+      {
+        "slug": "mechanicke-opravy",
+        "title": "Mechanical repairs",
+        "subtitle": "When something fails",
+        "description": "Repairs of suspension, engine and exhaust components using quality parts and guaranteed workmanship.",
+        "price": "from CZK 895"
+      },
+      {
+        "slug": "generalni-opravy-motoru",
+        "title": "Engine overhauls",
+        "subtitle": "When something fails",
+        "description": "Complete engine rebuilds including measuring tolerances, machining parts and controlled break-in after assembly.",
+        "price": "Free consultation"
+      },
+      {
+        "slug": "karosarske-prace",
+        "title": "Bodywork",
+        "subtitle": "Accident or vandal?",
+        "description": "Chassis straightening, panel replacement and paint preparation at factory-level quality.",
+        "price": "Free consultation"
+      },
+      {
+        "slug": "vymena-autoskel",
+        "title": "Windscreen replacement",
+        "subtitle": "Accident or vandal?",
+        "description": "Quick replacement of front, side and rear glass with calibration of cameras and assistance systems.",
+        "price": "from CZK 2,995"
+      },
+      {
+        "slug": "lakovani-dilu",
+        "title": "Panel painting",
+        "subtitle": "Accident or vandal?",
+        "description": "Professional painting of individual panels or whole bodies in a dust-free booth with accurate colour mixing.",
+        "price": "from CZK 2,995"
+      },
+      {
+        "slug": "technicka-kontrola-stk",
+        "title": "Technical inspection (MOT)",
+        "subtitle": "Checks and inspections",
+        "description": "Preparation for technical inspection, arranging emissions tests and resolving any findings promptly.",
+        "price": "from CZK 3,495"
+      },
+      {
+        "slug": "sezonni-prohlidka-vozu",
+        "title": "Seasonal vehicle check",
+        "subtitle": "Checks and inspections",
+        "description": "Comprehensive checklist of fluids, brakes, suspension and electrics to keep the car ready for the season.",
+        "price": "CZK 795"
+      },
+      {
+        "slug": "prohlidka-pred-koupi",
+        "title": "Pre-purchase inspection",
+        "subtitle": "Checks and inspections",
+        "description": "Detailed examination of a used vehicle on a lift, diagnostics and photo documentation for a confident purchase.",
+        "price": "CZK 1,995"
+      },
+      {
+        "slug": "vibracni-test-podvozku",
+        "title": "Suspension vibration test",
+        "subtitle": "Additional services",
+        "description": "Vibration testing reveals play in dampers, bushings and bearings and provides a clear measurement report.",
+        "price": "from CZK 2,295"
+      },
+      {
+        "slug": "servis-firemnich-vozu",
+        "title": "Fleet service",
+        "subtitle": "Additional services",
+        "description": "Fleet maintenance with contracted pricing, cost reporting and pick-up or delivery options.",
+        "price": "discounts up to 15%"
+      },
+      {
+        "slug": "oprava-strech-kabrioletu",
+        "title": "Convertible roof repair",
+        "subtitle": "Additional services",
+        "description": "Specialised repairs of fabric and hardtop convertible roofs, mechanism adjustment and surface treatment.",
+        "price": "from CZK 2,995"
+      },
+      {
+        "slug": "vymena-oleje-v-manualni-prevodovce",
+        "title": "Manual gearbox oil change",
+        "subtitle": "Additional services",
+        "description": "Flushing and replacing oil in manual gearboxes, including checking synchronisers and cover seals.",
+        "price": "from CZK 1,495"
+      },
+      {
+        "slug": "plneni-klimatizace",
+        "title": "A/C recharge",
+        "subtitle": "Additional services",
+        "description": "Air conditioning refill with precise refrigerant dosing, system vacuuming and leak pressure testing.",
+        "price": "from CZK 3.9/g"
+      }
+    ]
+  },
+  "serviceDetail": {
+    "back": "Back to services overview",
+    "badge": "Service offer",
+    "priceHeading": "Service price",
+    "primaryCta": "Book an appointment",
+    "secondaryCta": "Contact advisor",
+    "notFoundTitle": "Service not found | EURO MOTORS",
+    "notFoundDescription": "The requested service offer could not be found."
+  }
+}

@@ -1,5 +1,7 @@
 import "server-only";
 
+import { getDictionary, resolveLocale, type Dictionary } from "@/lib/i18n";
+
 export type RawService = {
   title?: unknown;
   subtitle?: unknown;
@@ -16,28 +18,18 @@ export type Service = {
   slug: string;
 };
 
-const ENV_KEYS = ["SERVICES_JSON", "NEXT_PUBLIC_SERVICES_JSON"] as const;
+const servicesCache = new Map<string, Service[]>();
 
-let cachedServices: Service[] | null = null;
+export function getServices(locale?: string): Service[] {
+  const resolvedLocale = resolveLocale(locale);
+  const cached = servicesCache.get(resolvedLocale);
 
-export function getServices(): Service[] {
-  if (cachedServices) {
-    return cachedServices;
+  if (cached) {
+    return cached;
   }
 
-  const rawPayload = getFirstDefinedEnvValue(ENV_KEYS);
-
-  if (!rawPayload) {
-    cachedServices = [];
-    return cachedServices;
-  }
-
-  const parsed = safeParseJson(rawPayload);
-  const serviceCandidates = Array.isArray(parsed)
-    ? parsed
-    : Array.isArray((parsed as { services?: unknown }).services)
-      ? (parsed as { services: RawService[] }).services
-      : [];
+  const dictionary = getDictionary(resolvedLocale);
+  const serviceCandidates = extractServiceCandidates(dictionary);
 
   const normalized: Service[] = [];
   const usedSlugs = new Set<string>();
@@ -56,8 +48,8 @@ export function getServices(): Service[] {
       return;
     }
 
-    const slugFromEnv = sanitizeString(candidate.slug);
-    const baseSlug = slugFromEnv || slugify(title);
+    const slugFromDictionary = sanitizeString(candidate.slug);
+    const baseSlug = slugFromDictionary || slugify(title);
     const uniqueSlug = ensureUniqueSlug(baseSlug || `service-${index + 1}`, usedSlugs);
 
     normalized.push({
@@ -69,33 +61,27 @@ export function getServices(): Service[] {
     });
   });
 
-  cachedServices = normalized;
-  return cachedServices;
+  servicesCache.set(resolvedLocale, normalized);
+  return normalized;
 }
 
-export function getServiceBySlug(slug: string): Service | undefined {
-  return getServices().find((service) => service.slug === slug);
+export function getServiceBySlug(slug: string, locale?: string): Service | undefined {
+  return getServices(locale).find((service) => service.slug === slug);
 }
 
-function getFirstDefinedEnvValue(keys: readonly string[]): string | undefined {
-  for (const key of keys) {
-    const value = process.env[key];
-    if (value) {
-      return value;
-    }
-  }
-  return undefined;
-}
+function extractServiceCandidates(dictionary: Dictionary): RawService[] {
+  const servicesSection = dictionary.services;
 
-function safeParseJson(payload: string): unknown {
-  try {
-    return JSON.parse(payload);
-  } catch (error) {
-    if (process.env.NODE_ENV !== "production") {
-      console.warn("Failed to parse SERVICES_JSON payload:", error);
-    }
+  if (!isRecord(servicesSection)) {
     return [];
   }
+
+  const items = servicesSection.items;
+  return Array.isArray(items) ? (items as RawService[]) : [];
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 function sanitizeString(input: unknown): string {

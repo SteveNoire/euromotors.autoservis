@@ -31,6 +31,8 @@ import {
 import { CurrentAvailability } from "@/components/current-availability";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { getServices } from "@/lib/services";
+import { getTranslator, resolveLocale, type Locale } from "@/lib/i18n";
+import { extractLocale, type RouteSearchParams } from "@/lib/i18n/routing";
 
 const faqs = [
   {
@@ -211,19 +213,24 @@ const structuredData = {
     },
   ],
 } as const;
+type HomeSearchParams = RouteSearchParams;
 
-export default function Home() {
+export default function Home({ searchParams }: { searchParams?: HomeSearchParams }) {
+  const currentSearchParams: HomeSearchParams = searchParams ?? {};
+  const explicitLocale = extractLocale(currentSearchParams);
+  const locale = resolveLocale(explicitLocale);
+
   return (
     <>
       <Script id="euromotors-structured-data" type="application/ld+json" strategy="beforeInteractive">
         {JSON.stringify(structuredData)}
       </Script>
       <div className="bg-white text-slate-900">
-        <SiteHeader />
+        <SiteHeader locale={locale} pathname="/" searchParams={currentSearchParams} />
         <main className="flex flex-col">
           <Hero />
           <BrandStrip />
-          <Services />
+          <Services locale={locale} />
           <About />
           <Quality />
           <Faq />
@@ -320,8 +327,9 @@ function BrandStrip() {
   );
 }
 
-function Services() {
-  const services = getServices();
+function Services({ locale }: { locale: Locale }) {
+  const services = getServices(locale);
+  const t = getTranslator(locale);
   const groups: Array<{ label: string; services: typeof services }> = [];
   const registry = new Map<string, number>();
 
@@ -342,22 +350,21 @@ function Services() {
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="flex flex-col gap-4">
           <Badge variant="soft" className="w-fit">
-            Naše služby
+            {t("services.badge")}
           </Badge>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl space-y-4">
               <h2 className="text-3xl font-semibold sm:text-4xl">
-                Kompletní servis od rychlých úkonů až po složité opravy
+                {t("services.headline")}
               </h2>
               <p className="text-lg text-slate-600">
-                Kombinujeme zkušené mechaniky, moderní diagnostiku a transparentní komunikaci.
-                Vyberte si z přehledných servisních balíčků nebo sestavíme řešení na míru.
+                {t("services.description")}
               </p>
             </div>
             <Button asChild variant="outline" className="w-fit">
               <Link href="tel:+420775230403" className="flex items-center gap-2">
                 <ArrowRight className="h-4 w-4" />
-                Rezervovat termín
+                {t("services.cta")}
               </Link>
             </Button>
           </div>
@@ -366,9 +373,9 @@ function Services() {
           {services.length === 0 ? (
             <Card className="col-span-full border-dashed border-slate-300 text-center">
               <CardHeader className="items-center text-center">
-                <CardTitle className="text-xl">Nabídku právě připravujeme</CardTitle>
+                <CardTitle className="text-xl">{t("services.empty.title")}</CardTitle>
                 <CardDescription>
-                  Přidejte prosím data do proměnné <code>SERVICES_JSON</code> v souboru .env.
+                  {t("services.empty.subtitlePrefix")} <code>SERVICES_JSON</code> {t("services.empty.subtitleSuffix")}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -384,7 +391,7 @@ function Services() {
                       {heading}
                     </h3>
                     <span className="text-sm text-slate-500">
-                      Vyberte si konkrétní servisní zásah a zjistěte více detailů.
+                      {t("services.helper")}
                     </span>
                   </div>
                   <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
@@ -404,7 +411,7 @@ function Services() {
                             </span>
                           </div>
                           <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.25em] text-emerald-600">
-                            detail
+                            {t("services.detailCta")}
                             <ChevronRight className="h-3 w-3 transition duration-200 group-hover:translate-x-1" />
                           </span>
                         </Card>
