@@ -34,59 +34,23 @@ import { getServices } from "@/lib/services";
 import { getTranslator, resolveLocale, type Locale } from "@/lib/i18n";
 import { extractLocale, type RouteSearchParams } from "@/lib/i18n/routing";
 
-const faqs = [
-  {
-    question: "Mohu naplánovat návštěvu mimo otevírací dobu?",
-    answer:
-      "Po telefonické domluvě se snažíme vyjít vstříc i mimo standardní provozní čas. Zavolejte nám a domluvíme konkrétní termín.",
-  },
-  {
-    question: "Jak probíhá kalkulace ceny opravy?",
-    answer:
-      "Nejprve provedeme diagnostiku a připravíme cenový odhad včetně dílů i práce. O každé změně jste předem informováni a schvalujete ji.",
-  },
-  {
-    question: "Zajišťujete náhradní vozidlo?",
-    answer:
-      "U vybraných typů servisních zásahů nabízíme krátkodobé zapůjčení náhradního vozu. Dostupnost ověříme při objednání.",
-  },
-  {
-    question: "Mohu přivézt vlastní autodíly?",
-    answer:
-      "Používáme ověřené komponenty s jasným původem, abychom mohli ručit za kvalitu i záruku. Vlastní díly proto nepřijímáme.",
-  },
-];
-
-const contactCards = [
-  {
-    title: "Autoservis & Pneuservis",
-    phone: "+420 775 230 403",
-    actionLabel: "Zavolejte hned",
-  },
-  {
-    title: "Lakovna & Karosárna",
-    phone: "+420 775 328 223",
-    actionLabel: "Objednat termín",
-  },
-];
-
 const heroHighlights = [
   {
     icon: Clock,
-    label: "Po–Pá 09:00–19:00",
-    description: "Servisní termíny bez zbytečného čekání",
+    labelKey: "home.hero.highlights.hours.label",
+    descriptionKey: "home.hero.highlights.hours.description",
   },
   {
     icon: MapPin,
-    label: "Edisonova 8, Praha 10",
-    description: "Snadné parkování a dobíjení elektromobilů",
+    labelKey: "home.hero.highlights.address.label",
+    descriptionKey: "home.hero.highlights.address.description",
   },
   {
     icon: Phone,
-    label: "+420 775 230 403",
-    description: "Okamžité objednání nebo konzultace",
+    labelKey: "home.hero.highlights.phone.label",
+    descriptionKey: "home.hero.highlights.phone.description",
   },
-];
+] as const;
 
 const brandNames = [
   "Audi",
@@ -106,26 +70,84 @@ const brandMarqueeItems = brandNames.flatMap((brand) => [
   // { label: brand, id: `${brand}-clone` },
 ]);
 
-const stats = [
-  { figure: "15+", label: "let zkušeností" },
-  { figure: "1 200+", label: "servisů ročně" },
-  { figure: "4.8★", label: "hodnocení zákazníků" },
-];
+const aboutStats = [
+  {
+    figureKey: "home.about.stats.experience.figure",
+    labelKey: "home.about.stats.experience.label",
+  },
+  {
+    figureKey: "home.about.stats.services.figure",
+    labelKey: "home.about.stats.services.label",
+  },
+  {
+    figureKey: "home.about.stats.rating.figure",
+    labelKey: "home.about.stats.rating.label",
+  },
+] as const;
+
+const aboutBullets = [
+  "home.about.bullets.equipment",
+  "home.about.bullets.warranty",
+  "home.about.bullets.detailCare",
+] as const;
+
+const qualityPoints = [
+  "home.quality.points.digitalLogbook",
+  "home.quality.points.premiumParts",
+  "home.quality.points.pickupService",
+  "home.quality.points.priceGuarantee",
+] as const;
 
 const bookingSteps = [
   {
     id: "step-contact",
-    text: "Zavoláte nebo vyplníte kontaktní formulář a domluvíme termín.",
+    textKey: "home.quality.steps.contact",
   },
   {
     id: "step-diagnostics",
-    text: "Technik provede diagnostiku a společně odsouhlasíme rozsah prací.",
+    textKey: "home.quality.steps.diagnostics",
   },
   {
     id: "step-hand-over",
-    text: "Po dokončení servisu předáme vůz čistý a připravený k jízdě.",
+    textKey: "home.quality.steps.handover",
   },
-];
+] as const;
+
+const faqItems = [
+  {
+    id: "after-hours",
+    questionKey: "home.faq.items.afterHours.question",
+    answerKey: "home.faq.items.afterHours.answer",
+  },
+  {
+    id: "quote-estimate",
+    questionKey: "home.faq.items.quoteEstimate.question",
+    answerKey: "home.faq.items.quoteEstimate.answer",
+  },
+  {
+    id: "replacement-car",
+    questionKey: "home.faq.items.replacementCar.question",
+    answerKey: "home.faq.items.replacementCar.answer",
+  },
+  {
+    id: "own-parts",
+    questionKey: "home.faq.items.ownParts.question",
+    answerKey: "home.faq.items.ownParts.answer",
+  },
+] as const;
+
+const contactCards = [
+  {
+    phone: "+420 775 230 403",
+    titleKey: "home.contact.cards.service.title",
+    actionKey: "home.contact.cards.service.action",
+  },
+  {
+    phone: "+420 775 328 223",
+    titleKey: "home.contact.cards.bodyshop.title",
+    actionKey: "home.contact.cards.bodyshop.action",
+  },
+] as const;
 
 const heroImage = "/hero-background.png";
 
@@ -228,21 +250,23 @@ export default function Home({ searchParams }: { searchParams?: HomeSearchParams
       <div className="bg-white text-slate-900">
         <SiteHeader locale={locale} pathname="/" searchParams={currentSearchParams} />
         <main className="flex flex-col">
-          <Hero />
+          <Hero locale={locale} />
           <BrandStrip />
           <Services locale={locale} />
-          <About />
-          <Quality />
-          <Faq />
-          <Contact />
+          <About locale={locale} />
+          <Quality locale={locale} />
+          <Faq locale={locale} />
+          <Contact locale={locale} />
         </main>
-        <SiteFooter />
+  <SiteFooter locale={locale} />
       </div>
     </>
   );
 }
 
-function Hero() {
+function Hero({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+
   return (
     <section
       id="hero"
@@ -251,7 +275,7 @@ function Hero() {
       <div className="absolute inset-0">
         <Image
           src={heroImage}
-          alt="Autoservis v provozu"
+          alt={t("home.hero.imageAlt")}
           fill
           className="object-cover opacity-60"
           priority
@@ -261,35 +285,34 @@ function Hero() {
       <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 py-24 md:py-32">
         <div className="max-w-2xl space-y-6">
           <Badge className="bg-white/10 text-white backdrop-blur-sm">
-            Kompletní péče o osobní i firemní vozidla
+            {t("home.hero.badge")}
           </Badge>
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
-            EURO MOTORS – spolehlivá péče o váš vůz v Praze
+            {t("home.hero.heading")}
           </h1>
           <p className="text-lg text-slate-200">
-            Přesný servis, transparentní komunikace a maximální důraz na bezpečnost.
-            Postaráme se o pravidelnou údržbu, složité opravy i přípravu na STK.
+            {t("home.hero.description")}
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg">
               <Link href="tel:+420775230403" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                Zavolejte teď
+                {t("home.hero.primaryCta")}
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
               <Link href="#services" className="flex items-center gap-2">
                 <ChevronRight className="h-5 w-5" />
-                Zobrazit služby
+                {t("home.hero.secondaryCta")}
               </Link>
             </Button>
           </div>
-          <CurrentAvailability className="max-w-md" />
+          <CurrentAvailability className="max-w-md" locale={locale} />
         </div>
         <div className="grid gap-6 sm:grid-cols-3">
           {heroHighlights.map((item) => (
             <Card
-              key={item.label}
+              key={item.labelKey}
               className="border-white/10 bg-white/5 backdrop-blur"
             >
               <CardHeader className="space-y-3">
@@ -297,10 +320,10 @@ function Hero() {
                   <item.icon className="h-10 w-10 p-2" />
                 </div>
                 <CardTitle className="text-base text-white">
-                  {item.label}
+                  {t(item.labelKey)}
                 </CardTitle>
                 <CardDescription className="text-slate-200">
-                  {item.description}
+                  {t(item.descriptionKey)}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -334,7 +357,7 @@ function Services({ locale }: { locale: Locale }) {
   const registry = new Map<string, number>();
 
   for (const service of services) {
-    const label = service.subtitle?.trim() || "Další služby";
+    const label = service.subtitle?.trim() || t("services.fallbackGroup");
     const currentIndex = registry.get(label);
 
     if (currentIndex === undefined) {
@@ -428,7 +451,9 @@ function Services({ locale }: { locale: Locale }) {
   );
 }
 
-function About() {
+function About({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+
   return (
     <section
       id="about"
@@ -438,53 +463,50 @@ function About() {
         <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div className="space-y-6">
             <Badge variant="soft" className="w-fit">
-              O nás
+              {t("home.about.badge")}
             </Badge>
             <h2 className="text-3xl font-semibold sm:text-4xl">
-              Věrní kvalitě, férovým cenám a osobnímu přístupu
+              {t("home.about.heading")}
             </h2>
             <p className="text-lg text-slate-600">
-              EURO MOTORS je rodinný autoservis, který staví na otevřené komunikaci a dlouhodobých vztazích se zákazníky.
-              Každou zakázku řešíme individuálně a doporučujeme jen to, co je pro stav vozidla skutečně přínosné.
+              {t("home.about.description")}
             </p>
             <div className="grid gap-6 sm:grid-cols-3">
-              {stats.map((item) => (
-                <div key={item.label} className="rounded-3xl bg-white p-6 text-center shadow-sm">
+              {aboutStats.map((item) => (
+                <div key={item.labelKey} className="rounded-3xl bg-white p-6 text-center shadow-sm">
                   <div className="text-3xl font-semibold text-slate-900">
-                    {item.figure}
+                    {t(item.figureKey)}
                   </div>
                   <div className="text-sm uppercase tracking-wide text-slate-500">
-                    {item.label}
+                    {t(item.labelKey)}
                   </div>
                 </div>
               ))}
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-600">
-              <div className="flex items-center gap-2">
-                <Wrench className="h-4 w-4 text-emerald-500" />
-                Špičkové vybavení dílny
-              </div>
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-emerald-500" />
-                Záruka na práci i díly
-              </div>
-              <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-emerald-500" />
-                Prémiová péče o detail
-              </div>
+              {aboutBullets.map((bulletKey, index) => {
+                const Icon = [Wrench, ShieldCheck, Sparkles][index] ?? Wrench;
+
+                return (
+                  <div key={bulletKey} className="flex items-center gap-2">
+                    <Icon className="h-4 w-4 text-emerald-500" />
+                    {t(bulletKey)}
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="relative overflow-hidden rounded-[2.5rem] bg-slate-900">
             <Image
               src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80"
-              alt="Mechanici v dílně"
+              alt={t("home.about.imageAlt")}
               width={900}
               height={700}
               className="h-full w-full object-cover opacity-90"
             />
             <div className="absolute inset-0 bg-linear-to-tr from-slate-900/70 via-slate-900/20 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-black/40 px-6 py-5 text-sm text-white backdrop-blur">
-              „Naším cílem je, aby každý zákazník odjížděl s pocitem jistoty a bezpečí.“
+              {t("home.about.quote")}
             </div>
           </div>
         </div>
@@ -493,41 +515,42 @@ function About() {
   );
 }
 
-function Quality() {
+function Quality({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+
   return (
     <section className="page-section bg-slate-900 text-white">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div className="space-y-6">
             <Badge className="bg-white/10 text-white">
-              Proč si vybrat nás
+              {t("home.quality.badge")}
             </Badge>
             <h2 className="text-3xl font-semibold sm:text-4xl">
-              Transparentní servisní proces a prémiová zákaznická péče
+              {t("home.quality.heading")}
             </h2>
             <p className="text-lg text-slate-200">
-              O průběhu opravy jste vždy informováni. Sdílíme fotografie, vysvětlujeme postupy a navrhujeme udržitelné řešení pro dlouhou životnost vozu.
+              {t("home.quality.description")}
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
-              {["Digitální servisní kniha", "Originální nebo prémiové díly", "Pick-up & drop-off služba", "Garance ceny před zahájením"]
-                .map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 rounded-3xl bg-white/10 p-5 text-sm text-slate-100"
-                  >
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-200">
-                      <ShieldCheck className="h-4 w-4" />
-                    </span>
-                    {item}
-                  </div>
-                ))}
+              {qualityPoints.map((pointKey) => (
+                <div
+                  key={pointKey}
+                  className="flex items-center gap-3 rounded-3xl bg-white/10 p-5 text-sm text-slate-100"
+                >
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-emerald-200">
+                    <ShieldCheck className="h-4 w-4" />
+                  </span>
+                  {t(pointKey)}
+                </div>
+              ))}
             </div>
           </div>
           <Card className="border-white/10 bg-white/5 backdrop-blur">
             <CardHeader>
-              <CardTitle className="text-white">Co očekávat po objednání</CardTitle>
+              <CardTitle className="text-white">{t("home.quality.cardTitle")}</CardTitle>
               <CardDescription className="text-slate-200">
-                Jednoduchý proces, který šetří váš čas.
+                {t("home.quality.cardDescription")}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -537,7 +560,7 @@ function Quality() {
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400/20 text-base font-semibold text-emerald-200">
                       0{index + 1}
                     </span>
-                    <span>{step.text}</span>
+                    <span>{t(step.textKey)}</span>
                   </li>
                 ))}
               </ol>
@@ -546,7 +569,7 @@ function Quality() {
               <Button asChild variant="secondary" className="mt-4 bg-white text-slate-900 hover:bg-slate-100">
                 <Link href="tel:+420775230403" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  Domluvte si termín
+                  {t("home.quality.cta")}
                 </Link>
               </Button>
             </CardFooter>
@@ -557,27 +580,29 @@ function Quality() {
   );
 }
 
-function Faq() {
+function Faq({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+
   return (
     <section id="faq" className="page-section bg-white">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <div className="mb-10 flex flex-col items-start gap-4">
-          <Badge variant="soft">Nejčastější dotazy</Badge>
+          <Badge variant="soft">{t("home.faq.badge")}</Badge>
           <h2 className="text-3xl font-semibold sm:text-4xl">
-            Odpovědi, které vám pomohou před návštěvou servisu
+            {t("home.faq.heading")}
           </h2>
           <p className="text-lg text-slate-600">
-            Pokud nenajdete odpověď na svou otázku, ozvěte se nám telefonicky nebo e-mailem a rádi poradíme.
+            {t("home.faq.description")}
           </p>
         </div>
         <Accordion type="single" collapsible className="space-y-3">
-          {faqs.map((item) => (
-            <AccordionItem key={item.question} value={item.question} className="rounded-3xl bg-slate-50 px-6">
+          {faqItems.map((item) => (
+            <AccordionItem key={item.id} value={item.id} className="rounded-3xl bg-slate-50 px-6">
               <AccordionTrigger className="py-5 text-left text-lg font-medium text-slate-800">
-                {item.question}
+                {t(item.questionKey)}
               </AccordionTrigger>
               <AccordionContent className="text-base leading-relaxed text-slate-600">
-                {item.answer}
+                {t(item.answerKey)}
               </AccordionContent>
             </AccordionItem>
           ))}
@@ -587,26 +612,28 @@ function Faq() {
   );
 }
 
-function Contact() {
+function Contact({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+
   return (
     <section id="contact" className="page-section border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
             <Badge variant="soft" className="w-fit">
-              Kontakt
+              {t("home.contact.badge")}
             </Badge>
             <h2 className="text-3xl font-semibold sm:text-4xl">
-              Jsme připraveni se postarat o vaše vozidlo
+              {t("home.contact.heading")}
             </h2>
             <p className="text-lg text-slate-600">
-              Objednejte se telefonicky nebo využijte online formulář. Rádi vám poradíme s výběrem správné služby a připravíme nezávaznou kalkulaci.
+              {t("home.contact.description")}
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {contactCards.map((card) => (
-                <Card key={card.title} className="bg-white">
+                <Card key={card.phone} className="bg-white">
                   <CardHeader>
-                    <CardTitle>{card.title}</CardTitle>
+                    <CardTitle>{t(card.titleKey)}</CardTitle>
                     <CardDescription>
                       <Link href={`tel:${card.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2 text-lg text-slate-700 hover:text-emerald-600">
                         <Phone className="h-4 w-4" />
@@ -616,7 +643,7 @@ function Contact() {
                   </CardHeader>
                   <CardFooter>
                     <Button asChild variant="outline" className="w-full">
-                      <Link href={`tel:${card.phone.replace(/\s+/g, "")}`}>{card.actionLabel}</Link>
+                      <Link href={`tel:${card.phone.replace(/\s+/g, "")}`}>{t(card.actionKey)}</Link>
                     </Button>
                   </CardFooter>
                 </Card>
@@ -625,38 +652,38 @@ function Contact() {
             <div className="grid gap-6 sm:grid-cols-3">
               <div className="space-y-2">
                 <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  Adresa
+                  {t("home.contact.address.label")}
                 </span>
                 <p className="text-sm text-slate-700">
-                  Edisonova 8<br />
-                  109 00 Praha – Petrovice
+                  {t("home.contact.address.line1")}<br />
+                  {t("home.contact.address.line2")}
                 </p>
               </div>
               <div className="space-y-2">
                 <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  Otevírací doba
+                  {t("home.contact.hours.label")}
                 </span>
                 <p className="text-sm text-slate-700">
-                  Pondělí–Pátek<br />
-                  09:00 – 19:00
+                  {t("home.contact.hours.days")}<br />
+                  {t("home.contact.hours.time")}
                 </p>
               </div>
               <div className="space-y-2">
                 <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  E-mail
+                  {t("home.contact.email.label")}
                 </span>
                 <Link
                   href="mailto:info@euromotors.cz"
                   className="text-sm text-slate-700 hover:text-emerald-600"
                 >
-                  info@euromotors.cz
+                  {t("home.contact.email.address")}
                 </Link>
               </div>
             </div>
           </div>
           <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-sm">
             <iframe
-              title="Mapa umístění EURO MOTORS"
+              title={t("home.contact.mapTitle")}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.116365719955!2d14.557463277373112!3d50.04746697152078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b941115171539%3A0x3729a6d019acd07c!2sEdisonova%208%2C%20109%2000%20Praha%2010-Petrovice!5e0!3m2!1scs!2scz!4v1729084800000!5m2!1scs!2scz"
               className="h-[420px] w-full border-0"
               loading="lazy"

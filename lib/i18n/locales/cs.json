@@ -12,6 +12,7 @@
     "helper": "Vyberte si konkrétní servisní zásah a zjistěte více detailů.",
     "priceLabel": "Cena",
     "detailCta": "Detail služby",
+    "fallbackGroup": "Další služby",
     "items": [
       {
         "slug": "vymena-oleje",
@@ -163,5 +164,187 @@
     "secondaryCta": "Kontaktovat poradce",
     "notFoundTitle": "Služba nenalezena | EURO MOTORS",
     "notFoundDescription": "Požadovaná servisní nabídka nebyla nalezena."
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Autoservis v provozu",
+      "badge": "Kompletní péče o osobní i firemní vozidla",
+      "heading": "EURO MOTORS – spolehlivá péče o váš vůz v Praze",
+      "description": "Přesný servis, transparentní komunikace a maximální důraz na bezpečnost. Postaráme se o pravidelnou údržbu, složité opravy i přípravu na STK.",
+      "primaryCta": "Zavolejte teď",
+      "secondaryCta": "Zobrazit služby",
+      "highlights": {
+        "hours": {
+          "label": "Po–Pá 09:00–19:00",
+          "description": "Servisní termíny bez zbytečného čekání"
+        },
+        "address": {
+          "label": "Edisonova 8, Praha 10",
+          "description": "Snadné parkování a dobíjení elektromobilů"
+        },
+        "phone": {
+          "label": "+420 775 230 403",
+          "description": "Okamžité objednání nebo konzultace"
+        }
+      }
+    },
+    "about": {
+      "badge": "O nás",
+      "heading": "Věrní kvalitě, férovým cenám a osobnímu přístupu",
+      "description": "EURO MOTORS je rodinný autoservis, který staví na otevřené komunikaci a dlouhodobých vztazích se zákazníky. Každou zakázku řešíme individuálně a doporučujeme jen to, co je pro stav vozidla skutečně přínosné.",
+      "stats": {
+        "experience": {
+          "figure": "15+",
+          "label": "let zkušeností"
+        },
+        "services": {
+          "figure": "1 200+",
+          "label": "servisů ročně"
+        },
+        "rating": {
+          "figure": "4.8★",
+          "label": "hodnocení zákazníků"
+        }
+      },
+      "bullets": {
+        "equipment": "Špičkové vybavení dílny",
+        "warranty": "Záruka na práci i díly",
+        "detailCare": "Prémiová péče o detail"
+      },
+      "imageAlt": "Mechanici v dílně",
+      "quote": "„Naším cílem je, aby každý zákazník odjížděl s pocitem jistoty a bezpečí.“"
+    },
+    "quality": {
+      "badge": "Proč si vybrat nás",
+      "heading": "Transparentní servisní proces a prémiová zákaznická péče",
+      "description": "O průběhu opravy jste vždy informováni. Sdílíme fotografie, vysvětlujeme postupy a navrhujeme udržitelné řešení pro dlouhou životnost vozu.",
+      "points": {
+        "digitalLogbook": "Digitální servisní kniha",
+        "premiumParts": "Originální nebo prémiové díly",
+        "pickupService": "Pick-up & drop-off služba",
+        "priceGuarantee": "Garance ceny před zahájením"
+      },
+      "cardTitle": "Co očekávat po objednání",
+      "cardDescription": "Jednoduchý proces, který šetří váš čas.",
+      "steps": {
+        "contact": "Zavoláte nebo vyplníte kontaktní formulář a domluvíme termín.",
+        "diagnostics": "Technik provede diagnostiku a společně odsouhlasíme rozsah prací.",
+        "handover": "Po dokončení servisu předáme vůz čistý a připravený k jízdě."
+      },
+      "cta": "Domluvte si termín"
+    },
+    "faq": {
+      "badge": "Nejčastější dotazy",
+      "heading": "Odpovědi, které vám pomohou před návštěvou servisu",
+      "description": "Pokud nenajdete odpověď na svou otázku, ozvěte se nám telefonicky nebo e-mailem a rádi poradíme.",
+      "items": {
+        "afterHours": {
+          "question": "Mohu naplánovat návštěvu mimo otevírací dobu?",
+          "answer": "Po telefonické domluvě se snažíme vyjít vstříc i mimo standardní provozní čas. Zavolejte nám a domluvíme konkrétní termín."
+        },
+        "quoteEstimate": {
+          "question": "Jak probíhá kalkulace ceny opravy?",
+          "answer": "Nejprve provedeme diagnostiku a připravíme cenový odhad včetně dílů i práce. O každé změně jste předem informováni a schvalujete ji."
+        },
+        "replacementCar": {
+          "question": "Zajišťujete náhradní vozidlo?",
+          "answer": "U vybraných typů servisních zásahů nabízíme krátkodobé zapůjčení náhradního vozu. Dostupnost ověříme při objednání."
+        },
+        "ownParts": {
+          "question": "Mohu přivézt vlastní autodíly?",
+          "answer": "Používáme ověřené komponenty s jasným původem, abychom mohli ručit za kvalitu i záruku. Vlastní díly proto nepřijímáme."
+        }
+      }
+    },
+    "contact": {
+      "badge": "Kontakt",
+      "heading": "Jsme připraveni se postarat o vaše vozidlo",
+      "description": "Objednejte se telefonicky nebo využijte online formulář. Rádi vám poradíme s výběrem správné služby a připravíme nezávaznou kalkulaci.",
+      "cards": {
+        "service": {
+          "title": "Autoservis & Pneuservis",
+          "action": "Zavolejte hned"
+        },
+        "bodyshop": {
+          "title": "Lakovna & Karosárna",
+          "action": "Objednat termín"
+        }
+      },
+      "address": {
+        "label": "Adresa",
+        "line1": "Edisonova 8",
+        "line2": "109 00 Praha – Petrovice"
+      },
+      "hours": {
+        "label": "Otevírací doba",
+        "days": "Pondělí–Pátek",
+        "time": "09:00 – 19:00"
+      },
+      "email": {
+        "label": "E-mail",
+        "address": "info@euromotors.cz"
+      },
+      "mapTitle": "Mapa umístění EURO MOTORS"
+    },
+    "availability": {
+      "openNow": {
+        "label": "Právě otevřeno",
+        "detail": "Zavíráme dnes v {time}."
+      },
+      "closed": {
+        "label": "Mimo otevírací dobu",
+        "detailToday": "Otevřeno bude dnes v {time}.",
+        "detailTomorrow": "Otevřeno bude zítra v {time}.",
+        "detailWeekday": "Otevřeno bude v {weekday} v {time}."
+      },
+      "unknown": {
+        "label": "Režim provozu",
+        "detail": "Otevírací doba bude upřesněna."
+      },
+      "days": {
+        "sunday": "neděli",
+        "monday": "pondělí",
+        "tuesday": "úterý",
+        "wednesday": "středu",
+        "thursday": "čtvrtek",
+        "friday": "pátek",
+        "saturday": "sobotu"
+      }
+    }
+  },
+  "chrome": {
+    "announcement": {
+      "certified": "Certifikovaný autoservis EURO MOTORS",
+      "hours": "Po–Pá 09:00–19:00",
+      "phone": "+420 775 230 403"
+    },
+    "header": {
+      "logoAlt": "Logo EURO MOTORS",
+      "tagline": "Autoservis Praha",
+      "nav": {
+        "services": "Služby",
+        "about": "O nás",
+        "faq": "FAQ",
+        "contact": "Kontakt"
+      },
+      "badge": "15 let praxe",
+      "cta": "Objednat servis",
+      "callAria": "Zavolat do servisu",
+      "languageSwitcherAria": "Změnit jazyk",
+      "languages": {
+        "cs": "Čeština",
+        "en": "English"
+      }
+    },
+    "footer": {
+      "brand": "EURO MOTORS",
+      "copy": "2019 – {year} © EURO MOTORS",
+      "privacy": "Zásady ochrany osobních údajů",
+      "waitingArea": "Při návštěvě servisu nabízíme čekací zónu s Wi-Fi a občerstvením.",
+      "credits": {
+        "prefix": "Webové stránky vytvořené společností",
+        "name": "DigiTale s.r.o."
+      }
+    }
   }
 }

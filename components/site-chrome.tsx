@@ -11,20 +11,22 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { locales, type Locale } from "@/lib/i18n";
+import { locales, getTranslator, type Locale } from "@/lib/i18n";
 import { buildLocaleHref, type RouteSearchParams } from "@/lib/i18n/routing";
 
 const navLinks = [
-  { label: "Služby", href: "/#services" },
-  { label: "O nás", href: "/#about" },
-  { label: "FAQ", href: "/#faq" },
-  { label: "Kontakt", href: "/#contact" },
-];
+  { labelKey: "chrome.header.nav.services", href: "/#services" },
+  { labelKey: "chrome.header.nav.about", href: "/#about" },
+  { labelKey: "chrome.header.nav.faq", href: "/#faq" },
+  { labelKey: "chrome.header.nav.contact", href: "/#contact" },
+] as const;
 
-const languageLabels: Record<Locale, string> = {
-  cs: "Čeština",
-  en: "English",
+const languageLabelKeys: Record<Locale, string> = {
+  cs: "chrome.header.languages.cs",
+  en: "chrome.header.languages.en",
 };
+
+type Translator = ReturnType<typeof getTranslator>;
 
 type SiteHeaderProps = {
   locale: Locale;
@@ -34,32 +36,36 @@ type SiteHeaderProps = {
 
 export function SiteHeader({ locale, pathname, searchParams }: SiteHeaderProps) {
   const resolvedSearchParams = searchParams ?? {};
+  const t = getTranslator(locale);
 
   return (
     <div className="sticky top-0 z-50">
-      <AnnouncementBar />
-      <Header locale={locale} pathname={pathname} searchParams={resolvedSearchParams} />
+      <AnnouncementBar t={t} />
+      <Header locale={locale} pathname={pathname} searchParams={resolvedSearchParams} t={t} />
     </div>
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ locale }: { locale: Locale }) {
+  const t = getTranslator(locale);
+  const currentYear = new Date().getFullYear().toString();
+
   return (
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-2">
-          <span className="font-semibold text-slate-900">EURO MOTORS</span>
-          <span>2019 – {new Date().getFullYear()} © EURO MOTORS</span>
+          <span className="font-semibold text-slate-900">{t("chrome.footer.brand")}</span>
+          <span>{t("chrome.footer.copy").replace("{year}", currentYear)}</span>
           <Link href="/gdpr" className="hover:text-emerald-600">
-            Zásady ochrany osobních údajů
+            {t("chrome.footer.privacy")}
           </Link>
         </div>
         <div className="flex flex-col gap-2 text-slate-500">
-          <span>Při návštěvě servisu nabízíme čekací zónu s Wi-Fi a občerstvením.</span>
+          <span>{t("chrome.footer.waitingArea")}</span>
           <span>
-            Webové stránky vytvořené společnosti {" "}
+            {t("chrome.footer.credits.prefix")} {" "}
             <Link href="https://www.digitale.dev" className="hover:text-emerald-600">
-              DigiTale s.r.o.
+              {t("chrome.footer.credits.name")}
             </Link>
           </span>
         </div>
@@ -68,18 +74,18 @@ export function SiteFooter() {
   );
 }
 
-function AnnouncementBar() {
+function AnnouncementBar({ t }: { t: Translator }) {
   return (
     <div className="bg-slate-900 text-white">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-2 text-sm">
         <div className="flex items-center gap-2 font-medium">
           <ShieldCheck className="h-4 w-4 text-emerald-400" />
-          Certifikovaný autoservis EURO MOTORS
+          {t("chrome.announcement.certified")}
         </div>
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4 text-emerald-300" />
-            Po–Pá 09:00–19:00
+            {t("chrome.announcement.hours")}
           </div>
           <Separator className="hidden h-4 w-px bg-white/30 md:block" decorative={true} />
           <Link
@@ -87,7 +93,7 @@ function AnnouncementBar() {
             className="flex items-center gap-2 text-emerald-300 transition hover:text-emerald-100"
           >
             <Phone className="h-4 w-4" />
-            +420 775 230 403
+            {t("chrome.announcement.phone")}
           </Link>
         </div>
       </div>
@@ -101,7 +107,7 @@ type HeaderProps = {
   searchParams: RouteSearchParams;
 };
 
-function Header({ locale, pathname, searchParams }: HeaderProps) {
+function Header({ locale, pathname, searchParams, t }: HeaderProps & { t: Translator }) {
   const homepageHref = buildLocaleHref("/", searchParams, locale);
 
   return (
@@ -110,7 +116,7 @@ function Header({ locale, pathname, searchParams }: HeaderProps) {
         <Link href={homepageHref} className="flex items-center gap-3 font-semibold">
           <Image
             src="/logo.svg"
-            alt="EURO MOTORS logo"
+            alt={t("chrome.header.logoAlt")}
             width={44}
             height={44}
             className="h-11 w-11"
@@ -118,7 +124,7 @@ function Header({ locale, pathname, searchParams }: HeaderProps) {
           />
           <div className="flex flex-col leading-none">
             <span className="text-base">EURO MOTORS</span>
-            <span className="text-xs text-slate-500">Autoservis Praha</span>
+            <span className="text-xs text-slate-500">{t("chrome.header.tagline")}</span>
           </div>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
@@ -131,24 +137,34 @@ function Header({ locale, pathname, searchParams }: HeaderProps) {
                 href={target}
                 className="text-slate-600 transition hover:text-slate-900"
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             );
           })}
         </nav>
         <div className="hidden items-center gap-3 md:flex">
-          <LanguageDropdown locale={locale} pathname={pathname} searchParams={searchParams} />
-          <Badge className="bg-emerald-100 text-emerald-700">15 let praxe</Badge>
+          <LanguageDropdown
+            locale={locale}
+            pathname={pathname}
+            searchParams={searchParams}
+            t={t}
+          />
+          <Badge className="bg-emerald-100 text-emerald-700">{t("chrome.header.badge")}</Badge>
           <Button asChild size="lg">
             <Link href="tel:+420775230403" className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
-              Objednat servis
+              {t("chrome.header.cta")}
             </Link>
           </Button>
         </div>
         <div className="flex items-center gap-2 md:hidden">
-          <LanguageDropdown locale={locale} pathname={pathname} searchParams={searchParams} />
-          <Button asChild variant="secondary" size="icon" aria-label="Zavolat do servisu">
+          <LanguageDropdown
+            locale={locale}
+            pathname={pathname}
+            searchParams={searchParams}
+            t={t}
+          />
+          <Button asChild variant="secondary" size="icon" aria-label={t("chrome.header.callAria")}>
             <Link href="tel:+420775230403">
               <Phone className="h-5 w-5" />
             </Link>
@@ -165,7 +181,7 @@ type LanguageDropdownProps = {
   searchParams: RouteSearchParams;
 };
 
-function LanguageDropdown({ locale, pathname, searchParams }: LanguageDropdownProps) {
+function LanguageDropdown({ locale, pathname, searchParams, t }: LanguageDropdownProps & { t: Translator }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -173,10 +189,10 @@ function LanguageDropdown({ locale, pathname, searchParams }: LanguageDropdownPr
           variant="ghost"
           size="sm"
           className="gap-2 px-3 text-slate-600 hover:text-slate-900"
-          aria-label="Změnit jazyk"
+          aria-label={t("chrome.header.languageSwitcherAria")}
         >
           <Languages className="h-4 w-4" />
-          <span className="hidden sm:inline">{languageLabels[locale]}</span>
+          <span className="hidden sm:inline">{t(languageLabelKeys[locale])}</span>
           <span className="text-xs font-semibold uppercase sm:hidden">{locale}</span>
         </Button>
       </DropdownMenuTrigger>
@@ -184,7 +200,7 @@ function LanguageDropdown({ locale, pathname, searchParams }: LanguageDropdownPr
         {locales.map((availableLocale) => {
           const isActive = availableLocale === locale;
           const href = buildLocaleHref(pathname, searchParams, availableLocale);
-          const label = languageLabels[availableLocale] ?? availableLocale.toUpperCase();
+          const label = t(languageLabelKeys[availableLocale]) ?? availableLocale.toUpperCase();
 
           return (
             <DropdownMenuItem key={availableLocale} asChild>

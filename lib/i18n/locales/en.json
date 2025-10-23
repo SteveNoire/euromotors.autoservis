@@ -12,6 +12,7 @@
     "helper": "Pick the service you need to see all details.",
     "priceLabel": "Price",
     "detailCta": "Service detail",
+    "fallbackGroup": "Additional services",
     "items": [
       {
         "slug": "vymena-oleje",
@@ -163,5 +164,187 @@
     "secondaryCta": "Contact advisor",
     "notFoundTitle": "Service not found | EURO MOTORS",
     "notFoundDescription": "The requested service offer could not be found."
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Workshop in operation",
+      "badge": "Complete care for personal and fleet vehicles",
+      "heading": "EURO MOTORS – reliable care for your car in Prague",
+      "description": "Precise service, transparent communication and maximum focus on safety. We handle regular maintenance, complex repairs and MOT preparation.",
+      "primaryCta": "Call now",
+      "secondaryCta": "View services",
+      "highlights": {
+        "hours": {
+          "label": "Mon-Fri 09:00-19:00",
+          "description": "Service appointments without long waits"
+        },
+        "address": {
+          "label": "Edisonova 8, Prague 10",
+          "description": "Easy parking and EV charging on-site"
+        },
+        "phone": {
+          "label": "+420 775 230 403",
+          "description": "Immediate booking or consultation"
+        }
+      }
+    },
+    "about": {
+      "badge": "About us",
+      "heading": "Committed to quality, fair pricing and personal service",
+      "description": "EURO MOTORS is a family-run workshop built on open communication and long-term customer relationships. We handle every job individually and only recommend what truly benefits the condition of the vehicle.",
+      "stats": {
+        "experience": {
+          "figure": "15+",
+          "label": "years of experience"
+        },
+        "services": {
+          "figure": "1,200+",
+          "label": "services per year"
+        },
+        "rating": {
+          "figure": "4.8★",
+          "label": "customer rating"
+        }
+      },
+      "bullets": {
+        "equipment": "State-of-the-art workshop equipment",
+        "warranty": "Warranty on labour and parts",
+        "detailCare": "Premium attention to detail"
+      },
+      "imageAlt": "Technicians working in the workshop",
+      "quote": "\"Our goal is for every customer to leave feeling safe and confident.\""
+    },
+    "quality": {
+      "badge": "Why choose us",
+      "heading": "Transparent repair process and premium customer care",
+      "description": "You are informed about every stage of the repair. We share photos, explain procedures and recommend sustainable solutions for a long vehicle lifespan.",
+      "points": {
+        "digitalLogbook": "Digital service logbook",
+        "premiumParts": "Original or premium parts",
+        "pickupService": "Pick-up & drop-off service",
+        "priceGuarantee": "Price guaranteed before work starts"
+      },
+      "cardTitle": "What to expect after booking",
+      "cardDescription": "A simple process that respects your time.",
+      "steps": {
+        "contact": "Call us or fill in the contact form and we will schedule a visit.",
+        "diagnostics": "A technician runs diagnostics and we agree the scope of work together.",
+        "handover": "After the service we hand over the car clean and ready to drive."
+      },
+      "cta": "Schedule a visit"
+    },
+    "faq": {
+      "badge": "Frequently asked questions",
+      "heading": "Answers that help before you visit the workshop",
+      "description": "If you cannot find the answer, call or email us and we will be happy to help.",
+      "items": {
+        "afterHours": {
+          "question": "Can I arrange a visit outside opening hours?",
+          "answer": "Give us a call and we will do our best to accommodate you even outside the standard schedule. We will agree a specific time together."
+        },
+        "quoteEstimate": {
+          "question": "How do you calculate the repair price?",
+          "answer": "We start with diagnostics and prepare a cost estimate covering parts and labour. You are informed about every change in advance and approve it."
+        },
+        "replacementCar": {
+          "question": "Do you provide a replacement vehicle?",
+          "answer": "For selected repair types we offer short-term replacement cars. We will check availability while booking."
+        },
+        "ownParts": {
+          "question": "Can I bring my own spare parts?",
+          "answer": "We work with verified components so we can guarantee quality and warranty. For that reason we do not install customer-supplied parts."
+        }
+      }
+    },
+    "contact": {
+      "badge": "Contact",
+      "heading": "We are ready to take care of your vehicle",
+      "description": "Book by phone or use the online form. We will help you choose the right service and prepare a non-binding quote.",
+      "cards": {
+        "service": {
+          "title": "Service & Tyre centre",
+          "action": "Call straight away"
+        },
+        "bodyshop": {
+          "title": "Paint shop & Body shop",
+          "action": "Reserve a slot"
+        }
+      },
+      "address": {
+        "label": "Address",
+        "line1": "Edisonova 8",
+        "line2": "109 00 Prague - Petrovice"
+      },
+      "hours": {
+        "label": "Opening hours",
+        "days": "Monday-Friday",
+        "time": "09:00 - 19:00"
+      },
+      "email": {
+        "label": "Email",
+        "address": "info@euromotors.cz"
+      },
+      "mapTitle": "Map location of EURO MOTORS"
+    },
+    "availability": {
+      "openNow": {
+        "label": "Open now",
+        "detail": "We close today at {time}."
+      },
+      "closed": {
+        "label": "Outside business hours",
+        "detailToday": "We open today at {time}.",
+        "detailTomorrow": "We open tomorrow at {time}.",
+        "detailWeekday": "We open on {weekday} at {time}."
+      },
+      "unknown": {
+        "label": "Operating mode",
+        "detail": "Opening hours will be confirmed soon."
+      },
+      "days": {
+        "sunday": "Sunday",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday"
+      }
+    }
+  },
+  "chrome": {
+    "announcement": {
+      "certified": "EURO MOTORS certified workshop",
+      "hours": "Mon–Fri 09:00–19:00",
+      "phone": "+420 775 230 403"
+    },
+    "header": {
+      "logoAlt": "EURO MOTORS logo",
+      "tagline": "Auto service Prague",
+      "nav": {
+        "services": "Services",
+        "about": "About us",
+        "faq": "FAQ",
+        "contact": "Contact"
+      },
+      "badge": "15 years of experience",
+      "cta": "Book a service",
+      "callAria": "Call the workshop",
+      "languageSwitcherAria": "Change language",
+      "languages": {
+        "cs": "Čeština",
+        "en": "English"
+      }
+    },
+    "footer": {
+      "brand": "EURO MOTORS",
+      "copy": "2019 – {year} © EURO MOTORS",
+      "privacy": "Privacy policy",
+      "waitingArea": "Enjoy a waiting lounge with Wi-Fi and refreshments during your visit.",
+      "credits": {
+        "prefix": "Website created by",
+        "name": "DigiTale s.r.o."
+      }
+    }
   }
 }

@@ -136,7 +136,7 @@ export default async function ServiceDetailPage({ params, searchParams }: Servic
           </div>
         </section>
       </main>
-      <SiteFooter />
+  <SiteFooter locale={locale} />
     </div>
   );
 }

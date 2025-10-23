@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { cn } from "@/lib/utils";
+import { getTranslator, type Locale } from "@/lib/i18n";
 
 type WorkingWindow = {
   start: number;
@@ -24,36 +25,9 @@ const WORKING_WINDOWS: Array<WorkingWindow | null> = [
   { start: 9 * 60, end: 19 * 60 },
   null,
 ];
-
-const WEEKDAY_INDEX: Record<string, number> = {
-  neděle: 0,
-  pondělí: 1,
-  úterý: 2,
-  středa: 3,
-  čtvrtek: 4,
-  pátek: 5,
-  sobota: 6,
-};
-
-const WEEKDAY_ACCUSATIVE = [
-  "neděli",
-  "pondělí",
-  "úterý",
-  "středu",
-  "čtvrtek",
-  "pátek",
-  "sobotu",
-];
-
-const LOCALE_FORMAT = new Intl.DateTimeFormat("cs-CZ", {
-  timeZone: "Europe/Prague",
-  weekday: "long",
-  hour: "2-digit",
-  minute: "2-digit",
-  hour12: false,
-});
-
 const NEXT_OPEN_LOOKUP_LIMIT = 7;
+
+type Translator = ReturnType<typeof getTranslator>;
 
 function minutesToTimeString(minutes: number) {
   const hours = Math.floor(minutes / 60);
@@ -61,47 +35,71 @@ function minutesToTimeString(minutes: number) {
   return `${hours.toString().padStart(2, "0")}:${mins.toString().padStart(2, "0")}`;
 }
 
-function getPragueTimeSnapshot(baseDate = new Date()) {
-  const parts = LOCALE_FORMAT.formatToParts(baseDate);
-  const hourPart = parts.find((part) => part.type === "hour");
-  const minutePart = parts.find((part) => part.type === "minute");
-  const weekdayPart = parts.find((part) => part.type === "weekday");
+function getPragueSnapshot(date = new Date()) {
+  const pragueNow = new Date(date.toLocaleString("en-US", { timeZone: "Europe/Prague" }));
+  const dayIndex = pragueNow.getDay();
+  const minutes = pragueNow.getHours() * 60 + pragueNow.getMinutes();
 
-  const hour = Number(hourPart?.value ?? 0);
-  const minute = Number(minutePart?.value ?? 0);
-  const weekday = (weekdayPart?.value ?? "").toLowerCase();
-
-  return {
-    dayIndex: WEEKDAY_INDEX[weekday] ?? 0,
-    minutes: hour * 60 + minute,
-  };
+  return { dayIndex, minutes };
 }
 
-function describeNextOpen(dayIndex: number, offset: number, startMinutes: number) {
+function getLocalizedDayNames(t: Translator) {
+  return [
+    t("home.availability.days.sunday"),
+    t("home.availability.days.monday"),
+    t("home.availability.days.tuesday"),
+    t("home.availability.days.wednesday"),
+    t("home.availability.days.thursday"),
+    t("home.availability.days.friday"),
+    t("home.availability.days.saturday"),
+  ];
+}
+
+function describeNextOpen({
+  offset,
+  dayIndex,
+  startMinutes,
+  dayNames,
+  t,
+}: {
+  offset: number;
+  dayIndex: number;
+  startMinutes: number;
+  dayNames: string[];
+  t: Translator;
+}) {
+  const time = minutesToTimeString(startMinutes);
+
   if (offset === 0) {
-    return `Otevřeno bude dnes v ${minutesToTimeString(startMinutes)}.`;
+    return t("home.availability.closed.detailToday").replace("{time}", time);
   }
 
   if (offset === 1) {
-    return `Otevřeno bude zítra v ${minutesToTimeString(startMinutes)}.`;
+    return t("home.availability.closed.detailTomorrow").replace("{time}", time);
   }
 
-  return `Otevřeno bude v ${WEEKDAY_ACCUSATIVE[dayIndex]} v ${minutesToTimeString(startMinutes)}.`;
+  const weekday = dayNames[dayIndex] ?? "";
+  return t("home.availability.closed.detailWeekday")
+    .replace("{weekday}", weekday)
+    .replace("{time}", time);
 }
 
-function calculateAvailability() {
-  const { dayIndex, minutes } = getPragueTimeSnapshot();
+function calculateAvailability(_locale: Locale, t: Translator): AvailabilityStatus {
+  const { dayIndex, minutes } = getPragueSnapshot();
+  const dayNames = getLocalizedDayNames(t);
   const todayWindow = WORKING_WINDOWS[dayIndex];
 
   if (todayWindow && minutes >= todayWindow.start && minutes < todayWindow.end) {
     return {
       isOpen: true,
-      label: "Právě otevřeno",
-      detail: `Zavíráme dnes v ${minutesToTimeString(todayWindow.end)}.`,
+      label: t("home.availability.openNow.label"),
+      detail: t("home.availability.openNow.detail").replace(
+        "{time}",
+        minutesToTimeString(todayWindow.end),
+      ),
     } satisfies AvailabilityStatus;
   }
 
-  // Find the next opening window
   for (let offset = 0; offset < NEXT_OPEN_LOOKUP_LIMIT; offset += 1) {
     const nextDayIndex = (dayIndex + offset) % WORKING_WINDOWS.length;
     const window = WORKING_WINDOWS[nextDayIndex];
@@ -117,43 +115,59 @@ function calculateAvailability() {
     if (offset === 0 && minutes < window.start) {
       return {
         isOpen: false,
-        label: "Mimo otevírací dobu",
-        detail: describeNextOpen(nextDayIndex, offset, window.start),
+        label: t("home.availability.closed.label"),
+        detail: describeNextOpen({
+          offset,
+          dayIndex: nextDayIndex,
+          startMinutes: window.start,
+          dayNames,
+          t,
+        }),
       } satisfies AvailabilityStatus;
     }
 
     if (offset > 0) {
       return {
         isOpen: false,
-        label: "Mimo otevírací dobu",
-        detail: describeNextOpen(nextDayIndex, offset, window.start),
+        label: t("home.availability.closed.label"),
+        detail: describeNextOpen({
+          offset,
+          dayIndex: nextDayIndex,
+          startMinutes: window.start,
+          dayNames,
+          t,
+        }),
       } satisfies AvailabilityStatus;
     }
   }
 
   return {
     isOpen: false,
-    label: "Režim provozu",
-    detail: "Otevírací doba bude upřesněna.",
+    label: t("home.availability.unknown.label"),
+    detail: t("home.availability.unknown.detail"),
   } satisfies AvailabilityStatus;
 }
 
 interface CurrentAvailabilityProps {
   className?: string;
+  locale: Locale;
 }
 
-export function CurrentAvailability({ className }: CurrentAvailabilityProps) {
-  const [status, setStatus] = useState<AvailabilityStatus>(calculateAvailability);
+export function CurrentAvailability({ className, locale }: CurrentAvailabilityProps) {
+  const translator = useMemo(() => getTranslator(locale), [locale]);
+  const [status, setStatus] = useState<AvailabilityStatus>(() => calculateAvailability(locale, translator));
 
   useEffect(() => {
+    setStatus(calculateAvailability(locale, translator));
+
     const intervalId = window.setInterval(() => {
-      setStatus(calculateAvailability());
+      setStatus(calculateAvailability(locale, translator));
     }, 60_000);
 
     return () => {
       window.clearInterval(intervalId);
     };
-  }, []);
+  }, [locale, translator]);
 
   return (
     <div
