@@ -1,9 +1,10 @@
 import cs from "./locales/cs.json";
 import en from "./locales/en.json";
+import de from "./locales/de.json";
 import ru from "./locales/ru.json";
 import uk from "./locales/uk.json";
 
-export const locales = ["cs", "en", "ru", "uk"] as const;
+export const locales = ["cs", "en", "de", "ru", "uk"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "cs";
 
@@ -12,6 +13,7 @@ export type Dictionary = Record<string, unknown>;
 const dictionaries: Record<Locale, Dictionary> = {
   cs: cs as Dictionary,
   en: en as Dictionary,
+  de: de as Dictionary,
   ru: ru as Dictionary,
   uk: uk as Dictionary,
 };

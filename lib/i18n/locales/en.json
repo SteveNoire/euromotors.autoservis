@@ -312,6 +312,125 @@
       }
     }
   },
+  "contactPage": {
+    "hero": {
+      "badge": "Workshop contacts",
+      "title": "Get in touch",
+      "intro": "Need to reach us? Choose the channel that suits you best."
+    },
+    "sections": {
+      "phones": {
+        "title": "Contact numbers",
+        "description": "Call us to book a service visit or discuss repairs.",
+        "items": {
+          "service": {
+            "title": "Service | Tyre centre",
+            "description": "Bookings, diagnostics and mechanical repairs.",
+            "action": "Call now"
+          },
+          "bodyshop": {
+            "title": "Paint shop | Body shop | Detailing",
+            "description": "Bodywork repairs, refinishing and detailing care.",
+            "action": "Call the body shop"
+          }
+        }
+      },
+      "details": {
+        "title": "Contact details",
+        "description": "Address, email and social channels in one place.",
+        "items": {
+          "address": {
+            "label": "Workshop address",
+            "value": "Edisonova 8",
+            "valueSecondary": "109 00 Prague 10",
+            "cta": "Open in Google Maps"
+          },
+          "email": {
+            "label": "Email",
+            "value": "euromotorsofficial@gmail.com",
+            "valueSecondary": "",
+            "cta": "Send an email"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "value": "euromotorsofficial",
+            "valueSecondary": "",
+            "cta": "Open Facebook"
+          },
+          "instagram": {
+            "label": "Instagram",
+            "value": "@euromotorscz",
+            "valueSecondary": "",
+            "cta": "Visit Instagram"
+          }
+        }
+      },
+      "hours": {
+        "title": "Opening hours",
+        "description": "By prior arrangement we will try to assist you outside standard hours as well.",
+        "items": {
+          "weekdays": {
+            "label": "Monday - Friday",
+            "value": "09:00 - 19:00",
+            "note": "Contact us in advance to arrange an individual time if needed."
+          },
+          "weekend": {
+            "label": "Saturday & Sunday",
+            "value": "Closed",
+            "note": "Call us and we will look for an individual arrangement if urgent."
+          }
+        }
+      },
+      "company": {
+        "title": "Company details",
+        "description": "Official information about EURO MOTORS.",
+        "items": {
+          "name": {
+            "label": "Registered name",
+            "value": "euromotors corporation s.r.o."
+          },
+          "registration": {
+            "label": "Company registration",
+            "value": "File C 321387 kept at the Municipal Court in Prague"
+          },
+          "seat": {
+            "label": "Registered office",
+            "value": "V Pitkovičkách 351, 104 00 Prague 10"
+          },
+          "ico": {
+            "label": "Company ID",
+            "value": "08580405"
+          },
+          "dic": {
+            "label": "VAT ID",
+            "value": "CZ08580405"
+          }
+        }
+      },
+      "bank": {
+        "title": "Bank details",
+        "description": "Payment information for wire transfers.",
+        "items": {
+          "bank": {
+            "label": "Bank",
+            "value": "Raiffeisenbank a.s."
+          },
+          "account": {
+            "label": "Account number",
+            "value": "77791197/5500"
+          },
+          "iban": {
+            "label": "IBAN",
+            "value": "CZ49 5500 0000 0000 7779 1197"
+          },
+          "swift": {
+            "label": "BIC/SWIFT",
+            "value": "RZBCCZPP"
+          }
+        }
+      }
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "EURO MOTORS certified workshop",
@@ -334,6 +453,7 @@
       "languages": {
         "cs": "Čeština",
         "en": "English",
+        "de": "Deutsch",
         "ru": "Русский",
         "uk": "Українська"
       }

@@ -18,12 +18,13 @@ const navLinks = [
   { labelKey: "chrome.header.nav.services", href: "/#services" },
   { labelKey: "chrome.header.nav.about", href: "/#about" },
   { labelKey: "chrome.header.nav.faq", href: "/#faq" },
-  { labelKey: "chrome.header.nav.contact", href: "/#contact" },
+  { labelKey: "chrome.header.nav.contact", href: "/contact" },
 ] as const;
 
 const languageLabelKeys: Record<Locale, string> = {
   cs: "chrome.header.languages.cs",
   en: "chrome.header.languages.en",
+  de: "chrome.header.languages.de",
   ru: "chrome.header.languages.ru",
   uk: "chrome.header.languages.uk",
 };

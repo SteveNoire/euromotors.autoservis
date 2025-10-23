@@ -312,6 +312,125 @@
       }
     }
   },
+  "contactPage": {
+    "hero": {
+      "badge": "Контакти автосервісу",
+      "title": "Зв'яжіться з нами",
+      "intro": "Потрібно обрати послугу чи поставити запитання? Обирайте зручний спосіб зв'язку."
+    },
+    "sections": {
+      "phones": {
+        "title": "Контактні телефони",
+        "description": "Телефонуйте для запису на сервіс, діагностику або консультацію.",
+        "items": {
+          "service": {
+            "title": "Автосервіс | Шиномонтаж",
+            "description": "Запис, діагностика та механічні роботи.",
+            "action": "Подзвонити зараз"
+          },
+          "bodyshop": {
+            "title": "Кузовний цех | Фарбування | Детейлінг",
+            "description": "Кузовний ремонт, фарбування та детейлінг.",
+            "action": "Подзвонити в кузовний цех"
+          }
+        }
+      },
+      "details": {
+        "title": "Контактні дані",
+        "description": "Адреса, e-mail і соцмережі в одному місці.",
+        "items": {
+          "address": {
+            "label": "Адреса сервісу",
+            "value": "Edisonova 8",
+            "valueSecondary": "109 00 Прага 10",
+            "cta": "Відкрити в Google Картах"
+          },
+          "email": {
+            "label": "E-mail",
+            "value": "euromotorsofficial@gmail.com",
+            "valueSecondary": "",
+            "cta": "Написати листа"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "value": "euromotorsofficial",
+            "valueSecondary": "",
+            "cta": "Відкрити Facebook"
+          },
+          "instagram": {
+            "label": "Instagram",
+            "value": "@euromotorscz",
+            "valueSecondary": "",
+            "cta": "Перейти в Instagram"
+          }
+        }
+      },
+      "hours": {
+        "title": "Години роботи",
+        "description": "За попередньою домовленістю допоможемо і поза стандартним графіком.",
+        "items": {
+          "weekdays": {
+            "label": "Понеділок - П'ятниця",
+            "value": "09:00 – 19:00",
+            "note": "За потреби домовимося про індивідуальний час."
+          },
+          "weekend": {
+            "label": "Субота та неділя",
+            "value": "Зачинено",
+            "note": "Зателефонуйте нам — у термінових випадках знайдемо рішення."
+          }
+        }
+      },
+      "company": {
+        "title": "Реквізити компанії",
+        "description": "Офіційні дані EURO MOTORS.",
+        "items": {
+          "name": {
+            "label": "Юридична назва",
+            "value": "euromotors corporation s.r.o."
+          },
+          "registration": {
+            "label": "Реєстраційний запис",
+            "value": "Справа C 321387, ведеться в Міському суді Праги"
+          },
+          "seat": {
+            "label": "Юридична адреса",
+            "value": "V Pitkovičkách 351, 104 00 Praha 10"
+          },
+          "ico": {
+            "label": "IČO",
+            "value": "08580405"
+          },
+          "dic": {
+            "label": "DIČ",
+            "value": "CZ08580405"
+          }
+        }
+      },
+      "bank": {
+        "title": "Банківські реквізити",
+        "description": "Платіжні дані для безготівкових переказів.",
+        "items": {
+          "bank": {
+            "label": "Банк",
+            "value": "Raiffeisenbank a.s."
+          },
+          "account": {
+            "label": "Номер рахунку",
+            "value": "77791197/5500"
+          },
+          "iban": {
+            "label": "IBAN",
+            "value": "CZ49 5500 0000 0000 7779 1197"
+          },
+          "swift": {
+            "label": "BIC/SWIFT",
+            "value": "RZBCCZPP"
+          }
+        }
+      }
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "Сертифікований автосервіс EURO MOTORS",
@@ -334,6 +453,7 @@
       "languages": {
         "cs": "Čeština",
         "en": "English",
+        "de": "Deutsch",
         "ru": "Русский",
         "uk": "Українська"
       }

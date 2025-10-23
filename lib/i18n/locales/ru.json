@@ -312,6 +312,125 @@
       }
     }
   },
+  "contactPage": {
+    "hero": {
+      "badge": "Контакты автосервиса",
+      "title": "Свяжитесь с нами",
+      "intro": "Хотите задать вопрос или записаться? Выберите удобный канал связи."
+    },
+    "sections": {
+      "phones": {
+        "title": "Контактные телефоны",
+        "description": "Позвоните для записи на сервис, диагностику или консультацию.",
+        "items": {
+          "service": {
+            "title": "Автосервис | Шиномонтаж",
+            "description": "Запись, диагностика и техническое обслуживание.",
+            "action": "Позвонить сейчас"
+          },
+          "bodyshop": {
+            "title": "Кузовной цех | Лакокрасочные работы | Детейлинг",
+            "description": "Кузовной ремонт, окраска и детейлинг.",
+            "action": "Позвонить в кузовной цех"
+          }
+        }
+      },
+      "details": {
+        "title": "Контактные данные",
+        "description": "Адрес, электронная почта и соцсети — в одном месте.",
+        "items": {
+          "address": {
+            "label": "Адрес сервиса",
+            "value": "Edisonova 8",
+            "valueSecondary": "109 00 Прага 10",
+            "cta": "Открыть в Google Картах"
+          },
+          "email": {
+            "label": "E-mail",
+            "value": "euromotorsofficial@gmail.com",
+            "valueSecondary": "",
+            "cta": "Написать письмо"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "value": "euromotorsofficial",
+            "valueSecondary": "",
+            "cta": "Открыть Facebook"
+          },
+          "instagram": {
+            "label": "Instagram",
+            "value": "@euromotorscz",
+            "valueSecondary": "",
+            "cta": "Перейти в Instagram"
+          }
+        }
+      },
+      "hours": {
+        "title": "Часы работы",
+        "description": "По предварительной договоренности постараемся помочь вне стандартного графика.",
+        "items": {
+          "weekdays": {
+            "label": "Понедельник - Пятница",
+            "value": "09:00 – 19:00",
+            "note": "При необходимости договоримся о личном времени посещения."
+          },
+          "weekend": {
+            "label": "Суббота и воскресенье",
+            "value": "Закрыто",
+            "note": "Позвоните нам — при срочной необходимости подберем индивидуальное решение."
+          }
+        }
+      },
+      "company": {
+        "title": "Реквизиты компании",
+        "description": "Официальные данные EURO MOTORS.",
+        "items": {
+          "name": {
+            "label": "Юридическое название",
+            "value": "euromotors corporation s.r.o."
+          },
+          "registration": {
+            "label": "Регистрационный номер дела",
+            "value": "Дело C 321387, ведется в Муниципальном суде Праги"
+          },
+          "seat": {
+            "label": "Юридический адрес",
+            "value": "V Pitkovičkách 351, 104 00 Praha 10"
+          },
+          "ico": {
+            "label": "IČO",
+            "value": "08580405"
+          },
+          "dic": {
+            "label": "DIČ",
+            "value": "CZ08580405"
+          }
+        }
+      },
+      "bank": {
+        "title": "Банковские реквизиты",
+        "description": "Данные для безналичных платежей.",
+        "items": {
+          "bank": {
+            "label": "Банк",
+            "value": "Raiffeisenbank a.s."
+          },
+          "account": {
+            "label": "Номер счета",
+            "value": "77791197/5500"
+          },
+          "iban": {
+            "label": "IBAN",
+            "value": "CZ49 5500 0000 0000 7779 1197"
+          },
+          "swift": {
+            "label": "BIC/SWIFT",
+            "value": "RZBCCZPP"
+          }
+        }
+      }
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "Сертифицированный автосервис EURO MOTORS",
@@ -334,6 +453,7 @@
       "languages": {
         "cs": "Čeština",
         "en": "English",
+        "de": "Deutsch",
         "ru": "Русский",
         "uk": "Українська"
       }

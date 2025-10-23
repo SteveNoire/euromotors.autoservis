@@ -312,6 +312,125 @@
       }
     }
   },
+  "contactPage": {
+    "hero": {
+      "badge": "Kontakty autoservisu",
+      "title": "Kontaktujte nás",
+      "intro": "Potřebujete se s námi spojit? Vyberte si způsob, který vám nejlépe vyhovuje."
+    },
+    "sections": {
+      "phones": {
+        "title": "Kontaktní čísla",
+        "description": "Zavolejte nám pro objednání servisu nebo konzultaci oprav.",
+        "items": {
+          "service": {
+            "title": "Autoservis | Pneuservis",
+            "description": "Objednávky, diagnostika a mechanické práce.",
+            "action": "Zavolejte hned"
+          },
+          "bodyshop": {
+            "title": "Lakovna | Karosárna | Detailing",
+            "description": "Opravy karoserie, lakování a péče o lak.",
+            "action": "Spojit s lakovnou"
+          }
+        }
+      },
+      "details": {
+        "title": "Kontaktní údaje",
+        "description": "Adresu, e-mail i sociální sítě najdete na jednom místě.",
+        "items": {
+          "address": {
+            "label": "Adresa servisu",
+            "value": "Edisonova 8",
+            "valueSecondary": "109 00 Praha 10",
+            "cta": "Otevřít v Mapách Google"
+          },
+          "email": {
+            "label": "E-mail",
+            "value": "euromotorsofficial@gmail.com",
+            "valueSecondary": "",
+            "cta": "Napsat e-mail"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "value": "euromotorsofficial",
+            "valueSecondary": "",
+            "cta": "Otevřít Facebook"
+          },
+          "instagram": {
+            "label": "Instagram",
+            "value": "@euromotorscz",
+            "valueSecondary": "",
+            "cta": "Podívat se na Instagram"
+          }
+        }
+      },
+      "hours": {
+        "title": "Otevírací doba",
+        "description": "Po domluvě se vám pokusíme přizpůsobit i mimo standardní hodiny.",
+        "items": {
+          "weekdays": {
+            "label": "Pondělí – Pátek",
+            "value": "09:00 – 19:00",
+            "note": "Po předchozí domluvě lze sjednat individuální termín."
+          },
+          "weekend": {
+            "label": "Sobota a neděle",
+            "value": "Zavřeno",
+            "note": "V naléhavých případech nám zavolejte a domluvte se individuálně."
+          }
+        }
+      },
+      "company": {
+        "title": "Identifikační údaje",
+        "description": "Oficiální údaje společnosti EURO MOTORS.",
+        "items": {
+          "name": {
+            "label": "Název společnosti",
+            "value": "euromotors corporation s.r.o."
+          },
+          "registration": {
+            "label": "Spisová značka",
+            "value": "C 321387 vedená u Městského soudu v Praze"
+          },
+          "seat": {
+            "label": "Sídlo",
+            "value": "V Pitkovičkách 351, 104 00 Praha 10"
+          },
+          "ico": {
+            "label": "IČO",
+            "value": "08580405"
+          },
+          "dic": {
+            "label": "DIČ",
+            "value": "CZ08580405"
+          }
+        }
+      },
+      "bank": {
+        "title": "Bankovní spojení",
+        "description": "Platební údaje pro bezhotovostní platby.",
+        "items": {
+          "bank": {
+            "label": "Banka",
+            "value": "Raiffeisenbank a.s."
+          },
+          "account": {
+            "label": "Číslo účtu",
+            "value": "77791197/5500"
+          },
+          "iban": {
+            "label": "IBAN",
+            "value": "CZ49 5500 0000 0000 7779 1197"
+          },
+          "swift": {
+            "label": "BIC/SWIFT",
+            "value": "RZBCCZPP"
+          }
+        }
+      }
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "Certifikovaný autoservis EURO MOTORS",
@@ -334,6 +453,7 @@
       "languages": {
         "cs": "Čeština",
         "en": "English",
+        "de": "Deutsch",
         "ru": "Русский",
         "uk": "Українська"
       }

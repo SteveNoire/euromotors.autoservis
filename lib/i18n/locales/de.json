@@ -1,0 +1,472 @@
+{
+  "services": {
+    "badge": "Unsere Leistungen",
+    "headline": "Umfassende Betreuung von Schnellservice bis komplexe Reparaturen",
+    "description": "Erfahrene Techniker, moderne Diagnostik und transparente Kommunikation. Wählen Sie aus klaren Servicepaketen oder lassen Sie sich ein individuelles Angebot erstellen.",
+    "cta": "Termin vereinbaren",
+    "empty": {
+      "title": "Leistungsverzeichnis wird vorbereitet",
+      "subtitlePrefix": "Bitte ergänzen Sie die Daten in der Variable",
+      "subtitleSuffix": "in der .env-Datei."
+    },
+    "helper": "Wählen Sie den benötigten Service, um alle Details zu sehen.",
+    "priceLabel": "Preis",
+    "detailCta": "Leistungsdetails",
+    "fallbackGroup": "Weitere Leistungen",
+    "items": [
+      {
+        "slug": "vymena-oleje",
+        "title": "Ölwechsel",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Schneller Wechsel von Motoröl und Filter inklusive Basischeck der Betriebsflüssigkeiten gemäß Herstellervorgaben.",
+        "price": "ab 595 Kč"
+      },
+      {
+        "slug": "vymena-kotoucu-a-desticek",
+        "title": "Tausch von Bremsscheiben und -belägen",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Präziser Austausch der Scheiben und Beläge inklusive Reinigung der Auflageflächen und Entlüftung der Bremsanlage.",
+        "price": "ab 795 Kč"
+      },
+      {
+        "slug": "vymena-oleje-v-prevodovce",
+        "title": "Getriebeölwechsel",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Kompletter Wechsel des Getriebeöls, Dichtigkeitsprüfung und Diagnose des Schaltverhaltens für einen ruhigen Lauf.",
+        "price": "ab 1 495 Kč"
+      },
+      {
+        "slug": "pneuservis",
+        "title": "Reifenservice",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Montage und Auswuchten, Reparatur von Reifenschäden sowie saisonaler Wechsel mit optionaler Einlagerung.",
+        "price": "ab 895 Kč"
+      },
+      {
+        "slug": "geometrie-kol",
+        "title": "Achsvermessung",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Laserbasierte Einstellung von Spur und Sturz für stabiles Fahrverhalten und gleichmäßigen Reifenverschleiß.",
+        "price": "ab 2 295 Kč"
+      },
+      {
+        "slug": "servis-klimatizace",
+        "title": "Klimaservice",
+        "subtitle": "Regelmäßige Wartung",
+        "description": "Diagnose der Klimaanlage, Nachfüllen des Kältemittels und Desinfektion des Systems für ein gesundes Innenraumklima.",
+        "price": "ab 1 295 Kč"
+      },
+      {
+        "slug": "diagnostika",
+        "title": "Diagnose",
+        "subtitle": "Wenn etwas nicht funktioniert",
+        "description": "Fortschrittliche Steuergeräte-Diagnose mit Live-Daten und einem klaren Reparaturplan.",
+        "price": "ab 995 Kč"
+      },
+      {
+        "slug": "mechanicke-opravy",
+        "title": "Mechanische Reparaturen",
+        "subtitle": "Wenn etwas nicht funktioniert",
+        "description": "Reparaturen an Fahrwerk, Motor und Abgasanlage mit Qualitätskomponenten und Garantie.",
+        "price": "ab 895 Kč"
+      },
+      {
+        "slug": "generalni-opravy-motoru",
+        "title": "Motorinstandsetzungen",
+        "subtitle": "Wenn etwas nicht funktioniert",
+        "description": "Komplette Motorüberholung inklusive Vermessen, Bearbeiten und kontrolliertem Einfahren nach dem Zusammenbau.",
+        "price": "Kostenlose Beratung"
+      },
+      {
+        "slug": "karosarske-prace",
+        "title": "Karosseriearbeiten",
+        "subtitle": "Unfall oder Vandalismus",
+        "description": "Richten des Rahmens, Austausch beschädigter Teile und Lackiervorbereitung in Werksqualität.",
+        "price": "Kostenlose Beratung"
+      },
+      {
+        "slug": "vymena-autoskel",
+        "title": "Scheibentausch",
+        "subtitle": "Unfall oder Vandalismus",
+        "description": "Schneller Austausch von Front-, Seiten- und Heckscheiben mit Kalibrierung von Kameras und Assistenzsystemen.",
+        "price": "ab 2 995 Kč"
+      },
+      {
+        "slug": "lakovani-dilu",
+        "title": "Lackierung von Karosserieteilen",
+        "subtitle": "Unfall oder Vandalismus",
+        "description": "Professionelle Lackierung einzelner Teile oder kompletter Karosserien in staubfreier Kabine mit exakter Farbtonmischung.",
+        "price": "ab 2 995 Kč"
+      },
+      {
+        "slug": "technicka-kontrola-stk",
+        "title": "Technische Prüfung (STK)",
+        "subtitle": "Checks und Inspektionen",
+        "description": "Vorbereitung auf die Hauptuntersuchung, Organisation der Abgasmessung und schnelle Beseitigung von Beanstandungen.",
+        "price": "ab 3 495 Kč"
+      },
+      {
+        "slug": "sezonni-prohlidka-vozu",
+        "title": "Saison-Check",
+        "subtitle": "Checks und Inspektionen",
+        "description": "Umfassende Kontrolle von Flüssigkeiten, Bremsen, Fahrwerk und Elektrik, damit Ihr Fahrzeug saisonbereit ist.",
+        "price": "795 Kč"
+      },
+      {
+        "slug": "prohlidka-pred-koupi",
+        "title": "Ankaufgutachten",
+        "subtitle": "Checks und Inspektionen",
+        "description": "Gründliche Prüfung eines Gebrauchtwagens auf der Bühne inklusive Diagnose und Fotodokumentation für einen sicheren Kauf.",
+        "price": "1 995 Kč"
+      },
+      {
+        "slug": "vibracni-test-podvozku",
+        "title": "Schwingungstest Fahrwerk",
+        "subtitle": "Weitere Leistungen",
+        "description": "Vibrationstest deckt Spiel in Dämpfern, Lagern und Buchsen auf und liefert einen verständlichen Messbericht.",
+        "price": "ab 2 295 Kč"
+      },
+      {
+        "slug": "servis-firemnich-vozu",
+        "title": "Fuhrparkservice",
+        "subtitle": "Weitere Leistungen",
+        "description": "Wartung für Firmenflotten mit Vertragskonditionen, Kostenreporting und Hol- und Bringservice.",
+        "price": "Rabatte bis zu 15 %"
+      },
+      {
+        "slug": "oprava-strech-kabrioletu",
+        "title": "Cabrioverdeck-Reparatur",
+        "subtitle": "Weitere Leistungen",
+        "description": "Spezialisierte Reparaturen von Stoff- und Hardtop-Dächern inklusive Justage der Mechanik und Oberflächenpflege.",
+        "price": "ab 2 995 Kč"
+      },
+      {
+        "slug": "vymena-oleje-v-manualni-prevodovce",
+        "title": "Ölwechsel Schaltgetriebe",
+        "subtitle": "Weitere Leistungen",
+        "description": "Spülung und Wechsel der Ölfüllung in manuellen Getrieben inklusive Prüfung von Synchronringen und Dichtungen.",
+        "price": "ab 1 495 Kč"
+      },
+      {
+        "slug": "plneni-klimatizace",
+        "title": "Klima-Befüllung",
+        "subtitle": "Weitere Leistungen",
+        "description": "Präzises Befüllen mit Kältemittel, Evakuieren des Systems und Dichtigkeitsprüfung unter Druck.",
+        "price": "ab 3,9 Kč/g"
+      }
+    ]
+  },
+  "serviceDetail": {
+    "back": "Zurück zur Leistungsübersicht",
+    "badge": "Serviceangebot",
+    "priceHeading": "Preis der Leistung",
+    "primaryCta": "Termin vereinbaren",
+    "secondaryCta": "Berater kontaktieren",
+    "notFoundTitle": "Leistung nicht gefunden | EURO MOTORS",
+    "notFoundDescription": "Das angeforderte Angebot wurde nicht gefunden."
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Werkstatt in Betrieb",
+      "badge": "Rundumservice für Privat- und Firmenfahrzeuge",
+      "heading": "EURO MOTORS – zuverlässige Betreuung für Ihr Auto in Prag",
+      "description": "Präziser Service, transparente Kommunikation und höchster Fokus auf Sicherheit. Wir kümmern uns um Wartung, komplexe Reparaturen und HU-Vorbereitung.",
+      "primaryCta": "Jetzt anrufen",
+      "secondaryCta": "Leistungen ansehen",
+      "highlights": {
+        "hours": {
+          "label": "Mo–Fr 09:00–19:00",
+          "description": "Servicetermine ohne lange Wartezeiten"
+        },
+        "address": {
+          "label": "Edisonova 8, Prag 10",
+          "description": "Bequeme Parkmöglichkeiten und E-Ladung vor Ort"
+        },
+        "phone": {
+          "label": "+420 775 230 403",
+          "description": "Sofortige Terminvergabe oder Beratung"
+        }
+      }
+    },
+    "about": {
+      "badge": "Über uns",
+      "heading": "Treue zu Qualität, fairen Preisen und persönlichem Service",
+      "description": "EURO MOTORS ist eine familiengeführte Werkstatt, die auf offene Kommunikation und langfristige Beziehungen setzt. Jede Aufgabe betrachten wir individuell und empfehlen nur, was Ihr Fahrzeug wirklich benötigt.",
+      "stats": {
+        "experience": {
+          "figure": "15+",
+          "label": "Jahre Erfahrung"
+        },
+        "services": {
+          "figure": "1 200+",
+          "label": "Services pro Jahr"
+        },
+        "rating": {
+          "figure": "4.8★",
+          "label": "Kundenzufriedenheit"
+        }
+      },
+      "bullets": {
+        "equipment": "Topmoderne Werkstattausstattung",
+        "warranty": "Garantie auf Arbeit und Teile",
+        "detailCare": "Premium Augenmerk auf Details"
+      },
+      "imageAlt": "Mechaniker in der Werkstatt",
+      "quote": "„Unser Ziel ist, dass jeder Kunde mit einem Gefühl von Sicherheit und Vertrauen vom Hof fährt.“"
+    },
+    "quality": {
+      "badge": "Warum wir",
+      "heading": "Transparenter Serviceprozess und erstklassige Kundenbetreuung",
+      "description": "Sie sind stets über den Reparaturverlauf informiert. Wir teilen Fotos, erklären Abläufe und schlagen nachhaltige Lösungen für die Lebensdauer Ihres Fahrzeugs vor.",
+      "points": {
+        "digitalLogbook": "Digitales Serviceheft",
+        "premiumParts": "Original- oder Premiumparts",
+        "pickupService": "Hol- und Bringservice",
+        "priceGuarantee": "Preisgarantie vor Arbeitsbeginn"
+      },
+      "cardTitle": "Was Sie nach der Buchung erwartet",
+      "cardDescription": "Ein einfacher Prozess, der Ihre Zeit respektiert.",
+      "steps": {
+        "contact": "Rufen Sie an oder füllen Sie das Formular aus – wir finden einen Termin.",
+        "diagnostics": "Der Techniker führt eine Diagnose durch und stimmt den Leistungsumfang mit Ihnen ab.",
+        "handover": "Nach dem Service übergeben wir Ihr Fahrzeug sauber und fahrbereit."
+      },
+      "cta": "Besuch vereinbaren"
+    },
+    "faq": {
+      "badge": "Häufige Fragen",
+      "heading": "Antworten, die vor dem Werkstattbesuch helfen",
+      "description": "Keine Antwort gefunden? Rufen Sie uns an oder schreiben Sie eine E-Mail – wir helfen gern.",
+      "items": {
+        "afterHours": {
+          "question": "Kann ich außerhalb der Öffnungszeiten einen Termin bekommen?",
+          "answer": "Rufen Sie uns an und wir bemühen uns, auch außerhalb der regulären Zeiten einen Termin zu finden."
+        },
+        "quoteEstimate": {
+          "question": "Wie wird der Reparaturpreis kalkuliert?",
+          "answer": "Wir beginnen mit einer Diagnose und erstellen einen Kostenvoranschlag für Teile und Arbeit. Änderungen stimmen wir vorab mit Ihnen ab."
+        },
+        "replacementCar": {
+          "question": "Gibt es ein Ersatzfahrzeug?",
+          "answer": "Für ausgewählte Leistungen bieten wir Kurzzeit-Ersatzwagen an. Die Verfügbarkeit klären wir bei der Terminvereinbarung."
+        },
+        "ownParts": {
+          "question": "Kann ich eigene Ersatzteile mitbringen?",
+          "answer": "Wir arbeiten mit geprüften Komponenten und übernehmen dafür Garantie, daher verbauen wir keine Kunden-Teile."
+        }
+      }
+    },
+    "contact": {
+      "badge": "Kontakt",
+      "heading": "Wir kümmern uns gern um Ihr Fahrzeug",
+      "description": "Buchen Sie telefonisch oder nutzen Sie das Online-Formular. Wir beraten bei der Wahl des richtigen Services und erstellen ein unverbindliches Angebot.",
+      "cards": {
+        "service": {
+          "title": "Werkstatt & Reifenservice",
+          "action": "Jetzt anrufen"
+        },
+        "bodyshop": {
+          "title": "Lackiererei & Karosserie",
+          "action": "Termin reservieren"
+        }
+      },
+      "address": {
+        "label": "Adresse",
+        "line1": "Edisonova 8",
+        "line2": "109 00 Prag – Petrovice"
+      },
+      "hours": {
+        "label": "Öffnungszeiten",
+        "days": "Montag–Freitag",
+        "time": "09:00 – 19:00"
+      },
+      "email": {
+        "label": "E-Mail",
+        "address": "info@euromotors.cz"
+      },
+      "mapTitle": "Standortkarte EURO MOTORS"
+    },
+    "availability": {
+      "openNow": {
+        "label": "Jetzt geöffnet",
+        "detail": "Wir schließen heute um {time}."
+      },
+      "closed": {
+        "label": "Außerhalb der Öffnungszeiten",
+        "detailToday": "Wir öffnen heute um {time}.",
+        "detailTomorrow": "Wir öffnen morgen um {time}.",
+        "detailWeekday": "Wir öffnen am {weekday} um {time}."
+      },
+      "unknown": {
+        "label": "Betriebsstatus",
+        "detail": "Öffnungszeiten werden in Kürze bekanntgegeben."
+      },
+      "days": {
+        "sunday": "Sonntag",
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag"
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Werkstattkontakte",
+      "title": "Kontaktieren Sie uns",
+      "intro": "Sie möchten uns erreichen? Wählen Sie den Kanal, der für Sie am besten passt."
+    },
+    "sections": {
+      "phones": {
+        "title": "Kontakttelefonnummern",
+        "description": "Rufen Sie uns für Service-Termine oder fachliche Beratung an.",
+        "items": {
+          "service": {
+            "title": "Autoservice | Reifenservice",
+            "description": "Terminvereinbarungen, Diagnosen und mechanische Reparaturen.",
+            "action": "Jetzt anrufen"
+          },
+          "bodyshop": {
+            "title": "Lackiererei | Karosserie | Detailing",
+            "description": "Karosseriearbeiten, Lackaufbereitung und Detailing.",
+            "action": "Lackiererei anrufen"
+          }
+        }
+      },
+      "details": {
+        "title": "Kontaktdaten",
+        "description": "Adresse, E-Mail und soziale Netzwerke auf einen Blick.",
+        "items": {
+          "address": {
+            "label": "Werkstattadresse",
+            "value": "Edisonova 8",
+            "valueSecondary": "109 00 Prag 10",
+            "cta": "In Google Maps öffnen"
+          },
+          "email": {
+            "label": "E-Mail",
+            "value": "euromotorsofficial@gmail.com",
+            "valueSecondary": "",
+            "cta": "E-Mail schreiben"
+          },
+          "facebook": {
+            "label": "Facebook",
+            "value": "euromotorsofficial",
+            "valueSecondary": "",
+            "cta": "Facebook öffnen"
+          },
+          "instagram": {
+            "label": "Instagram",
+            "value": "@euromotorscz",
+            "valueSecondary": "",
+            "cta": "Instagram besuchen"
+          }
+        }
+      },
+      "hours": {
+        "title": "Öffnungszeiten",
+        "description": "Nach Absprache unterstützen wir Sie auch außerhalb der Standardzeiten.",
+        "items": {
+          "weekdays": {
+            "label": "Montag – Freitag",
+            "value": "09:00 – 19:00",
+            "note": "Bei Bedarf vereinbaren wir gern einen individuellen Termin."
+          },
+          "weekend": {
+            "label": "Samstag & Sonntag",
+            "value": "Geschlossen",
+            "note": "Rufen Sie uns an – bei dringenden Fällen finden wir eine Lösung."
+          }
+        }
+      },
+      "company": {
+        "title": "Firmendaten",
+        "description": "Offizielle Angaben zu EURO MOTORS.",
+        "items": {
+          "name": {
+            "label": "Firmenname",
+            "value": "euromotors corporation s.r.o."
+          },
+          "registration": {
+            "label": "Handelsregister",
+            "value": "Aktenzeichen C 321387 beim Stadtgericht Prag"
+          },
+          "seat": {
+            "label": "Sitz",
+            "value": "V Pitkovičkách 351, 104 00 Prag 10"
+          },
+          "ico": {
+            "label": "IČO",
+            "value": "08580405"
+          },
+          "dic": {
+            "label": "USt-IdNr.",
+            "value": "CZ08580405"
+          }
+        }
+      },
+      "bank": {
+        "title": "Bankverbindung",
+        "description": "Zahlungsinformationen für Überweisungen.",
+        "items": {
+          "bank": {
+            "label": "Bank",
+            "value": "Raiffeisenbank a.s."
+          },
+          "account": {
+            "label": "Kontonummer",
+            "value": "77791197/5500"
+          },
+          "iban": {
+            "label": "IBAN",
+            "value": "CZ49 5500 0000 0000 7779 1197"
+          },
+          "swift": {
+            "label": "BIC/SWIFT",
+            "value": "RZBCCZPP"
+          }
+        }
+      }
+    }
+  },
+  "chrome": {
+    "announcement": {
+      "certified": "Zertifizierte Werkstatt EURO MOTORS",
+      "hours": "Mo–Fr 09:00–19:00",
+      "phone": "+420 775 230 403"
+    },
+    "header": {
+      "logoAlt": "EURO MOTORS Logo",
+      "tagline": "Auto-Service Prag",
+      "nav": {
+        "services": "Leistungen",
+        "about": "Über uns",
+        "faq": "FAQ",
+        "contact": "Kontakt"
+      },
+      "badge": "15 Jahre Erfahrung",
+      "cta": "Service buchen",
+      "callAria": "Werkstatt anrufen",
+      "languageSwitcherAria": "Sprache ändern",
+      "languages": {
+        "cs": "Čeština",
+        "en": "English",
+        "de": "Deutsch",
+        "ru": "Русский",
+        "uk": "Українська"
+      }
+    },
+    "footer": {
+      "brand": "EURO MOTORS",
+      "copy": "2019 – {year} © EURO MOTORS",
+      "privacy": "Datenschutzerklärung",
+      "waitingArea": "Während Sie warten, stehen Lounge, WLAN und Erfrischungen bereit.",
+      "credits": {
+        "prefix": "Website erstellt von",
+        "name": "DigiTale s.r.o."
+      }
+    }
+  }
+}
