@@ -11,7 +11,7 @@
     },
     "helper": "Vyberte si konkrétní servisní zásah a zjistěte více detailů.",
     "priceLabel": "Cena",
-    "detailCta": "Detail služby",
+    "detailCta": "Detail",
     "fallbackGroup": "Další služby",
     "items": [
       {
@@ -333,7 +333,9 @@
       "languageSwitcherAria": "Změnit jazyk",
       "languages": {
         "cs": "Čeština",
-        "en": "English"
+        "en": "English",
+        "ru": "Русский",
+        "uk": "Українська"
       }
     },
     "footer": {

@@ -11,7 +11,7 @@
     },
     "helper": "Pick the service you need to see all details.",
     "priceLabel": "Price",
-    "detailCta": "Service detail",
+    "detailCta": "detail",
     "fallbackGroup": "Additional services",
     "items": [
       {
@@ -333,7 +333,9 @@
       "languageSwitcherAria": "Change language",
       "languages": {
         "cs": "Čeština",
-        "en": "English"
+        "en": "English",
+        "ru": "Русский",
+        "uk": "Українська"
       }
     },
     "footer": {

@@ -24,6 +24,8 @@ const navLinks = [
 const languageLabelKeys: Record<Locale, string> = {
   cs: "chrome.header.languages.cs",
   en: "chrome.header.languages.en",
+  ru: "chrome.header.languages.ru",
+  uk: "chrome.header.languages.uk",
 };
 
 type Translator = ReturnType<typeof getTranslator>;
