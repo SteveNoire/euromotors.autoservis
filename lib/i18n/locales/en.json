@@ -431,6 +431,84 @@
       }
     }
   },
+  "aboutPage": {
+    "hero": {
+      "badge": "About us",
+      "title": "About the EURO MOTORS workshop",
+      "description": "Get to know the values that shape our service philosophy. We live the idea of \"Thinking together\" in every repair we deliver."
+    },
+    "sections": {
+      "introduction": {
+        "title": "Thinking together",
+        "subtitle": "Every booking is a sign of trust that we want to honour.",
+        "paragraphs": {
+          "mission": "Allow us to introduce our workshop and the mindset that defines it. The EURO MOTORS motto \"Thinking together\" means we always look for the option that truly benefits you.",
+          "approach": "We approach every job as a personal commitment. We listen, explain each step and recommend the solution that best matches your budget and the needs of your car.",
+          "team": "Maximum quality, fair pricing and short turnaround times are goals shared by the whole team. From the mechanics to the warehouse and management, everyone focuses fully on your vehicle."
+        }
+      },
+      "values": {
+        "title": "Values we put into practice",
+        "description": "What you can rely on whenever you visit EURO MOTORS.",
+        "items": {
+          "partnership": {
+            "title": "Partnership with every customer",
+            "description": "Trust and openness guide the way we communicate. We share information transparently and only recommend what genuinely makes sense."
+          },
+          "craftsmanship": {
+            "title": "Craftsmanship and accountability",
+            "description": "Qualified technicians, proven parts and a willingness to stand behind our work are the cornerstones of each service."
+          },
+          "transparency": {
+            "title": "Transparent communication",
+            "description": "You always know what will happen and how much it will cost. There are no hidden extras or last-minute surprises."
+          }
+        }
+      },
+      "care": {
+        "title": "Comfort throughout the service",
+        "description": "Additional services designed to save you time and hassle.",
+        "items": {
+          "replacementCar": {
+            "title": "Replacement vehicle",
+            "description": "Depending on the job we can provide a short-term loaner so you can stay mobile."
+          },
+          "pickup": {
+            "title": "Pick-up & drop-off",
+            "description": "We collect your car, carry out the repair and bring it back ready to drive."
+          },
+          "detailing": {
+            "title": "Finishing touch detailing",
+            "description": "Once the work is complete, we return the car clean so the handover feels special."
+          }
+        }
+      },
+      "commitments": {
+        "title": "What we guarantee",
+        "description": "Reliability matters, which is why we keep our promises.",
+        "items": {
+          "communication": {
+            "title": "Ongoing communication",
+            "description": "We keep you informed via phone or email as the job progresses."
+          },
+          "documentation": {
+            "title": "Documentation and approvals",
+            "description": "We share photos and recommendations, and obtain approval before any change."
+          },
+          "deadlines": {
+            "title": "Agreed timelines respected",
+            "description": "We plan efficiently so the vehicle is ready at the time we commit to."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Would you like to know more?",
+      "description": "Get in touch and let’s discuss how we can help.",
+      "primary": "Call the workshop",
+      "secondary": "View contacts"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Workshop pricing",
@@ -726,7 +804,10 @@
         "about": "About us",
         "faq": "FAQ",
         "pricing": "Pricing",
-        "contact": "Contact"
+        "contact": "Contact",
+        "aboutItems": {
+          "workshop": "About the workshop"
+        }
       },
       "badge": "15 years of experience",
       "cta": "Book a service",

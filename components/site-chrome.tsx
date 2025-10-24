@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Clock, ShieldCheck, Languages, Check } from "lucide-react";
+import { Phone, Clock, ShieldCheck, Languages, Check, ChevronDown } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -14,13 +14,21 @@ import {
 import { locales, getTranslator, type Locale } from "@/lib/i18n";
 import { buildLocaleHref, type RouteSearchParams } from "@/lib/i18n/routing";
 
-const navLinks = [
-  { labelKey: "chrome.header.nav.services", href: "/#services" },
-  { labelKey: "chrome.header.nav.about", href: "/#about" },
-  { labelKey: "chrome.header.nav.faq", href: "/#faq" },
-  { labelKey: "chrome.header.nav.pricing", href: "/pricing" },
-  { labelKey: "chrome.header.nav.contact", href: "/contact" },
-] as const;
+type NavLink =
+  | { type: "link"; labelKey: string; href: string }
+  | { type: "dropdown"; labelKey: string; items: ReadonlyArray<{ labelKey: string; href: string }> };
+
+const navLinks: ReadonlyArray<NavLink> = [
+  { type: "link", labelKey: "chrome.header.nav.services", href: "/#services" },
+  {
+    type: "dropdown",
+    labelKey: "chrome.header.nav.about",
+    items: [{ labelKey: "chrome.header.nav.aboutItems.workshop", href: "/about" }],
+  },
+  { type: "link", labelKey: "chrome.header.nav.faq", href: "/#faq" },
+  { type: "link", labelKey: "chrome.header.nav.pricing", href: "/pricing" },
+  { type: "link", labelKey: "chrome.header.nav.contact", href: "/contact" },
+];
 
 const languageLabelKeys: Record<Locale, string> = {
   cs: "chrome.header.languages.cs",
@@ -133,16 +141,45 @@ function Header({ locale, pathname, searchParams, t }: HeaderProps & { t: Transl
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => {
-            const target = formatLocalizedTarget(link.href, locale, searchParams);
+            if (link.type === "link") {
+              const target = formatLocalizedTarget(link.href, locale, searchParams);
+
+              return (
+                <Link
+                  key={link.href}
+                  href={target}
+                  className="text-slate-600 transition hover:text-slate-900"
+                >
+                  {t(link.labelKey)}
+                </Link>
+              );
+            }
 
             return (
-              <Link
-                key={link.href}
-                href={target}
-                className="text-slate-600 transition hover:text-slate-900"
-              >
-                {t(link.labelKey)}
-              </Link>
+              <DropdownMenu key={link.labelKey}>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    type="button"
+                    className="flex items-center gap-1 text-slate-600 transition hover:text-slate-900"
+                  >
+                    <span>{t(link.labelKey)}</span>
+                    <ChevronDown className="h-3 w-3" aria-hidden="true" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56">
+                  {link.items.map((item) => {
+                    const itemTarget = formatLocalizedTarget(item.href, locale, searchParams);
+
+                    return (
+                      <DropdownMenuItem key={item.href} asChild>
+                        <Link href={itemTarget} className="flex items-center gap-2 text-slate-700">
+                          {t(item.labelKey)}
+                        </Link>
+                      </DropdownMenuItem>
+                    );
+                  })}
+                </DropdownMenuContent>
+              </DropdownMenu>
             );
           })}
         </nav>

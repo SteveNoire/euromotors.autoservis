@@ -431,6 +431,84 @@
       }
     }
   },
+  "aboutPage": {
+    "hero": {
+      "badge": "O nás",
+      "title": "O autoservisu EURO MOTORS",
+      "description": "Dovolte nám představit hodnoty, které nás formují. Věříme v přístup \"Myslíme společně\" a každý den ho promítáme do práce pro naše zákazníky."
+    },
+    "sections": {
+      "introduction": {
+        "title": "Myslíme společně",
+        "subtitle": "Každá zakázka je pro nás důvěrou, kterou si chceme zasloužit.",
+        "paragraphs": {
+          "mission": "Dovolte nám představit náš autoservis a vše, co nás charakterizuje. Filozofii EURO MOTORS vystihuje motto \"Myslíme společně\" – hledáme řešení, která jsou pro vás opravdu výhodná.",
+          "approach": "Každá zakázka je pro nás osobním závazkem. Nasloucháme, vysvětlujeme postupy a společně vybíráme variantu, která respektuje váš rozpočet i potřeby vozu.",
+          "team": "Nejvyšší kvalita práce, příznivá cena a rychlé vyřízení – to jsou cíle, které sdílí celý náš tým. Od mechaniků přes sklad až po vedení se každý plně věnuje vaší zakázce."
+        }
+      },
+      "values": {
+        "title": "Naše hodnoty v praxi",
+        "description": "Co stojí za každou návštěvou v EURO MOTORS.",
+        "items": {
+          "partnership": {
+            "title": "Partnerství se zákazníkem",
+            "description": "Stavíme na důvěře a otevřené komunikaci. Sdílíme informace, nasloucháme vašim požadavkům a doporučujeme jen to, co dává skutečný smysl."
+          },
+          "craftsmanship": {
+            "title": "Poctivé řemeslo a zodpovědnost",
+            "description": "Dbáme na kvalifikaci techniků, používáme prověřené díly a za svou práci se vždy postavíme."
+          },
+          "transparency": {
+            "title": "Transparentní komunikace",
+            "description": "Dopředu víte, co se bude dít a kolik to bude stát. Žádné skryté položky ani nepříjemná překvapení."
+          }
+        }
+      },
+      "care": {
+        "title": "Pohodlí během celého servisu",
+        "description": "Služby navíc, které vám ušetří čas i starosti.",
+        "items": {
+          "replacementCar": {
+            "title": "Náhradní vozidlo",
+            "description": "Podle typu zakázky vám zajistíme krátkodobé zapůjčení, abyste mohli pokračovat v běžném provozu."
+          },
+          "pickup": {
+            "title": "Pick-up servis",
+            "description": "Váš vůz vyzvedneme, postaráme se o servis a vrátíme ho připravený k jízdě."
+          },
+          "detailing": {
+            "title": "Detailní péče o čistotu",
+            "description": "Po dokončení prací předáváme automobil vyčištěný, aby byl zážitek z vyzvednutí co nejlepší."
+          }
+        }
+      },
+      "commitments": {
+        "title": "Co vám garantujeme",
+        "description": "Dodržujeme sliby, protože víme, jak důležitá je spolehlivost.",
+        "items": {
+          "communication": {
+            "title": "Průběžná komunikace",
+            "description": "O postupu vás průběžně informujeme telefonicky i e-mailem."
+          },
+          "documentation": {
+            "title": "Fotodokumentace a schvalování",
+            "description": "Sdílíme fotografie i doporučení, každou změnu si potvrzujeme předem."
+          },
+          "deadlines": {
+            "title": "Dodržení termínů",
+            "description": "Servis plánujeme efektivně, abyste vůz získali zpět v domluveném čase."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Chcete se dozvědět více?",
+      "description": "Spojte se s námi a projdeme společně, jak vám můžeme pomoci.",
+      "primary": "Zavolat autoservisu",
+      "secondary": "Zobrazit kontakty"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Ceník autoservisu",
@@ -726,7 +804,10 @@
         "about": "O nás",
         "faq": "FAQ",
         "pricing": "Ceník",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "aboutItems": {
+          "workshop": "O autoservisu"
+        }
       },
       "badge": "15 let praxe",
       "cta": "Objednat servis",

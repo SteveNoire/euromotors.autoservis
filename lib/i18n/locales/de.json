@@ -431,6 +431,84 @@
       }
     }
   },
+  "aboutPage": {
+    "hero": {
+      "badge": "Über uns",
+      "title": "Über die Werkstatt EURO MOTORS",
+      "description": "Lernen Sie die Werte kennen, die unsere Service-Philosophie prägen. Das Motto \"Gemeinsam denken\" begleiten jede Reparatur und jeden Auftrag."
+    },
+    "sections": {
+      "introduction": {
+        "title": "Gemeinsam denken",
+        "subtitle": "Jede Anfrage ist ein Vertrauensbeweis, dem wir gerecht werden wollen.",
+        "paragraphs": {
+          "mission": "Gern stellen wir Ihnen unsere Werkstatt und die dahinterstehenden Grundsätze vor. Das Motto von EURO MOTORS – \"Gemeinsam denken\" – bedeutet, dass wir stets nach der für Sie besten Lösung suchen.",
+          "approach": "Jeder Auftrag ist für uns ein persönliches Versprechen. Wir hören zu, erklären alle Schritte und empfehlen nur Maßnahmen, die zu Ihrem Budget und zum Fahrzeug passen.",
+          "team": "Höchste Qualität, faire Preise und kurze Durchlaufzeiten sind Ziele, die das gesamte Team teilt. Von der Werkbank über das Lager bis ins Büro arbeitet jeder voll fokussiert an Ihrem Fahrzeug."
+        }
+      },
+      "values": {
+        "title": "Unsere gelebten Werte",
+        "description": "Darauf können Sie sich bei EURO MOTORS verlassen.",
+        "items": {
+          "partnership": {
+            "title": "Partnerschaft mit Kunden",
+            "description": "Vertrauen und Offenheit bestimmen unsere Kommunikation. Wir teilen Informationen transparent und empfehlen nur, was wirklich sinnvoll ist."
+          },
+          "craftsmanship": {
+            "title": "Handwerk & Verantwortung",
+            "description": "Qualifizierte Techniker, geprüfte Teile und der Anspruch, hinter unserer Arbeit zu stehen, bilden das Fundament jeder Reparatur."
+          },
+          "transparency": {
+            "title": "Transparente Kommunikation",
+            "description": "Sie wissen im Voraus, was getan wird und welche Kosten entstehen. Es gibt keine versteckten Posten oder böse Überraschungen."
+          }
+        }
+      },
+      "care": {
+        "title": "Komfort während des gesamten Service",
+        "description": "Zusatzleistungen, die Zeit und Aufwand sparen.",
+        "items": {
+          "replacementCar": {
+            "title": "Ersatzfahrzeug",
+            "description": "Je nach Auftrag stellen wir Ihnen kurzfristig einen Leihwagen zur Verfügung, damit Sie mobil bleiben."
+          },
+          "pickup": {
+            "title": "Hol- & Bringservice",
+            "description": "Wir holen Ihr Fahrzeug ab, erledigen die Arbeiten und liefern es fahrbereit zurück."
+          },
+          "detailing": {
+            "title": "Aufbereitung als Abschluss",
+            "description": "Nach der Reparatur übergeben wir Ihr Fahrzeug gereinigt – für ein rundum gutes Gefühl."
+          }
+        }
+      },
+      "commitments": {
+        "title": "Unsere Zusagen",
+        "description": "Zuverlässigkeit bedeutet, Versprechen einzuhalten.",
+        "items": {
+          "communication": {
+            "title": "Laufende Kommunikation",
+            "description": "Wir informieren Sie per Telefon oder E-Mail über jeden Fortschritt."
+          },
+          "documentation": {
+            "title": "Dokumentation & Freigaben",
+            "description": "Wir teilen Fotos, sprechen Empfehlungen ab und holen vor Änderungen Ihr Okay ein."
+          },
+          "deadlines": {
+            "title": "Einhaltung von Terminen",
+            "description": "Die Planung ist so ausgelegt, dass Ihr Fahrzeug zum vereinbarten Zeitpunkt fertig ist."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Sie möchten mehr erfahren?",
+      "description": "Kontaktieren Sie uns – gemeinsam finden wir die passende Lösung.",
+      "primary": "Werkstatt anrufen",
+      "secondary": "Kontaktdaten anzeigen"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Werkstattpreise",
@@ -726,7 +804,10 @@
         "about": "Über uns",
         "faq": "FAQ",
         "pricing": "Preise",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "aboutItems": {
+          "workshop": "Über die Werkstatt"
+        }
       },
       "badge": "15 Jahre Erfahrung",
       "cta": "Service buchen",
