@@ -431,6 +431,287 @@
       }
     }
   },
+  "pricingPage": {
+    "hero": {
+      "badge": "Ceník autoservisu",
+      "title": "Transparentně sdílené ceny servisních prací",
+      "description": "Uvedené sazby vám poskytnou rychlý přehled o nejčastějších službách. Přesnou kalkulaci připravíme po diagnostice vašeho vozu.",
+      "disclaimerHeading": "Důležité informace k cenám",
+      "notePrimary": "Ceny jsou uvedeny pouze za provedenou práci bez započtení materiálu (maziva, díly, oleje apod.).",
+      "noteSecondary": "Veškeré částky jsou orientační a bez DPH. Individuální nabídku připravíme podle konkrétní zakázky."
+    },
+    "sections": {
+      "labor": {
+        "title": "Hodinové sazby servisních prací",
+        "description": "Standardní sazby pro nejčastější autoservisní zásahy. Konečnou cenu potvrdíme po podrobné diagnostice vozidla.",
+        "groups": {
+          "mechanical": {
+            "title": "Mechanické práce",
+            "note": "Ceny jsou uvedeny bez DPH.",
+            "items": {
+              "passenger": {
+                "label": "Osobní vozy",
+                "value": "1 000 Kč / hod."
+              },
+              "suv": {
+                "label": "SUV a terénní vozy",
+                "value": "1 100 Kč / hod."
+              },
+              "vans": {
+                "label": "Dodávky",
+                "value": "1 200 Kč / hod."
+              },
+              "customerParts": {
+                "label": "Práce mechanika (vůz do 3,5 t) při dodání vlastních dílů",
+                "value": "1 500 Kč / hod."
+              }
+            }
+          },
+          "electrical": {
+            "title": "Elektro práce",
+            "note": "Ceny jsou uvedeny bez DPH.",
+            "items": {
+              "hourly": {
+                "label": "Hodinová sazba",
+                "value": "1 400 Kč / hod."
+              }
+            }
+          },
+          "paint": {
+            "title": "Lakýrnické práce",
+            "note": "Ceny jsou uvedeny bez DPH.",
+            "items": {
+              "hourly": {
+                "label": "Hodinová sazba",
+                "value": "1 000 Kč / hod."
+              }
+            }
+          },
+          "bodywork": {
+            "title": "Klempířské práce",
+            "note": "Ceny jsou uvedeny bez DPH.",
+            "items": {
+              "hourly": {
+                "label": "Hodinová sazba",
+                "value": "1 200 Kč / hod."
+              }
+            }
+          },
+          "airConditioning": {
+            "title": "Plnění a servis klimatizací",
+            "note": "Ceny jsou uvedeny bez DPH.",
+            "items": {
+              "leakTest": {
+                "label": "Kontrola netěsnosti a tlaková zkouška",
+                "value": "500 Kč"
+              },
+              "refill": {
+                "label": "Plnění klimatizace",
+                "value": "500 Kč"
+              },
+              "refrigerantR134a": {
+                "label": "Chladivo R134a",
+                "value": "3 Kč / g"
+              },
+              "refrigerantHfo": {
+                "label": "Chladivo HFO1234yf",
+                "value": "7 Kč / g"
+              },
+              "compressorOil": {
+                "label": "Olej kompresoru klimatizace",
+                "value": "59 Kč / 10 ml"
+              },
+              "uvDye": {
+                "label": "Detekční barvivo (pouze při hledání netěsnosti)",
+                "value": "49 Kč / 10 ml"
+              },
+              "disinfection": {
+                "label": "Dezinfekce klimatizace (práce bez přípravků)",
+                "value": "200 Kč"
+              }
+            }
+          }
+        }
+      },
+      "services": {
+        "title": "Orientační ceny vybraných služeb",
+        "description": "Nejčastější servisní úkony a jejich standardní sazby.",
+        "cardTitle": "Běžné opravy a údržba",
+        "note": "Ceny jsou orientační a nezahrnují cenu náhradních dílů.",
+        "items": {
+          "inspection": { "label": "Inspekční servis", "value": "1 500 Kč" },
+          "suspensionDiagnostics": { "label": "Diagnostika podvozku", "value": "od 800 Kč" },
+          "computerDiagnostics": { "label": "Počítačová diagnostika", "value": "800 Kč" },
+          "faultMemory": { "label": "Čtení / mazání paměti závad", "value": "500 Kč" },
+          "serviceReset": { "label": "Vynulování servisního intervalu přes diagnostiku", "value": "500 Kč" },
+          "injectorCoding": { "label": "Kódování vstřikovačů", "value": "1 000 Kč" },
+          "ecuReset": { "label": "Reset a adaptace řídicí jednotky", "value": "1 000 Kč" },
+          "geometry": { "label": "3D geometrie", "value": "od 800 Kč" },
+          "brakeDiagnostics": { "label": "Diagnostika brzdového systému", "value": "od 800 Kč" },
+          "brakeFluid": { "label": "Výměna brzdové kapaliny", "value": "od 1 100 Kč" },
+          "brakePads": { "label": "Výměna brzdových destiček na ose", "value": "od 800 Kč" },
+          "discsAndPads": { "label": "Výměna brzdových kotoučů a destiček na ose", "value": "od 1 300 Kč" },
+          "brakeShoes": { "label": "Výměna brzdových čelistí", "value": "od 800 Kč" },
+          "parkingBrakeLinings": { "label": "Výměna brzdového obložení (samonastavovací)", "value": "od 1 100 Kč" },
+          "towbarInstall": { "label": "Montáž tažného zařízení", "value": "od 3 000 Kč" },
+          "shockReplacement": { "label": "Výměna tlumiče (1 ks)", "value": "od 600 Kč" },
+          "subframe": { "label": "Demontáž a montáž nápravnice", "value": "od 3 000 Kč" },
+          "transmission": { "label": "Demontáž a montáž převodovky", "value": "od 3 500 Kč" },
+          "headGasket": { "label": "Výměna těsnění pod hlavou válců", "value": "od 6 500 Kč" },
+          "timing": { "label": "Výměna rozvodů", "value": "od 4 500 Kč" },
+          "clutch": { "label": "Výměna spojky", "value": "od 4 500 Kč" },
+          "oilChange": { "label": "Výměna motorového oleje (vč. filtru)", "value": "od 400 Kč" },
+          "fuelFilter": { "label": "Výměna palivového filtru", "value": "od 350 Kč" },
+          "airFilter": { "label": "Výměna vzduchového filtru", "value": "od 200 Kč" },
+          "cabinFilter": { "label": "Výměna kabinového filtru", "value": "od 200 Kč" },
+          "sparkPlug": { "label": "Výměna zapalovací svíčky (1 ks)", "value": "od 130 Kč" },
+          "glowPlug": { "label": "Výměna žhaviče (1 ks)", "value": "od 350 Kč" },
+          "headlightRestoration": { "label": "Renovace světlometů (1 pár)", "value": "od 1 800 Kč" },
+          "windscreenReplacement": { "label": "Výměna čelního skla", "value": "od 4 500 Kč" },
+          "rearGlassReplacement": { "label": "Výměna zadního skla", "value": "od 5 000 Kč" },
+          "sideGlassReplacement": { "label": "Výměna bočního skla", "value": "od 2 500 Kč" },
+          "headlightAim": { "label": "Seřízení světlometů", "value": "300 Kč" },
+          "acDiagnostics": { "label": "Diagnostika klimatizace", "value": "400 Kč" }
+        }
+      },
+      "tyresPassenger": {
+        "title": "Pneuservis – osobní vozy",
+        "description": "Ceník platí pro osobní vozidla na alu nebo plechových discích. Uvedené ceny jsou bez DPH.",
+        "groups": {
+          "fullChange": {
+            "title": "Kompletní přezutí 4 pneu",
+            "note": "Včetně vyvážení a závaží s montáží.",
+            "variants": {
+              "alu": {
+                "title": "ALU disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 Kč" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 400 Kč" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 600 Kč" },
+                  "23_24": { "label": "23″ – 24″", "value": "2 000 Kč" }
+                }
+              },
+              "steel": {
+                "title": "Plechové disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 000 Kč" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Přehození kol (bez přezutí pneu)",
+            "note": "Včetně vyvážení a závaží.",
+            "variants": {
+              "alu": {
+                "title": "ALU disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "600 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "700 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "900 Kč" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 100 Kč" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 300 Kč" },
+                  "23_24": { "label": "23″ – 24″", "value": "1 700 Kč" }
+                }
+              },
+              "steel": {
+                "title": "Plechové disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "500 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "600 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "800 Kč" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyresUtility": {
+        "title": "Pneuservis – užitková, SUV a offroad vozidla",
+        "description": "Ceník platí pro větší vozy, SUV a dodávky. Ceny jsou bez DPH.",
+        "groups": {
+          "fullChange": {
+            "title": "Kompletní přezutí 4 pneu",
+            "note": "Včetně vyvážení a závaží s montáží.",
+            "variants": {
+              "alu": {
+                "title": "ALU disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "1 000 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "1 100 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 300 Kč" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 600 Kč" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 800 Kč" },
+                  "23_24": { "label": "23″ – 24″", "value": "2 000 Kč" }
+                }
+              },
+              "steel": {
+                "title": "Plechové disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 Kč" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Přehození kol (bez přezutí pneu)",
+            "note": "Včetně vyvážení a závaží.",
+            "variants": {
+              "alu": {
+                "title": "ALU disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 Kč" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 300 Kč" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 500 Kč" },
+                  "23_24": { "label": "23″ – 24″", "value": "1 700 Kč" }
+                }
+              },
+              "steel": {
+                "title": "Plechové disky",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 Kč" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 Kč" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 000 Kč" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyreExtras": {
+        "title": "Doplňkové pneuservisní služby",
+        "description": "Orientační ceny bez DPH.",
+        "items": {
+          "geometry": { "label": "Geometrie kol", "value": "od 800 Kč" },
+          "puncture": { "label": "Oprava píchlé pneumatiky (1 kolo)", "value": "500 Kč" }
+        }
+      },
+      "otherServices": {
+        "title": "Další služby autoservisu",
+        "description": "Komplexní péče o vaše vozidlo včetně administrativy.",
+        "items": {
+          "technicalInspection": { "label": "Vyřízení STK a emisí", "value": "3 500 Kč" },
+          "ownershipTransfer": { "label": "Přepis vozidla", "value": "dohodou" },
+          "insuranceClaim": { "label": "Vyřízení pojistné události", "value": "dohodou" },
+          "purchaseAssistance": { "label": "Asistence při koupi vozidla", "value": "dohodou" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Zajímá vás přesná kalkulace?",
+      "description": "Spojte se s námi a připravíme závazný rozpočet podle konkrétního rozsahu prací.",
+      "primary": "Zavolat autoservisu",
+      "secondary": "Přejít na kontakty"
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "Certifikovaný autoservis EURO MOTORS",
@@ -444,6 +725,7 @@
         "services": "Služby",
         "about": "O nás",
         "faq": "FAQ",
+        "pricing": "Ceník",
         "contact": "Kontakt"
       },
       "badge": "15 let praxe",

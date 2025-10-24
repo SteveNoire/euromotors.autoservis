@@ -431,6 +431,287 @@
       }
     }
   },
+  "pricingPage": {
+    "hero": {
+      "badge": "Workshop pricing",
+      "title": "Transparent overview of service rates",
+      "description": "These rates provide a quick guide to our most common services. We will issue a precise quote after inspecting your vehicle.",
+      "disclaimerHeading": "Important pricing notes",
+      "notePrimary": "Prices cover labour only and exclude consumables or parts (oils, cleaners, components).",
+      "noteSecondary": "All amounts are indicative and listed without VAT. We will tailor an exact offer to your requirements."
+    },
+    "sections": {
+      "labor": {
+        "title": "Hourly labour rates",
+        "description": "Standard rates for our most frequent workshop jobs. Final pricing is confirmed after diagnostics.",
+        "groups": {
+          "mechanical": {
+            "title": "Mechanical labour",
+            "note": "Prices are listed without VAT.",
+            "items": {
+              "passenger": {
+                "label": "Passenger cars",
+                "value": "1,000 CZK / hour"
+              },
+              "suv": {
+                "label": "SUV and off-road vehicles",
+                "value": "1,100 CZK / hour"
+              },
+              "vans": {
+                "label": "Vans",
+                "value": "1,200 CZK / hour"
+              },
+              "customerParts": {
+                "label": "Labour with customer-supplied parts (up to 3.5 t)",
+                "value": "1,500 CZK / hour"
+              }
+            }
+          },
+          "electrical": {
+            "title": "Electrical work",
+            "note": "Prices are listed without VAT.",
+            "items": {
+              "hourly": {
+                "label": "Hourly rate",
+                "value": "1,400 CZK / hour"
+              }
+            }
+          },
+          "paint": {
+            "title": "Paint shop labour",
+            "note": "Prices are listed without VAT.",
+            "items": {
+              "hourly": {
+                "label": "Hourly rate",
+                "value": "1,000 CZK / hour"
+              }
+            }
+          },
+          "bodywork": {
+            "title": "Bodywork labour",
+            "note": "Prices are listed without VAT.",
+            "items": {
+              "hourly": {
+                "label": "Hourly rate",
+                "value": "1,200 CZK / hour"
+              }
+            }
+          },
+          "airConditioning": {
+            "title": "Air conditioning service",
+            "note": "Prices are listed without VAT.",
+            "items": {
+              "leakTest": {
+                "label": "Leak test and pressure check",
+                "value": "500 CZK"
+              },
+              "refill": {
+                "label": "A/C refill",
+                "value": "500 CZK"
+              },
+              "refrigerantR134a": {
+                "label": "Refrigerant R134a",
+                "value": "3 CZK / g"
+              },
+              "refrigerantHfo": {
+                "label": "Refrigerant HFO1234yf",
+                "value": "7 CZK / g"
+              },
+              "compressorOil": {
+                "label": "A/C compressor oil",
+                "value": "59 CZK / 10 ml"
+              },
+              "uvDye": {
+                "label": "UV dye (used when tracing leaks)",
+                "value": "49 CZK / 10 ml"
+              },
+              "disinfection": {
+                "label": "A/C disinfection (labour only)",
+                "value": "200 CZK"
+              }
+            }
+          }
+        }
+      },
+      "services": {
+        "title": "Indicative pricing for popular services",
+        "description": "A snapshot of the workshop jobs customers request most often.",
+        "cardTitle": "Common repairs and maintenance",
+        "note": "Prices are indicative and exclude the cost of spare parts.",
+        "items": {
+          "inspection": { "label": "Inspection service", "value": "1,500 CZK" },
+          "suspensionDiagnostics": { "label": "Suspension diagnostics", "value": "from 800 CZK" },
+          "computerDiagnostics": { "label": "Computer diagnostics", "value": "800 CZK" },
+          "faultMemory": { "label": "Fault memory read / clear", "value": "500 CZK" },
+          "serviceReset": { "label": "Service interval reset via diagnostics", "value": "500 CZK" },
+          "injectorCoding": { "label": "Injector coding", "value": "1,000 CZK" },
+          "ecuReset": { "label": "ECU reset and adaptation", "value": "1,000 CZK" },
+          "geometry": { "label": "3D wheel alignment", "value": "from 800 CZK" },
+          "brakeDiagnostics": { "label": "Brake system diagnostics", "value": "from 800 CZK" },
+          "brakeFluid": { "label": "Brake fluid replacement", "value": "from 1,100 CZK" },
+          "brakePads": { "label": "Brake pad replacement per axle", "value": "from 800 CZK" },
+          "discsAndPads": { "label": "Brake discs and pads replacement per axle", "value": "from 1,300 CZK" },
+          "brakeShoes": { "label": "Brake shoe replacement", "value": "from 800 CZK" },
+          "parkingBrakeLinings": { "label": "Parking brake linings (self-adjusting)", "value": "from 1,100 CZK" },
+          "towbarInstall": { "label": "Tow bar installation", "value": "from 3,000 CZK" },
+          "shockReplacement": { "label": "Shock absorber replacement (per unit)", "value": "from 600 CZK" },
+          "subframe": { "label": "Subframe removal and installation", "value": "from 3,000 CZK" },
+          "transmission": { "label": "Transmission removal and installation", "value": "from 3,500 CZK" },
+          "headGasket": { "label": "Cylinder head gasket replacement", "value": "from 6,500 CZK" },
+          "timing": { "label": "Timing belt replacement", "value": "from 4,500 CZK" },
+          "clutch": { "label": "Clutch replacement", "value": "from 4,500 CZK" },
+          "oilChange": { "label": "Engine oil change (incl. filter)", "value": "from 400 CZK" },
+          "fuelFilter": { "label": "Fuel filter replacement", "value": "from 350 CZK" },
+          "airFilter": { "label": "Air filter replacement", "value": "from 200 CZK" },
+          "cabinFilter": { "label": "Cabin filter replacement", "value": "from 200 CZK" },
+          "sparkPlug": { "label": "Spark plug replacement (per unit)", "value": "from 130 CZK" },
+          "glowPlug": { "label": "Glow plug replacement (per unit)", "value": "from 350 CZK" },
+          "headlightRestoration": { "label": "Headlight restoration (pair)", "value": "from 1,800 CZK" },
+          "windscreenReplacement": { "label": "Windscreen replacement", "value": "from 4,500 CZK" },
+          "rearGlassReplacement": { "label": "Rear window replacement", "value": "from 5,000 CZK" },
+          "sideGlassReplacement": { "label": "Side window replacement", "value": "from 2,500 CZK" },
+          "headlightAim": { "label": "Headlight aiming", "value": "300 CZK" },
+          "acDiagnostics": { "label": "A/C diagnostics", "value": "400 CZK" }
+        }
+      },
+      "tyresPassenger": {
+        "title": "Tyre service – passenger vehicles",
+        "description": "Pricing for passenger cars on alloy or steel wheels. Listed amounts exclude VAT.",
+        "groups": {
+          "fullChange": {
+            "title": "Full tyre change (4 tyres)",
+            "note": "Includes balancing and wheel weights with installation.",
+            "variants": {
+              "alu": {
+                "title": "Alloy wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,100 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1,400 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1,600 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "2,000 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Steel wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,000 CZK" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Wheel swap (no tyre change)",
+            "note": "Includes balancing and wheel weights.",
+            "variants": {
+              "alu": {
+                "title": "Alloy wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "600 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "700 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "900 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1,100 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1,300 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "1,700 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Steel wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "500 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "600 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "800 CZK" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyresUtility": {
+        "title": "Tyre service – utility, SUV and off-road",
+        "description": "Pricing for larger vehicles, SUVs and vans. Listed amounts exclude VAT.",
+        "groups": {
+          "fullChange": {
+            "title": "Full tyre change (4 tyres)",
+            "note": "Includes balancing and wheel weights with installation.",
+            "variants": {
+              "alu": {
+                "title": "Alloy wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "1,000 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "1,100 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,300 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1,600 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1,800 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "2,000 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Steel wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,100 CZK" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Wheel swap (no tyre change)",
+            "note": "Includes balancing and wheel weights.",
+            "variants": {
+              "alu": {
+                "title": "Alloy wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,100 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1,300 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1,500 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "1,700 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Steel wheels",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1,000 CZK" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyreExtras": {
+        "title": "Additional tyre services",
+        "description": "Indicative prices excluding VAT.",
+        "items": {
+          "geometry": { "label": "Wheel alignment", "value": "from 800 CZK" },
+          "puncture": { "label": "Puncture repair (per wheel)", "value": "500 CZK" }
+        }
+      },
+      "otherServices": {
+        "title": "Other workshop services",
+        "description": "Administrative and assistance services to complement maintenance.",
+        "items": {
+          "technicalInspection": { "label": "Technical inspection & emissions handling", "value": "3,500 CZK" },
+          "ownershipTransfer": { "label": "Vehicle ownership transfer", "value": "on request" },
+          "insuranceClaim": { "label": "Insurance claim handling", "value": "on request" },
+          "purchaseAssistance": { "label": "Used car purchase assistance", "value": "on request" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Need a detailed quote?",
+      "description": "Get in touch and we will prepare a tailored estimate for your vehicle.",
+      "primary": "Call the workshop",
+      "secondary": "Open contact page"
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "EURO MOTORS certified workshop",
@@ -444,6 +725,7 @@
         "services": "Services",
         "about": "About us",
         "faq": "FAQ",
+        "pricing": "Pricing",
         "contact": "Contact"
       },
       "badge": "15 years of experience",

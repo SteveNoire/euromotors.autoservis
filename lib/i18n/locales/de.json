@@ -431,6 +431,287 @@
       }
     }
   },
+  "pricingPage": {
+    "hero": {
+      "badge": "Werkstattpreise",
+      "title": "Transparente Übersicht unserer Servicepreise",
+      "description": "Diese Preisliste zeigt die gängigen Leistungen und Sätze. Ein verbindliches Angebot erhalten Sie nach der Fahrzeugdiagnose.",
+      "disclaimerHeading": "Wichtige Preis-Hinweise",
+      "notePrimary": "Alle Preise gelten ausschließlich für Arbeitsleistungen ohne Materialien (Öle, Reiniger, Ersatzteile).",
+      "noteSecondary": "Sämtliche Beträge sind Richtwerte und verstehen sich netto. Ein individuelles Angebot erstellen wir nach Ihren Vorgaben."
+    },
+    "sections": {
+      "labor": {
+        "title": "Stundensätze für Werkstattleistungen",
+        "description": "Standardpreise für die häufigsten Arbeiten. Die finale Kalkulation erfolgt nach der Diagnose.",
+        "groups": {
+          "mechanical": {
+            "title": "Mechanische Arbeiten",
+            "note": "Preise verstehen sich zzgl. MwSt.",
+            "items": {
+              "passenger": {
+                "label": "Pkw",
+                "value": "1 000 CZK / Stunde"
+              },
+              "suv": {
+                "label": "SUV & Offroad",
+                "value": "1 100 CZK / Stunde"
+              },
+              "vans": {
+                "label": "Transporter",
+                "value": "1 200 CZK / Stunde"
+              },
+              "customerParts": {
+                "label": "Arbeit mit kundeneigenen Teilen (bis 3,5 t)",
+                "value": "1 500 CZK / Stunde"
+              }
+            }
+          },
+          "electrical": {
+            "title": "Elektroarbeiten",
+            "note": "Preise verstehen sich zzgl. MwSt.",
+            "items": {
+              "hourly": {
+                "label": "Stundensatz",
+                "value": "1 400 CZK / Stunde"
+              }
+            }
+          },
+          "paint": {
+            "title": "Lackierarbeiten",
+            "note": "Preise verstehen sich zzgl. MwSt.",
+            "items": {
+              "hourly": {
+                "label": "Stundensatz",
+                "value": "1 000 CZK / Stunde"
+              }
+            }
+          },
+          "bodywork": {
+            "title": "Karosseriearbeiten",
+            "note": "Preise verstehen sich zzgl. MwSt.",
+            "items": {
+              "hourly": {
+                "label": "Stundensatz",
+                "value": "1 200 CZK / Stunde"
+              }
+            }
+          },
+          "airConditioning": {
+            "title": "Klimaservice",
+            "note": "Preise verstehen sich zzgl. MwSt.",
+            "items": {
+              "leakTest": {
+                "label": "Lecksuche und Druckprüfung",
+                "value": "500 CZK"
+              },
+              "refill": {
+                "label": "Befüllung Klimaanlage",
+                "value": "500 CZK"
+              },
+              "refrigerantR134a": {
+                "label": "Kältemittel R134a",
+                "value": "3 CZK / g"
+              },
+              "refrigerantHfo": {
+                "label": "Kältemittel HFO1234yf",
+                "value": "7 CZK / g"
+              },
+              "compressorOil": {
+                "label": "Kompressoröl",
+                "value": "59 CZK / 10 ml"
+              },
+              "uvDye": {
+                "label": "UV-Kontrastmittel (nur zur Lecksuche)",
+                "value": "49 CZK / 10 ml"
+              },
+              "disinfection": {
+                "label": "Klimadesinfektion (reine Arbeitszeit)",
+                "value": "200 CZK"
+              }
+            }
+          }
+        }
+      },
+      "services": {
+        "title": "Orientierende Preise für beliebte Leistungen",
+        "description": "Die am häufigsten angefragten Arbeiten auf einen Blick.",
+        "cardTitle": "Typische Reparaturen und Wartungen",
+        "note": "Preise sind Richtwerte ohne Ersatzteilkosten.",
+        "items": {
+          "inspection": { "label": "Inspektionsservice", "value": "1 500 CZK" },
+          "suspensionDiagnostics": { "label": "Fahrwerksdiagnose", "value": "ab 800 CZK" },
+          "computerDiagnostics": { "label": "Computerdiagnose", "value": "800 CZK" },
+          "faultMemory": { "label": "Fehlerspeicher lesen / löschen", "value": "500 CZK" },
+          "serviceReset": { "label": "Serviceintervall zurücksetzen", "value": "500 CZK" },
+          "injectorCoding": { "label": "Injektoren codieren", "value": "1 000 CZK" },
+          "ecuReset": { "label": "Steuergerät resetten und adaptieren", "value": "1 000 CZK" },
+          "geometry": { "label": "3D-Achsmessung", "value": "ab 800 CZK" },
+          "brakeDiagnostics": { "label": "Bremsendiagnose", "value": "ab 800 CZK" },
+          "brakeFluid": { "label": "Bremsflüssigkeit wechseln", "value": "ab 1 100 CZK" },
+          "brakePads": { "label": "Bremsbeläge pro Achse", "value": "ab 800 CZK" },
+          "discsAndPads": { "label": "Scheiben & Beläge pro Achse", "value": "ab 1 300 CZK" },
+          "brakeShoes": { "label": "Bremstrommelbacken wechseln", "value": "ab 800 CZK" },
+          "parkingBrakeLinings": { "label": "Feststellbrems-Beläge (selbstnachstellend)", "value": "ab 1 100 CZK" },
+          "towbarInstall": { "label": "Anhängerkupplung montieren", "value": "ab 3 000 CZK" },
+          "shockReplacement": { "label": "Stoßdämpfer wechseln (pro Stück)", "value": "ab 600 CZK" },
+          "subframe": { "label": "Achsträger aus- und einbauen", "value": "ab 3 000 CZK" },
+          "transmission": { "label": "Getriebe aus- und einbauen", "value": "ab 3 500 CZK" },
+          "headGasket": { "label": "Zylinderkopfdichtung wechseln", "value": "ab 6 500 CZK" },
+          "timing": { "label": "Zahnriemen wechseln", "value": "ab 4 500 CZK" },
+          "clutch": { "label": "Kupplung wechseln", "value": "ab 4 500 CZK" },
+          "oilChange": { "label": "Motorölwechsel (inkl. Filter)", "value": "ab 400 CZK" },
+          "fuelFilter": { "label": "Kraftstofffilter wechseln", "value": "ab 350 CZK" },
+          "airFilter": { "label": "Luftfilter wechseln", "value": "ab 200 CZK" },
+          "cabinFilter": { "label": "Innenraumfilter wechseln", "value": "ab 200 CZK" },
+          "sparkPlug": { "label": "Zündkerze wechseln (pro Stück)", "value": "ab 130 CZK" },
+          "glowPlug": { "label": "Glühkerze wechseln (pro Stück)", "value": "ab 350 CZK" },
+          "headlightRestoration": { "label": "Scheinwerferaufbereitung (Paar)", "value": "ab 1 800 CZK" },
+          "windscreenReplacement": { "label": "Frontscheibe wechseln", "value": "ab 4 500 CZK" },
+          "rearGlassReplacement": { "label": "Heckscheibe wechseln", "value": "ab 5 000 CZK" },
+          "sideGlassReplacement": { "label": "Seitenscheibe wechseln", "value": "ab 2 500 CZK" },
+          "headlightAim": { "label": "Scheinwerfer einstellen", "value": "300 CZK" },
+          "acDiagnostics": { "label": "Klimadiagnose", "value": "400 CZK" }
+        }
+      },
+      "tyresPassenger": {
+        "title": "Reifenservice – Pkw",
+        "description": "Preise für Pkw auf Alu- oder Stahlfelgen. Alle Angaben netto.",
+        "groups": {
+          "fullChange": {
+            "title": "Kompletter Reifenwechsel (4 Reifen)",
+            "note": "Inkl. Wuchten und Gewichte mit Montage.",
+            "variants": {
+              "alu": {
+                "title": "Alufelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 400 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 600 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "2 000 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Stahlfelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 000 CZK" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Räderwechsel (ohne Reifenmontage)",
+            "note": "Inkl. Wuchten und Gewichte.",
+            "variants": {
+              "alu": {
+                "title": "Alufelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "600 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "700 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "900 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 100 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 300 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "1 700 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Stahlfelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "500 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "600 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "800 CZK" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyresUtility": {
+        "title": "Reifenservice – Nutzfahrzeuge, SUV & Offroad",
+        "description": "Preise für größere Fahrzeuge, SUV und Transporter. Alle Angaben netto.",
+        "groups": {
+          "fullChange": {
+            "title": "Kompletter Reifenwechsel (4 Reifen)",
+            "note": "Inkl. Wuchten und Gewichte mit Montage.",
+            "variants": {
+              "alu": {
+                "title": "Alufelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "1 000 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "1 100 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 300 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 600 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 800 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "2 000 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Stahlfelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 CZK" }
+                }
+              }
+            }
+          },
+          "swapOnly": {
+            "title": "Räderwechsel (ohne Reifenmontage)",
+            "note": "Inkl. Wuchten und Gewichte.",
+            "variants": {
+              "alu": {
+                "title": "Alufelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "800 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "900 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 100 CZK" },
+                  "19_20": { "label": "19″ – 20″", "value": "1 300 CZK" },
+                  "21_22": { "label": "21″ – 22″", "value": "1 500 CZK" },
+                  "23_24": { "label": "23″ – 24″", "value": "1 700 CZK" }
+                }
+              },
+              "steel": {
+                "title": "Stahlfelgen",
+                "items": {
+                  "13_14": { "label": "13″ – 14″", "value": "700 CZK" },
+                  "15_16": { "label": "15″ – 16″", "value": "800 CZK" },
+                  "17_18": { "label": "17″ – 18″", "value": "1 000 CZK" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tyreExtras": {
+        "title": "Zusätzliche Reifenservices",
+        "description": "Richtpreise exkl. MwSt.",
+        "items": {
+          "geometry": { "label": "Achsmessung", "value": "ab 800 CZK" },
+          "puncture": { "label": "Reifenreparatur (pro Rad)", "value": "500 CZK" }
+        }
+      },
+      "otherServices": {
+        "title": "Weitere Serviceleistungen",
+        "description": "Unterstützung bei Formalitäten und Zusatzservices.",
+        "items": {
+          "technicalInspection": { "label": "Abwicklung STK & Emission", "value": "3 500 CZK" },
+          "ownershipTransfer": { "label": "Fahrzeugumschreibung", "value": "nach Absprache" },
+          "insuranceClaim": { "label": "Schadensabwicklung Versicherung", "value": "nach Absprache" },
+          "purchaseAssistance": { "label": "Begleitung beim Fahrzeugkauf", "value": "nach Absprache" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Sie wünschen ein verbindliches Angebot?",
+      "description": "Kontaktieren Sie uns und wir erstellen eine maßgeschneiderte Kalkulation.",
+      "primary": "Werkstatt anrufen",
+      "secondary": "Zur Kontaktseite"
+    }
+  },
   "chrome": {
     "announcement": {
       "certified": "Zertifizierte Werkstatt EURO MOTORS",
@@ -444,6 +725,7 @@
         "services": "Leistungen",
         "about": "Über uns",
         "faq": "FAQ",
+        "pricing": "Preise",
         "contact": "Kontakt"
       },
       "badge": "15 Jahre Erfahrung",

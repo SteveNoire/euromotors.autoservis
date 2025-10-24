@@ -18,6 +18,7 @@ const navLinks = [
   { labelKey: "chrome.header.nav.services", href: "/#services" },
   { labelKey: "chrome.header.nav.about", href: "/#about" },
   { labelKey: "chrome.header.nav.faq", href: "/#faq" },
+  { labelKey: "chrome.header.nav.pricing", href: "/pricing" },
   { labelKey: "chrome.header.nav.contact", href: "/contact" },
 ] as const;
 
