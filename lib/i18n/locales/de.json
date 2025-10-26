@@ -1100,5 +1100,30 @@
         "name": "DigiTale s.r.o."
       }
     }
+  },
+  "notFoundPage": {
+    "badge": "404 Fehler",
+    "title": "404",
+    "description": "Die gesuchte Seite wurde nicht gefunden. Sie wurde möglicherweise verschoben oder existiert nicht mehr.",
+    "homeButton": "Zur Startseite",
+    "backButton": "Zurück",
+    "suggestions": {
+      "title": "Sie können versuchen:",
+      "services": {
+        "title": "Unsere Leistungen",
+        "description": "Entdecken Sie unser komplettes Serviceangebot.",
+        "button": "Services ansehen"
+      },
+      "pricing": {
+        "title": "Preise",
+        "description": "Transparente Übersicht der Servicearbeiten.",
+        "button": "Preise ansehen"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Kontaktieren Sie uns telefonisch oder per E-Mail.",
+        "button": "Kontakt aufnehmen"
+      }
+    }
   }
 }

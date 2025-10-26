@@ -1100,5 +1100,30 @@
         "name": "DigiTale s.r.o."
       }
     }
+  },
+  "notFoundPage": {
+    "badge": "404 Error",
+    "title": "404",
+    "description": "The page you are looking for was not found. It may have been moved or no longer exists.",
+    "homeButton": "Back to homepage",
+    "backButton": "Go back",
+    "suggestions": {
+      "title": "You might want to try:",
+      "services": {
+        "title": "Our services",
+        "description": "Browse our complete range of automotive services.",
+        "button": "View services"
+      },
+      "pricing": {
+        "title": "Pricing",
+        "description": "Transparent overview of service work prices.",
+        "button": "View pricing"
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Get in touch via phone or email.",
+        "button": "Contact us"
+      }
+    }
   }
 }

@@ -1100,5 +1100,30 @@
         "name": "DigiTale s.r.o."
       }
     }
+  },
+  "notFoundPage": {
+    "badge": "404 Chyba",
+    "title": "404",
+    "description": "Stránka, kterou hledáte, nebyla nalezena. Možná byla přesunuta nebo již neexistuje.",
+    "homeButton": "Zpět na hlavní stránku",
+    "backButton": "Zpět",
+    "suggestions": {
+      "title": "Můžete zkusit:",
+      "services": {
+        "title": "Naše služby",
+        "description": "Prohlédněte si kompletní nabídku servisních služeb.",
+        "button": "Zobrazit služby"
+      },
+      "pricing": {
+        "title": "Ceník",
+        "description": "Transparentní přehled cen servisních prací.",
+        "button": "Zobrazit ceník"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Spojte se s námi telefonicky nebo e-mailem.",
+        "button": "Kontaktovat nás"
+      }
+    }
   }
 }
