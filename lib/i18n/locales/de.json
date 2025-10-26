@@ -593,6 +593,55 @@
       "emailTitle": "CV an:"
     }
   },
+  "privacyPage": {
+    "hero": {
+      "badge": "GDPR",
+      "title": "Datenschutzerklärung",
+      "description": "Wir erläutern transparent, wie wir personenbezogene Daten von Kunden, Interessenten und Website-Besuchern verarbeiten."
+    },
+    "meta": {
+      "effectiveDate": "Gültig seit 4. Oktober 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Einleitung",
+        "body": "Verantwortlicher im Sinne der DSGVO ist euromotors corporation s.r.o., ID 08580405, mit Sitz V Pitkovičkách 351, 104 00 Prag 10, eingetragen beim Stadtgericht Prag, Abteilung C, Einlage 321387. Das Unternehmen verarbeitet Daten seiner Kunden, Interessenten und Webseitenbesucher als Verantwortlicher.\n\nPersonenbezogene Daten sind alle Informationen, mit denen eine natürliche Person direkt oder indirekt identifiziert werden kann – etwa Name, Kontaktdaten, Transaktionsinformationen oder Gerätekennungen.\n\nDiese Richtlinie beschreibt, welche Daten wir erheben, zu welchen Zwecken, auf welcher Rechtsgrundlage und wie lange sie gespeichert werden. Hinweise auf die DSGVO oder tschechische Gesetze beziehen sich stets auf die aktuelle Fassung."
+      },
+      "purposes": {
+        "title": "II. Zwecke und Aufbewahrungsdauern",
+        "body": "Wir verarbeiten personenbezogene Daten nur insoweit, wie es für unsere Dienstleistungen und gesetzliche Pflichten erforderlich ist. Für jeden Zweck legen wir eine angemessene Speicherdauer fest und achten auf Datensparsamkeit.\n\nDie meisten Verarbeitungen stützen sich auf Vertragserfüllung, berechtigtes Interesse oder gesetzliche Verpflichtungen. Für Marketingmaßnahmen außerhalb dieses Rahmens holen wir Ihre Einwilligung ein, die jederzeit widerrufen werden kann.",
+        "listTitle": "Die Verarbeitung umfasst insbesondere:",
+        "list": "- Abwicklung von Bestellungen und Serviceleistungen inklusive Fakturierung und Logistik\n- Kommunikation mit Kunden, Bearbeitung von Anfragen und Reklamationen\n- Führung der Buchhaltung und steuerlicher Pflichten\n- Betrieb und Absicherung der Website, Analyse der Nutzung und Cookies\n- Information über Dienstleistungen und Neuigkeiten bei vorliegender Einwilligung"
+      },
+      "protection": {
+        "title": "III. Datensicherheit",
+        "body": "Wir setzen technische und organisatorische Maßnahmen ein, um unbefugten Zugriff, Verlust oder Missbrauch zu verhindern. Nur geschulte, zur Vertraulichkeit verpflichtete Personen erhalten Zugriff; wir verwenden verschlüsselte Kommunikationswege, Zugriffssteuerung, Backups und regelmäßige Kontrollen.\n\nDaten werden manuell und automatisiert verarbeitet; es findet jedoch keine ausschließlich automatisierte Entscheidungsfindung mit rechtlicher Wirkung statt."
+      },
+      "sharing": {
+        "title": "IV. Weitergabe an Dritte",
+        "body": "Eine Weitergabe erfolgt nur an vertrauenswürdige Auftragsverarbeiter, die uns bei Kundenservice, Logistik, IT-Betrieb, Buchhaltung oder Rechtsberatung unterstützen. Jeder Verarbeiter arbeitet auf Vertragsbasis, ist zur Verschwiegenheit verpflichtet und darf die Daten nur für den vereinbarten Zweck nutzen.\n\nSoweit gesetzlich erforderlich, können Daten auch an Behörden übermittelt werden."
+      },
+      "rights": {
+        "title": "V. Rechte der betroffenen Personen",
+        "body": "Betroffene Personen können die in der DSGVO festgelegten Rechte ausüben. Anfragen richten Sie bitte an euromotorsofficial@gmail.com oder postalisch an den Unternehmenssitz; wir antworten innerhalb von 30 Tagen und dürfen zur Verifizierung einen Identitätsnachweis anfordern.",
+        "listTitle": "Sie können insbesondere:",
+        "list": "- eine Bestätigung und Auskunft über verarbeitete Daten verlangen\n- die Berichtigung unrichtiger oder unvollständiger Daten fordern\n- die Löschung verlangen, sofern der Verarbeitungszweck entfällt oder eine Einwilligung widerrufen wurde\n- die Verarbeitung einschränken, widersprechen oder eine Einwilligung widerrufen\n- eine Kopie der Daten in einem strukturierten Format erhalten und deren Übertragung verlangen\n- Beschwerde beim Amt für den Schutz personenbezogener Daten (ÚOOÚ) einlegen"
+      },
+      "conclusion": {
+        "title": "VI. Schlussbestimmungen",
+        "body": "Alle Rechtsbeziehungen unterliegen dem Recht der Tschechischen Republik. Bei Fragen kontaktieren Sie uns über die angegebenen Kanäle; zuständige Aufsichtsbehörde ist das Amt für den Schutz personenbezogener Daten (www.uoou.cz).\n\nWir überprüfen diese Richtlinie regelmäßig und veröffentlichen die aktuelle Version auf unserer Website."
+      }
+    },
+    "cta": {
+      "title": "Fragen zu Ihren Daten?",
+      "description": "Kontaktieren Sie uns – wir erläutern, wie wir personenbezogene Daten verarbeiten oder wie Sie Ihre Rechte wahrnehmen können.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse",
+      "addressValue": "V Pitkovičkách 351, 104 00 Praha 10",
+      "note": "Verantwortlicher: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Werkstattpreise",
@@ -891,7 +940,8 @@
         "contact": "Kontakt",
         "aboutItems": {
           "workshop": "Über die Werkstatt",
-          "career": "Karriere"
+          "career": "Karriere",
+          "privacy": "Datenschutzerklärung"
         }
       },
       "badge": "15 Jahre Erfahrung",

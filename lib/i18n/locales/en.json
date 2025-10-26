@@ -593,6 +593,55 @@
       "emailTitle": "Send CV to:"
     }
   },
+  "privacyPage": {
+    "hero": {
+      "badge": "GDPR",
+      "title": "Privacy policy",
+      "description": "We explain how we process personal data of customers, prospects and visitors in a transparent way."
+    },
+    "meta": {
+      "effectiveDate": "Effective from 4 October 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Introductory provisions",
+        "body": "The data controller is euromotors corporation s.r.o., ID 08580405, registered office V Pitkovičkách 351, 104 00 Prague 10, entered in the Commercial Register maintained by the Municipal Court in Prague, Section C, Insert 321387. The company acts as controller when processing data of customers, prospects and website visitors.\n\nPersonal data means any information that can identify an individual directly or indirectly – such as name, contact details, transaction information or device identifiers.\n\nThese principles describe what data we process, for which purposes, on what legal grounds and for how long. Whenever we refer to GDPR or Czech legislation, we follow their current wording."
+      },
+      "purposes": {
+        "title": "II. Purposes and retention",
+        "body": "We only process personal data to the extent necessary to deliver our services and fulfil statutory duties. For each purpose we define a proportional retention period and respect the principle of data minimisation.\n\nMost processing is based on contract performance, legitimate interest or legal obligation. For marketing outside that scope we request your consent, which can be withdrawn at any time.",
+        "listTitle": "Processing typically covers:",
+        "list": "- fulfilling service orders and logistics, including invoicing\n- communicating with clients, handling enquiries and claims\n- meeting accounting and tax obligations\n- operating and securing the website, analytics and cookies\n- informing about services and news when consent has been granted"
+      },
+      "protection": {
+        "title": "III. Data protection measures",
+        "body": "We implement technical and organisational measures to prevent unauthorised access, loss or misuse of data. Only trained personnel bound by confidentiality have access, and we rely on encrypted channels, access management, backups and regular reviews.\n\nData is processed both manually and automatically; however, we do not make decisions based solely on automated processing that would produce legal effects."
+      },
+      "sharing": {
+        "title": "IV. Disclosure to third parties",
+        "body": "We share data only with trusted processors who support us with customer care, logistics, IT operations, accounting or legal services. Each processor works under contract, is bound by confidentiality and may use the data solely for the agreed purpose.\n\nWhen required by law we may also provide data to public authorities."
+      },
+      "rights": {
+        "title": "V. Data subject rights",
+        "body": "Anyone whose data we process can exercise the rights laid down in the GDPR. Requests can be sent to euromotorsofficial@gmail.com or mailed to the company address; we respond within 30 days and may ask for identity verification before handling the request.",
+        "listTitle": "You may in particular:",
+        "list": "- request confirmation whether we process your data and gain access to it\n- ask for rectification of inaccurate or incomplete data\n- demand erasure if the purpose expired or consent was withdrawn\n- restrict processing, object to it, or withdraw consent\n- obtain a copy of data in a structured format and request its transfer to another controller\n- lodge a complaint with the Czech Data Protection Authority"
+      },
+      "conclusion": {
+        "title": "VI. Final provisions",
+        "body": "All relations are governed by the laws of the Czech Republic. Contact us through the listed channels with any questions; the competent supervisory authority is the Office for Personal Data Protection (www.uoou.cz).\n\nWe review these principles regularly and publish the current version on our website."
+      }
+    },
+    "cta": {
+      "title": "Need more details?",
+      "description": "Get in touch and we will gladly clarify how we handle personal data or how to exercise your rights.",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressValue": "V Pitkovičkách 351, 104 00 Prague 10",
+      "note": "Controller: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Workshop pricing",
@@ -891,7 +940,8 @@
         "contact": "Contact",
         "aboutItems": {
           "workshop": "About the workshop",
-          "career": "Careers"
+          "career": "Careers",
+          "privacy": "Privacy policy"
         }
       },
       "badge": "15 years of experience",

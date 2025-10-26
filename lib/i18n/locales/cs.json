@@ -593,6 +593,55 @@
       "emailTitle": "Pošlete CV na:"
     }
   },
+  "privacyPage": {
+    "hero": {
+      "badge": "GDPR",
+      "title": "Zásady ochrany osobních údajů",
+      "description": "Transparentně popisujeme, jak nakládáme s údaji zákazníků, zájemců a návštěvníků webu."
+    },
+    "meta": {
+      "effectiveDate": "Účinnost od 4. října 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Úvodní ustanovení",
+        "body": "Správcem osobních údajů je euromotors corporation s.r.o., IČ 08580405, sídlem V Pitkovičkách 351, 104 00 Praha 10, zapsaná u Městského soudu v Praze, oddíl C, vložka 321387. Společnost vystupuje jako správce při zpracování údajů zákazníků, zájemců i návštěvníků webu.\n\nZa osobní údaje považujeme veškeré informace, které umožní jednotlivce přímo nebo nepřímo identifikovat – například jméno, kontaktní údaje, transakční a lokalizační data nebo identifikátory zařízení.\n\nTyto zásady vysvětlují, jaké údaje zpracováváme, za jakým účelem, jak dlouho a z jakých právních důvodů. Pokud části dokumentu používají termíny GDPR nebo českých zákonů, vždy se držíme jejich aktuálního znění."
+      },
+      "purposes": {
+        "title": "II. Účely a doby zpracování",
+        "body": "Osobní údaje zpracováváme pouze v rozsahu nezbytném pro poskytování našich služeb a pro plnění zákonných povinností. Při každém účelu stanovujeme odpovídající dobu uchování a respektujeme zásadu minimalizace.\n\nVětšina zpracování vychází z plnění smlouvy, oprávněného zájmu nebo zákonné povinnosti. Pro marketingové aktivity mimo tento rámec si vyžadujeme souhlas, který lze kdykoliv odvolat.",
+        "listTitle": "Zpracování pokrývá zejména:",
+        "list": "- vyřízení objednávek a servisních zakázek včetně fakturace a logistiky\n- komunikaci s klienty, řešení dotazů a reklamací\n- vedení účetních a daňových agend dle zákona\n- provoz a zabezpečení webových stránek, analýzu návštěvnosti a cookies\n- informování o službách a novinkách při uděleném souhlasu"
+      },
+      "protection": {
+        "title": "III. Ochrana a zabezpečení dat",
+        "body": "Dbáme na technická i organizační opatření, která brání neoprávněnému přístupu, ztrátě nebo zneužití údajů. Přístup mají pouze poučené osoby vázané mlčenlivostí a používáme šifrované komunikační kanály, řízení přístupu, zálohování i pravidelné kontroly.\n\nOsobní údaje zpracováváme ručně i automatizovaně, avšak neprovádíme rozhodování založené výhradně na automatizovaném zpracování, které by mělo právní účinky."
+      },
+      "sharing": {
+        "title": "IV. Předávání třetím stranám",
+        "body": "Údaje předáváme pouze důvěryhodným zpracovatelům, kteří nám pomáhají se zákaznickou podporou, logistikou, IT službami, účetnictvím či právním poradenstvím. Každý zpracovatel jedná na základě smlouvy, je vázán mlčenlivostí a smí údaje používat jen k dohodnutému účelu.\n\nPokud nám to ukládá zákon, můžeme údaje poskytnout také orgánům veřejné moci."
+      },
+      "rights": {
+        "title": "V. Práva subjektů údajů",
+        "body": "Každý, jehož údaje zpracováváme, má práva stanovená GDPR. Žádost lze adresovat e-mailem na euromotorsofficial@gmail.com nebo poštou na sídlo společnosti; reagujeme nejpozději do 30 dnů. Před vyřízením můžeme požádat o ověření totožnosti.",
+        "listTitle": "Můžete zejména:",
+        "list": "- požádat o potvrzení, zda údaje zpracováváme, a získat k nim přístup\n- požadovat opravu nepřesných nebo neúplných údajů\n- žádat výmaz, pokud pominul účel zpracování nebo byl odvolán souhlas\n- omezit zpracování, vznést námitku nebo odvolat souhlas\n- získat kopii údajů ve strukturovaném formátu a požádat o jejich předání jinému správci\n- podat stížnost u Úřadu pro ochranu osobních údajů"
+      },
+      "conclusion": {
+        "title": "VI. Závěrečná ustanovení",
+        "body": "Veškeré vztahy se řídí právním řádem České republiky. S dotazy či podněty nás kontaktujte prostřednictvím uvedených kanálů; dozorovým orgánem je Úřad pro ochranu osobních údajů (www.uoou.cz).\n\nTyto zásady pravidelně aktualizujeme a jejich aktuální znění najdete vždy na našem webu."
+      }
+    },
+    "cta": {
+      "title": "Potřebujete upřesnit detaily?",
+      "description": "Ozvěte se nám, rádi vám vysvětlíme, jak s osobními údaji pracujeme nebo jak uplatnit vaše práva.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "addressLabel": "Adresa",
+      "addressValue": "V Pitkovičkách 351, 104 00 Praha 10",
+      "note": "Správce: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Ceník autoservisu",
@@ -891,7 +940,8 @@
         "contact": "Kontakt",
         "aboutItems": {
           "workshop": "O autoservisu",
-          "career": "Kariéra"
+          "career": "Kariéra",
+          "privacy": "Zásady ochrany osobních údajů"
         }
       },
       "badge": "15 let praxe",
