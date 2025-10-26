@@ -509,6 +509,83 @@
       "secondary": "View contacts"
     }
   },
+  "careerPage": {
+    "hero": {
+      "badge": "Careers",
+      "title": "Careers at EURO MOTORS",
+      "description": "Join our team — see open roles below and send your CV."
+    },
+    "sections": {
+      "openPositions": {
+        "title": "Open positions",
+        "description": "We are currently looking for the following specialists:",
+        "items": {
+          "mechanic": {
+            "title": "Auto mechanic (passenger & light commercial vehicles)",
+            "summary": "Maintenance, diagnostics and repairs of cars and vans.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary from CZK 45,000; Official employment; Full-time contract; Friendly team",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Min. 1 year experience; Punctuality; Responsibility"
+          },
+          "painter": {
+            "title": "Auto painter",
+            "summary": "Preparation and painting of parts and bodies.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary; Official employment; Friendly team",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Experience in painting; Attention to detail"
+          },
+          "prep": {
+            "title": "Paint shop preparer",
+            "summary": "Sanding and preparation of panels before painting.",
+            "offersTitle": "We offer:",
+            "offers": "Stable work; Official employment",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Carefulness; Experience is an advantage"
+          },
+          "body": {
+            "title": "Bodywork technician",
+            "summary": "Repairs of body panels and shaping metal parts.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary; Official employment",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Experience in bodywork; Precision"
+          },
+          "machinist": {
+            "title": "Body shop machinist",
+            "summary": "Operation of bodyshop machinery and part preparation.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary; Official employment",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Experience with workshop equipment; Carefulness"
+          },
+          "driver": {
+            "title": "Tow-truck driver",
+            "summary": "Transport and towing of vehicles when needed.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary; Official employment",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Driving licence; Responsibility"
+          },
+          "receptionist": {
+            "title": "Workshop receptionist",
+            "summary": "Customer reception, booking and communications.",
+            "offersTitle": "We offer:",
+            "offers": "Stable salary; Official employment; Friendly team",
+            "requirementsTitle": "Requirements:",
+            "requirements": "Knowledge of Czech and Russian; Good communication skills"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Interested in joining us?",
+      "description": "Call us or send your CV and we'll get back to you.",
+      "callTitle": "Call:",
+      "emailTitle": "Send CV to:"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Workshop pricing",
@@ -806,7 +883,8 @@
         "pricing": "Pricing",
         "contact": "Contact",
         "aboutItems": {
-          "workshop": "About the workshop"
+          "workshop": "About the workshop",
+          "career": "Careers"
         }
       },
       "badge": "15 years of experience",

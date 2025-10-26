@@ -509,6 +509,83 @@
       "secondary": "Zobrazit kontakty"
     }
   },
+  "careerPage": {
+    "hero": {
+      "badge": "Kariéra",
+      "title": "Kariéra v EURO MOTORS",
+      "description": "Chcete pracovat v dynamickém týmu? Podívejte se na aktuální pozice a pošlete nám CV."
+    },
+    "sections": {
+      "openPositions": {
+        "title": "Otevřené pozice",
+        "description": "Aktuálně hledáme tyto specialisty:",
+        "items": {
+          "mechanic": {
+            "title": "Automechanik (osobní a dodávkové vozy)",
+            "summary": "Servis, diagnostika a opravy osobních a užitkových vozidel.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu od 45 000 Kč; Oficiální zaměstnání; Práce na plný úvazek; Příjemný kolektiv",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Praxe v oboru minimálně 1 rok; Dochvilnost; Zodpovědnost"
+          },
+          "painter": {
+            "title": "Autolakýrník",
+            "summary": "Příprava a lakování dílů a karoserií.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu; Oficiální zaměstnání; Příjemný kolektiv",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Praxe v oboru; Smysl pro detail"
+          },
+          "prep": {
+            "title": "Přípravář lakovny",
+            "summary": "Přípravné práce pro lakovnu, broušení a příprava dílů.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní práci; Oficiální zaměstnání",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Pečlivost; Zkušenost výhodou"
+          },
+          "body": {
+            "title": "Autoklempíř",
+            "summary": "Opravy karoserií, výměny panelů a tvarování plechů.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Praxe v oboru; Pečlivost"
+          },
+          "machinist": {
+            "title": "Strojič vozidel karosárny",
+            "summary": "Obsluha strojního vybavení karosárny a příprava dílů.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Zkušenost s provozem zařízení; Pečlivost"
+          },
+          "driver": {
+            "title": "Řidič odtahového vozidla",
+            "summary": "Přeprava a odtah vozidel dle potřeby servisu.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Řidičský průkaz; Zodpovědnost"
+          },
+          "receptionist": {
+            "title": "Recepční autoservisu",
+            "summary": "Příjem zákazníků, správa objednávek a komunikace.",
+            "offersTitle": "Nabízíme:",
+            "offers": "Stabilní mzdu; Oficiální zaměstnání; Přátelský kolektiv",
+            "requirementsTitle": "Požadujeme:",
+            "requirements": "Znalost češtiny a ruštiny; Komunikační dovednosti"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Zaujala Vás nabídka?",
+      "description": "Neváhejte nás kontaktovat. Zavolejte nebo pošlete své CV.",
+      "callTitle": "Zavolejte nás:",
+      "emailTitle": "Pošlete CV na:"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Ceník autoservisu",
@@ -806,7 +883,8 @@
         "pricing": "Ceník",
         "contact": "Kontakt",
         "aboutItems": {
-          "workshop": "O autoservisu"
+          "workshop": "O autoservisu",
+          "career": "Kariéra"
         }
       },
       "badge": "15 let praxe",

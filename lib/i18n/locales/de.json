@@ -509,6 +509,83 @@
       "secondary": "Kontaktdaten anzeigen"
     }
   },
+  "careerPage": {
+    "hero": {
+      "badge": "Karriere",
+      "title": "Karriere bei EURO MOTORS",
+      "description": "Werden Sie Teil unseres Teams — aktuelle Stellen finden Sie unten."
+    },
+    "sections": {
+      "openPositions": {
+        "title": "Offene Stellen",
+        "description": "Wir suchen derzeit die folgenden Spezialisten:",
+        "items": {
+          "mechanic": {
+            "title": "Kfz-Mechaniker (Pkw & leichte Nutzfahrzeuge)",
+            "summary": "Wartung, Diagnose und Reparatur von Fahrzeugen.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung; Vollzeit; Angenehmes Team",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Mind. 1 Jahr Erfahrung; Pünktlichkeit; Verantwortungsbewusstsein"
+          },
+          "painter": {
+            "title": "Lackierer",
+            "summary": "Vorbereitung und Lackierung von Karosserieteilen.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Erfahrung im Lackierbereich; Sorgfalt"
+          },
+          "prep": {
+            "title": "Lackvorbereiter",
+            "summary": "Schleif- und Vorbereitungsarbeiten vor dem Lackieren.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabile Anstellung; Festanstellung",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Sorgfalt; Erfahrung von Vorteil"
+          },
+          "body": {
+            "title": "Karosseriebauer",
+            "summary": "Reparatur von Karosserieteilen und Formgebung.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Berufserfahrung; Präzision"
+          },
+          "machinist": {
+            "title": "Maschinist der Karosseriewerkstatt",
+            "summary": "Bedienung von Werkstattmaschinen und Teilevorbereitung.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Maschinenkenntnisse; Sorgfalt"
+          },
+          "driver": {
+            "title": "Abschleppwagenfahrer",
+            "summary": "Transport und Abschleppen von Fahrzeugen.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Führerschein; Verantwortungsbewusstsein"
+          },
+          "receptionist": {
+            "title": "Empfangsmitarbeiter Werkstatt",
+            "summary": "Kundenempfang, Terminverwaltung und Kommunikation.",
+            "offersTitle": "Wir bieten:",
+            "offers": "Stabiles Gehalt; Festanstellung; Freundliches Team",
+            "requirementsTitle": "Anforderungen:",
+            "requirements": "Sprachkenntnisse; Kommunikationsfähigkeit"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Interessiert?",
+      "description": "Rufen Sie uns an oder senden Sie Ihren Lebenslauf.",
+      "callTitle": "Anrufen:",
+      "emailTitle": "CV an:"
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Werkstattpreise",
@@ -806,7 +883,8 @@
         "pricing": "Preise",
         "contact": "Kontakt",
         "aboutItems": {
-          "workshop": "Über die Werkstatt"
+          "workshop": "Über die Werkstatt",
+          "career": "Karriere"
         }
       },
       "badge": "15 Jahre Erfahrung",

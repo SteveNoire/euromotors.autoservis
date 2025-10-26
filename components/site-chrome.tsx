@@ -23,7 +23,10 @@ const navLinks: ReadonlyArray<NavLink> = [
   {
     type: "dropdown",
     labelKey: "chrome.header.nav.about",
-    items: [{ labelKey: "chrome.header.nav.aboutItems.workshop", href: "/about" }],
+    items: [
+      { labelKey: "chrome.header.nav.aboutItems.workshop", href: "/about" },
+      { labelKey: "chrome.header.nav.aboutItems.career", href: "/about/kariera" },
+    ],
   },
   { type: "link", labelKey: "chrome.header.nav.faq", href: "/#faq" },
   { type: "link", labelKey: "chrome.header.nav.pricing", href: "/pricing" },

@@ -155,7 +155,7 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
                         </CardTitle>
                         <CardDescription className="space-y-1 text-slate-600">
                           {valueLines.map((line, index) => (
-                            <span key={index} className="block">
+                            <span key={`${channel.key}-${index}`} className="block">
                               {line}
                             </span>
                           ))}
