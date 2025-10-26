@@ -523,58 +523,65 @@
           "mechanic": {
             "title": "Automechanik (osobní a dodávkové vozy)",
             "summary": "Servis, diagnostika a opravy osobních a užitkových vozidel.",
+            "salary": "Mzda: od 45 000 Kč až 70 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu od 45 000 Kč; Oficiální zaměstnání; Práce na plný úvazek; Příjemný kolektiv",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Praxe v oboru minimálně 1 rok; Dochvilnost; Zodpovědnost"
+            "requirements": "Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "painter": {
             "title": "Autolakýrník",
             "summary": "Příprava a lakování dílů a karoserií.",
+            "salary": "Mzda: od 45 000 Kč až 70 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu; Oficiální zaměstnání; Příjemný kolektiv",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Praxe v oboru; Smysl pro detail"
+            "requirements": "Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "prep": {
             "title": "Přípravář lakovny",
             "summary": "Přípravné práce pro lakovnu, broušení a příprava dílů.",
+            "salary": "Mzda: od 45 000 Kč až 70 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní práci; Oficiální zaměstnání",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Pečlivost; Zkušenost výhodou"
+            "requirements": "Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "body": {
             "title": "Autoklempíř",
             "summary": "Opravy karoserií, výměny panelů a tvarování plechů.",
+            "salary": "Mzda: od 45 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Praxe v oboru; Pečlivost"
+            "requirements": "Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "machinist": {
             "title": "Strojič vozidel karosárny",
             "summary": "Obsluha strojního vybavení karosárny a příprava dílů.",
+            "salary": "Mzda: od 45 000 Kč až 70 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Zkušenost s provozem zařízení; Pečlivost"
+            "requirements": "Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "driver": {
             "title": "Řidič odtahového vozidla",
             "summary": "Přeprava a odtah vozidel dle potřeby servisu.",
+            "salary": "Mzda: od 25 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu; Oficiální zaměstnání",
+            "offers": "Oficiální zaměstnání; Práce na plný úvazek; Stabilní zázemí; Příjemný kolektiv; Pracovní oděvy",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Řidičský průkaz; Zodpovědnost"
+            "requirements": "Řidičský průkaz skupiny B; Proaktivnost, zodpovědnost a dochvilnost; Legální pobyt v ČR; Praxe v oboru minimálně 1 rok; Bez zlozvyků"
           },
           "receptionist": {
             "title": "Recepční autoservisu",
-            "summary": "Příjem zákazníků, správa objednávek a komunikace.",
+            "summary": "Vítání klientů, telefonické hovory a administrativa servisu.",
+            "salary": "Mzda: od 25 000 Kč",
             "offersTitle": "Nabízíme:",
-            "offers": "Stabilní mzdu; Oficiální zaměstnání; Přátelský kolektiv",
+            "offers": "Perspektiva růstu mzdy; Oficiální zaměstnání; Přátelský kolektiv",
             "requirementsTitle": "Požadujeme:",
-            "requirements": "Znalost češtiny a ruštiny; Komunikační dovednosti"
+            "requirements": "Legální pobyt v ČR; Aktivní znalost češtiny a ruštiny, angličtina výhodou; Uživatelská práce na PC; Reprezentativní vystupování; Komunikační dovednosti a dochvilnost"
           }
         }
       }

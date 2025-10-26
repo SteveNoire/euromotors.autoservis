@@ -523,58 +523,65 @@
           "mechanic": {
             "title": "Auto mechanic (passenger & light commercial vehicles)",
             "summary": "Maintenance, diagnostics and repairs of cars and vans.",
+            "salary": "Salary: CZK 45,000 – 70,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary from CZK 45,000; Official employment; Full-time contract; Friendly team",
+            "offers": "Salary growth potential; Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Min. 1 year experience; Punctuality; Responsibility"
+            "requirements": "At least 1 year of experience; Proactive, responsible and punctual; Legal residency in the Czech Republic; No harmful habits"
           },
           "painter": {
             "title": "Auto painter",
             "summary": "Preparation and painting of parts and bodies.",
+            "salary": "Salary: CZK 45,000 – 70,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary; Official employment; Friendly team",
+            "offers": "Salary growth potential; Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Experience in painting; Attention to detail"
+            "requirements": "At least 1 year of experience; Proactive, responsible and punctual; Legal residency in the Czech Republic; No harmful habits"
           },
           "prep": {
             "title": "Paint shop preparer",
             "summary": "Sanding and preparation of panels before painting.",
+            "salary": "Salary: CZK 45,000 – 70,000",
             "offersTitle": "We offer:",
-            "offers": "Stable work; Official employment",
+            "offers": "Salary growth potential; Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Carefulness; Experience is an advantage"
+            "requirements": "At least 1 year of experience; Proactive, responsible and punctual; Legal residency in the Czech Republic; No harmful habits"
           },
           "body": {
             "title": "Bodywork technician",
             "summary": "Repairs of body panels and shaping metal parts.",
+            "salary": "Salary: from CZK 45,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary; Official employment",
+            "offers": "Salary growth potential; Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Experience in bodywork; Precision"
+            "requirements": "At least 1 year of experience; Proactive, responsible and punctual; Legal residency in the Czech Republic; No harmful habits"
           },
           "machinist": {
             "title": "Body shop machinist",
             "summary": "Operation of bodyshop machinery and part preparation.",
+            "salary": "Salary: CZK 45,000 – 70,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary; Official employment",
+            "offers": "Salary growth potential; Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Experience with workshop equipment; Carefulness"
+            "requirements": "At least 1 year of experience; Proactive, responsible and punctual; Legal residency in the Czech Republic; No harmful habits"
           },
           "driver": {
             "title": "Tow-truck driver",
             "summary": "Transport and towing of vehicles when needed.",
+            "salary": "Salary: from CZK 25,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary; Official employment",
+            "offers": "Official employment; Full-time schedule; Stable workplace; Friendly team; Workwear provided",
             "requirementsTitle": "Requirements:",
-            "requirements": "Driving licence; Responsibility"
+            "requirements": "Category B driving licence; Proactive, responsible and punctual; Legal residency in the Czech Republic; At least 1 year of relevant experience; No harmful habits"
           },
           "receptionist": {
             "title": "Workshop receptionist",
-            "summary": "Customer reception, booking and communications.",
+            "summary": "Welcoming clients, handling calls and workshop paperwork.",
+            "salary": "Salary: from CZK 25,000",
             "offersTitle": "We offer:",
-            "offers": "Stable salary; Official employment; Friendly team",
+            "offers": "Salary growth potential; Official employment; Friendly team",
             "requirementsTitle": "Requirements:",
-            "requirements": "Knowledge of Czech and Russian; Good communication skills"
+            "requirements": "Legal residency in the Czech Republic; Fluent Czech and Russian, English is an advantage; Confident PC skills; Professional communication; Customer-friendly attitude and punctuality"
           }
         }
       }

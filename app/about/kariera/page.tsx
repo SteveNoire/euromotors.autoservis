@@ -52,22 +52,29 @@ export default function CareerPage({ searchParams }: CareerPageProps) {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {jobKeys.map((key) => (
-                <Card key={key} className="h-full">
-                  <CardHeader className="space-y-2">
-                    <CardTitle className="text-lg font-semibold text-slate-900">
-                      {t(`careerPage.sections.openPositions.items.${key}.title`)}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="text-sm text-slate-600">
-                    <p className="mb-3">{t(`careerPage.sections.openPositions.items.${key}.summary`)}</p>
-                    <div className="mb-2 font-semibold">{t(`careerPage.sections.openPositions.items.${key}.offersTitle`)}</div>
-                    <p className="text-sm text-slate-600">{t(`careerPage.sections.openPositions.items.${key}.offers`)}</p>
-                    <div className="mt-3 mb-1 font-semibold">{t(`careerPage.sections.openPositions.items.${key}.requirementsTitle`)}</div>
-                    <p className="text-sm text-slate-600">{t(`careerPage.sections.openPositions.items.${key}.requirements`)}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              {jobKeys.map((key) => {
+                const salaryKey = `careerPage.sections.openPositions.items.${key}.salary` as const;
+                const salary = t(salaryKey);
+                const hasSalary = salary !== salaryKey;
+
+                return (
+                  <Card key={key} className="h-full">
+                    <CardHeader className="space-y-2">
+                      <CardTitle className="text-lg font-semibold text-slate-900">
+                        {t(`careerPage.sections.openPositions.items.${key}.title`)}
+                      </CardTitle>
+                      {hasSalary ? <div className="text-sm font-semibold text-emerald-600">{salary}</div> : null}
+                    </CardHeader>
+                    <CardContent className="text-sm text-slate-600">
+                      <p className="mb-3">{t(`careerPage.sections.openPositions.items.${key}.summary`)}</p>
+                      <div className="mb-2 font-semibold">{t(`careerPage.sections.openPositions.items.${key}.offersTitle`)}</div>
+                      <p className="text-sm text-slate-600">{t(`careerPage.sections.openPositions.items.${key}.offers`)}</p>
+                      <div className="mt-3 mb-1 font-semibold">{t(`careerPage.sections.openPositions.items.${key}.requirementsTitle`)}</div>
+                      <p className="text-sm text-slate-600">{t(`careerPage.sections.openPositions.items.${key}.requirements`)}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>

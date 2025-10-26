@@ -523,58 +523,65 @@
           "mechanic": {
             "title": "Kfz-Mechaniker (Pkw & leichte Nutzfahrzeuge)",
             "summary": "Wartung, Diagnose und Reparatur von Fahrzeugen.",
+            "salary": "Gehalt: 45 000 - 70 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung; Vollzeit; Angenehmes Team",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Mind. 1 Jahr Erfahrung; Pünktlichkeit; Verantwortungsbewusstsein"
+            "requirements": "Mindestens 1 Jahr Erfahrung; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Keine schlechten Gewohnheiten"
           },
           "painter": {
             "title": "Lackierer",
             "summary": "Vorbereitung und Lackierung von Karosserieteilen.",
+            "salary": "Gehalt: 45 000 - 70 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Erfahrung im Lackierbereich; Sorgfalt"
+            "requirements": "Mindestens 1 Jahr Erfahrung; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Keine schlechten Gewohnheiten"
           },
           "prep": {
             "title": "Lackvorbereiter",
             "summary": "Schleif- und Vorbereitungsarbeiten vor dem Lackieren.",
+            "salary": "Gehalt: 45 000 - 70 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabile Anstellung; Festanstellung",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Sorgfalt; Erfahrung von Vorteil"
+            "requirements": "Mindestens 1 Jahr Erfahrung; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Keine schlechten Gewohnheiten"
           },
           "body": {
             "title": "Karosseriebauer",
             "summary": "Reparatur von Karosserieteilen und Formgebung.",
+            "salary": "Gehalt: ab 45 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Berufserfahrung; Präzision"
+            "requirements": "Mindestens 1 Jahr Erfahrung; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Keine schlechten Gewohnheiten"
           },
           "machinist": {
             "title": "Maschinist der Karosseriewerkstatt",
             "summary": "Bedienung von Werkstattmaschinen und Teilevorbereitung.",
+            "salary": "Gehalt: 45 000 - 70 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Maschinenkenntnisse; Sorgfalt"
+            "requirements": "Mindestens 1 Jahr Erfahrung; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Keine schlechten Gewohnheiten"
           },
           "driver": {
             "title": "Abschleppwagenfahrer",
             "summary": "Transport und Abschleppen von Fahrzeugen.",
+            "salary": "Gehalt: ab 25 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung",
+            "offers": "Festanstellung; Vollzeit; Stabiles Arbeitsumfeld; Freundliches Team; Arbeitskleidung inklusive",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Führerschein; Verantwortungsbewusstsein"
+            "requirements": "Führerschein Klasse B; Proaktiv, verantwortungsbewusst und pünktlich; Gültiger Aufenthalt in Tschechien; Mindestens 1 Jahr Erfahrung; Keine schlechten Gewohnheiten"
           },
           "receptionist": {
             "title": "Empfangsmitarbeiter Werkstatt",
-            "summary": "Kundenempfang, Terminverwaltung und Kommunikation.",
+            "summary": "Empfang von Kunden, Telefonate und Werkstattverwaltung.",
+            "salary": "Gehalt: ab 25 000 CZK",
             "offersTitle": "Wir bieten:",
-            "offers": "Stabiles Gehalt; Festanstellung; Freundliches Team",
+            "offers": "Perspektive auf Gehaltswachstum; Festanstellung; Freundliches Team",
             "requirementsTitle": "Anforderungen:",
-            "requirements": "Sprachkenntnisse; Kommunikationsfähigkeit"
+            "requirements": "Aufenthaltstitel für die Tschechische Republik; Fließend Tschechisch und Russisch, Englisch von Vorteil; Sicherer Umgang mit dem PC; Repräsentatives Auftreten; Kommunikationsstärke und Pünktlichkeit"
           }
         }
       }
