@@ -1081,6 +1081,7 @@
       "badge": "15 років досвіду",
       "cta": "Записатися",
       "callAria": "Подзвонити в сервіс",
+  "mobileMenuAria": "Відкрити меню навігації",
       "languageSwitcherAria": "Змінити мову",
       "languages": {
         "cs": "Čeština",

@@ -1081,6 +1081,7 @@
       "badge": "15 Jahre Erfahrung",
       "cta": "Service buchen",
       "callAria": "Werkstatt anrufen",
+  "mobileMenuAria": "Navigation öffnen",
       "languageSwitcherAria": "Sprache ändern",
       "languages": {
         "cs": "Čeština",

@@ -158,12 +158,12 @@ export function CookieConsent({ locale }: CookieConsentProps) {
       ) : null}
 
       {showSettings ? (
-        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-10">
+        <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto px-4 py-6 sm:items-center sm:py-10">
           <div className="absolute inset-0 bg-slate-950/60" aria-hidden="true" />
           <div
             role="dialog"
             aria-modal="true"
-            className="relative z-10 w-full max-w-xl rounded-2xl border border-slate-200 bg-white shadow-2xl"
+            className="relative z-10 w-full max-w-xl max-h-[calc(100vh-3rem)] overflow-y-auto rounded-2xl border border-slate-200 bg-white shadow-2xl sm:max-h-[calc(100vh-5rem)]"
           >
             <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4">
               <div>

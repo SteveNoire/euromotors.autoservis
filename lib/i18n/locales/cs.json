@@ -1081,6 +1081,7 @@
       "badge": "15 let praxe",
       "cta": "Objednat servis",
       "callAria": "Zavolat do servisu",
+  "mobileMenuAria": "Otevřít navigaci",
       "languageSwitcherAria": "Změnit jazyk",
       "languages": {
         "cs": "Čeština",

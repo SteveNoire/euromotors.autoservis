@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Clock, ShieldCheck, Languages, Check, ChevronDown } from "lucide-react";
+import { Phone, Clock, ShieldCheck, Languages, Check, ChevronDown, Menu } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { locales, getTranslator, type Locale } from "@/lib/i18n";
 import { buildLocaleHref, type RouteSearchParams } from "@/lib/i18n/routing";
@@ -205,6 +206,7 @@ function Header({ locale, pathname, searchParams, t }: HeaderProps & { t: Transl
           </Button>
         </div>
         <div className="flex items-center gap-2 md:hidden">
+          <MobileNav locale={locale} searchParams={searchParams} t={t} />
           <LanguageDropdown
             locale={locale}
             pathname={pathname}
@@ -260,6 +262,63 @@ function LanguageDropdown({ locale, pathname, searchParams, t }: LanguageDropdow
                 {isActive ? <Check className="h-4 w-4 text-emerald-600" /> : null}
               </Link>
             </DropdownMenuItem>
+          );
+        })}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
+function MobileNav({ locale, searchParams, t }: { locale: Locale; searchParams: RouteSearchParams; t: Translator }) {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="text-slate-600 hover:text-slate-900"
+          aria-label={t("chrome.header.mobileMenuAria")}
+        >
+          <Menu className="h-5 w-5" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-56">
+        {navLinks.map((link, index) => {
+          const isLast = index === navLinks.length - 1;
+
+          if (link.type === "link") {
+            const target = formatLocalizedTarget(link.href, locale, searchParams);
+
+            return (
+              <DropdownMenuItem key={link.href} asChild>
+                <Link href={target} className="flex items-center gap-2 text-slate-700">
+                  {t(link.labelKey)}
+                </Link>
+              </DropdownMenuItem>
+            );
+          }
+
+          return (
+            <div key={link.labelKey} className="space-y-1">
+              <DropdownMenuItem
+                disabled
+                className="cursor-default text-xs font-semibold uppercase tracking-wide text-slate-400"
+              >
+                {t(link.labelKey)}
+              </DropdownMenuItem>
+              {link.items.map((item) => {
+                const itemTarget = formatLocalizedTarget(item.href, locale, searchParams);
+
+                return (
+                  <DropdownMenuItem key={item.href} asChild>
+                    <Link href={itemTarget} className="flex items-center gap-2 text-slate-700">
+                      {t(item.labelKey)}
+                    </Link>
+                  </DropdownMenuItem>
+                );
+              })}
+              {!isLast ? <DropdownMenuSeparator /> : null}
+            </div>
           );
         })}
       </DropdownMenuContent>

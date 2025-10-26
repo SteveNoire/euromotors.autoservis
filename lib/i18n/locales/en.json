@@ -1081,6 +1081,7 @@
       "badge": "15 years of experience",
       "cta": "Book a service",
       "callAria": "Call the workshop",
+  "mobileMenuAria": "Open navigation menu",
       "languageSwitcherAria": "Change language",
       "languages": {
         "cs": "Čeština",
