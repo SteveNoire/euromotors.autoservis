@@ -642,6 +642,83 @@
       "note": "Verantwortlicher: euromotors corporation s.r.o."
     }
   },
+  "termsPage": {
+    "hero": {
+      "badge": "Bedingungen",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Vollständiger Überblick über Rechte und Pflichten beim Kauf von Waren oder der Nutzung der Dienstleistungen der euromotors corporation s.r.o."
+    },
+    "meta": {
+      "effectiveDate": "Gültig seit 4. Oktober 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Einleitende Bestimmungen",
+        "body": "Diese Allgemeinen Geschäftsbedingungen (\"AGB\") regeln das Vertragsverhältnis zwischen dem Verkäufer, der den Online-Shop unter www.euromotors.cz betreibt, und dem Käufer – Verbraucher oder Unternehmer – über die Weboberfläche.\n\nVerkäufer ist die euromotors corporation s.r.o., IČ 08580405, mit Sitz V Pitkovičkách 351, 104 00 Prag 10, eingetragen beim Stadtgericht Prag, Abteilung C, Einlage 321387.\n\nVerbraucher ist jede natürliche Person, die den Vertrag außerhalb ihrer geschäftlichen Tätigkeit abschließt. Unternehmer ist jede Person, die eine gewinnorientierte Tätigkeit selbstständig auf eigene Rechnung und Verantwortung ausübt.\n\nDie AGB legen die gegenseitigen Rechte und Pflichten fest, die aus über das Web geschlossenen Kaufverträgen entstehen. Soweit nichts anderes vereinbart ist, unterliegt das Verhältnis dem tschechischen Bürgerlichen Gesetzbuch und dem Verbraucherschutzgesetz.\n\nIm Konfliktfall hat der individuell vereinbarte Vertrag Vorrang vor diesen AGB. Mit dem Absenden der Bestellung bestätigt der Käufer, dass er die AGB gelesen und akzeptiert hat; maßgeblich ist stets die zum Zeitpunkt der Bestellung gültige Fassung. Eine Kopie der AGB wird der Bestellbestätigung beigefügt, und der Verkäufer ist berechtigt, die AGB anzupassen." 
+      },
+      "contract": {
+        "title": "II. Kaufvertrag",
+        "body": "Der Kaufvertrag betrifft den Versandhandel mit Waren, die auf der Weboberfläche des Verkäufers angeboten werden. Produktpräsentationen sind unverbindlich, der Verkäufer ist nicht verpflichtet, den Vertrag abzuschließen. Preise verstehen sich inklusive MwSt. und etwaiger Gebühren und gelten, solange sie auf der Website angezeigt werden. Der Verkäufer behält sich vor, Waren in beliebigen Farbvarianten zu liefern. Die Bestellung erfolgt über den elektronischen Warenkorb und umfasst die Auswahl der Ware, die Zahlungsmethode und die Versandart.\n\nDer Käufer sendet die Bestellung durch Anklicken von \"Bestellung abschließen\"; der Verkäufer bestätigt den Eingang unverzüglich per E-Mail. Je nach Charakter der Bestellung kann der Verkäufer eine zusätzliche Bestätigung verlangen. Das Vertragsverhältnis entsteht mit dem Absenden der Bestellung; das Eigentum geht erst nach vollständiger Zahlung über. Der Käufer kann die Bestellung vor Zahlung elektronisch oder telefonisch stornieren.\n\nDer Käufer stimmt der Verwendung von Fernkommunikationsmitteln zu und trägt die hierfür anfallenden Kosten.",
+        "listTitle": "Die Bestellung enthält insbesondere:",
+        "list": "- ausgewählte Waren im Warenkorb\n- gewählte Zahlungs- und Versandart\n- Informationen zu Lieferkosten"
+      },
+      "pricing": {
+        "title": "III. Preis und Zahlungsbedingungen",
+        "body": "Der Kaufpreis kann bar bei persönlicher Abholung oder per Nachnahme, bargeldlos per Überweisung, über ein Zahlungssystem oder per Online-Kartenzahlung beglichen werden. Sofern nicht anders angegeben, umfasst der Preis auch Verpackungs- und Lieferkosten. Bei Bar- oder Nachnahmezahlung ist der Preis bei Übernahme fällig, bei bargeldloser Zahlung innerhalb von 48 Stunden nach Absenden der Bestellung. Wird die Frist nicht eingehalten, kann der Verkäufer vom Vertrag zurücktreten; die Ware wird erst nach vollständiger Zahlung ausgehändigt. Der Zahlungseingang wird per E-Mail bestätigt.\n\nDer Käufer muss den variablen Zahlungszweck angeben; Rabatte sind nicht kombinierbar. Der Verkäufer stellt eine Steuerrechnung aus und ist verpflichtet, Umsätze gemäß dem Gesetz über elektronische Aufzeichnungen zu erfassen. Bis zur vollständigen Zahlung und Übergabe bleibt die Ware Eigentum des Verkäufers.",
+        "listTitle": "Akzeptierte Zahlungsarten:",
+        "list": "- Barzahlung bei persönlicher Abholung\n- Nachnahme\n- Banküberweisung auf das Konto des Verkäufers\n- Zahlung über ein Online-Zahlungssystem\n- Online-Kartenzahlung"
+      },
+      "delivery": {
+        "title": "IV. Lieferung der Ware",
+        "body": "Die Ware wird an die vom Käufer angegebene Adresse geliefert oder kann persönlich unter Edisonova 15/8, Prag 10 – Petrovice abgeholt werden. Die Versandart wird während der Bestellung gewählt; bei Sonderwünschen trägt der Käufer das Risiko sowie Mehrkosten. Der Käufer ist verpflichtet, bei der Lieferung mitzuwirken, korrekte Daten bereitzustellen und die Ware zu übernehmen.\n\nMuss die Lieferung aufgrund von Umständen auf Seiten des Käufers wiederholt oder anders durchgeführt werden, trägt der Käufer die dadurch entstehenden Mehrkosten. Beim Empfang hat der Käufer die Unversehrtheit der Verpackung zu prüfen und eventuelle Schäden sofort dem Zusteller zu melden; beschädigte Sendungen können verweigert werden. Die Gefahr des zufälligen Untergangs geht mit der Übernahme auf den Käufer über. Die übliche Lieferzeit beträgt maximal 14 Tage, meist innerhalb von 10 Werktagen nach Zahlungseingang.",
+        "listTitle": "Lieferoptionen:",
+        "list": "- Lieferung an die Adresse des Käufers\n- Persönliche Abholung in Edisonova 15/8, Prag 10\n- Individuell vereinbarter Transport"
+      },
+      "withdrawal": {
+        "title": "V. Rücktritt vom Vertrag",
+        "body": "Verbraucher haben das Recht, binnen 14 Tagen nach Erhalt der Ware bzw. der letzten Teillieferung vom Vertrag zurückzutreten. Der Rücktritt kann elektronisch oder postalisch erklärt werden und wird vom Verkäufer bestätigt. Die Frist ist gewahrt, wenn die Mitteilung rechtzeitig abgesendet wird. Ein Musterformular steht auf der Website des Verkäufers bereit.\n\nDie Ware ist innerhalb von 14 Tagen nach Rücktritt zurückzusenden, unbeschädigt, unbenutzt und möglichst in der Originalverpackung; Rücksendekosten trägt der Käufer. Der Verkäufer erstattet Zahlungen binnen 14 Tagen auf demselben Weg, kann die Erstattung jedoch bis zum Erhalt der Ware oder dem Nachweis der Absendung zurückhalten. Bei Wertminderung infolge unsachgemäßer Handhabung kann der Verkäufer Schadensersatz verlangen. Der Verkäufer darf bis zur Übernahme der Ware durch den Käufer vom Vertrag zurücktreten und erstattet den Kaufpreis unverzüglich.\n\nEin Rücktritt ist in den Fällen des § 1837 des tschechischen Bürgerlichen Gesetzbuches ausgeschlossen (z. B. Ware nach Kundenspezifikation oder schnell verderbliche Ware).",
+        "listTitle": "Beim Rücktritt sollte der Käufer:",
+        "list": "- Identifikationsdaten und Details zur Ware angeben\n- die Kosten der Rücksendung tragen\n- die Ware im ursprünglichen Zustand zurückgeben\n- mit der Rückzahlung nach Warenrückgabe rechnen\n- für Wertminderungen durch unsachgemäße Nutzung haften"
+      },
+      "defects": {
+        "title": "VI. Rechte bei mangelhafter Leistung",
+        "body": "Der Verkäufer haftet dafür, dass die Ware bei Übergabe frei von Mängeln ist und die vereinbarten bzw. üblichen Eigenschaften besitzt. Die Haftung umfasst Menge, Qualität, Ausführung und die Einhaltung gesetzlicher Anforderungen. Zeigt sich ein Mangel innerhalb von sechs Monaten, wird vermutet, dass er bereits bei Übernahme vorlag. Rechte aus mangelhafter Leistung entstehen sowohl bei Mängeln zum Gefahrübergang als auch bei später auftretenden Mängeln aufgrund einer Pflichtverletzung des Verkäufers.",
+        "listTitle": "Je nach Mangel kann der Käufer verlangen:",
+        "list": "- Lieferung neuer mangelfreier Ware oder fehlender Teile\n- kostenlose Reparatur\n- angemessene Minderung des Kaufpreises\n- Rücktritt vom Vertrag bei wesentlicher Vertragsverletzung\n- Rückerstattung des Kaufpreises, falls Reparatur oder Ersatz unmöglich ist\n- Erstattung der angemessenen Kosten der Reklamation"
+      },
+      "privacy": {
+        "title": "VII. Datenschutz",
+        "body": "Alle vom Käufer bereitgestellten Informationen gelten als vertraulich und werden ausschließlich zur Vertragserfüllung verarbeitet, sofern der Käufer keiner anderen Verwendung zustimmt. Details sind in der auf der Website veröffentlichten Datenschutzerklärung geregelt, womit die Informationspflicht gemäß DSGVO erfüllt ist. Zuständige Aufsichtsbehörde ist das Amt für den Schutz personenbezogener Daten, hinsichtlich des Verbraucherschutzes die Tschechische Handelsinspektion.",
+        "list": ""
+      },
+      "communication": {
+        "title": "VIII. Zustellung",
+        "body": "Mitteilungen können an die vom Käufer angegebene E-Mail-Adresse zugestellt werden."
+      },
+      "disputes": {
+        "title": "IX. Außergerichtliche Streitbeilegung",
+        "body": "Der Käufer hat das Recht auf außergerichtliche Beilegung von Verbraucherstreitigkeiten aus dem Kaufvertrag. Zuständig ist die Tschechische Handelsinspektion, Štěpánská 567/15, 120 00 Prag 2, IČ 00020869, www.coi.cz. Die Online-Streitbeilegungsplattform der EU unter ec.europa.eu/consumers/odr kann ebenfalls genutzt werden. Kontaktstelle ist das Europäische Verbraucherzentrum Tschechische Republik.",
+        "list": ""
+      },
+      "supervision": {
+        "title": "X. Aufsichtsbehörde",
+        "body": "Die Tätigkeit des Verkäufers unterliegt der Aufsicht der Tschechischen Handelsinspektion, Štěpánská 567/15, 120 00 Prag 2, Telefon +420 222 703 404, E-Mail podatelna@coi.cz, www.coi.cz. Ansprechpartner gegenüber der Behörde ist der Verkäufer."
+      },
+      "conclusion": {
+        "title": "XI. Schlussbestimmungen",
+        "body": "Diese AGB gelten seit dem 4. Oktober 2021. Vertragsbeziehungen zwischen Verkäufer und Käufer unterliegen tschechischem Recht; bei internationalen Bezügen wird tschechisches Recht gewählt, ohne den Verbraucherschutz gemäß Art. 6 der Rom-I-Verordnung zu beeinträchtigen. Sämtliche Rechte an der Website des Verkäufers, einschließlich Inhalt und Logo, liegen beim Verkäufer und dürfen ohne Zustimmung nicht genutzt werden.\n\nIst eine Bestimmung unwirksam oder wird unwirksam, wird sie durch eine der Bedeutung möglichst nahe kommende Regelung ersetzt; die Wirksamkeit der übrigen Bestimmungen bleibt unberührt. Der Kaufvertrag einschließlich der AGB wird elektronisch archiviert und ist nicht öffentlich zugänglich. Der Verkäufer ist berechtigt, die AGB zu ändern oder zu ergänzen; bereits entstandene Rechte und Pflichten bleiben davon unberührt." 
+      }
+    },
+    "cta": {
+      "title": "Fragen zu den AGB?",
+      "description": "Kontaktieren Sie uns – wir erläutern einzelne Artikel der AGB oder unterstützen bei Ihrem Anliegen.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse",
+      "addressValue": "V Pitkovičkách 351, 104 00 Praha 10",
+      "note": "Verkäufer: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Werkstattpreise",
@@ -941,7 +1018,8 @@
         "aboutItems": {
           "workshop": "Über die Werkstatt",
           "career": "Karriere",
-          "privacy": "Datenschutzerklärung"
+          "privacy": "Datenschutzerklärung",
+          "terms": "Allgemeine Geschäftsbedingungen"
         }
       },
       "badge": "15 Jahre Erfahrung",

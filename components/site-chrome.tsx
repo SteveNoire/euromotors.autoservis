@@ -27,6 +27,7 @@ const navLinks: ReadonlyArray<NavLink> = [
       { labelKey: "chrome.header.nav.aboutItems.workshop", href: "/about" },
       { labelKey: "chrome.header.nav.aboutItems.career", href: "/about/kariera" },
       { labelKey: "chrome.header.nav.aboutItems.privacy", href: "/gdpr" },
+      { labelKey: "chrome.header.nav.aboutItems.terms", href: "/vseobecne-obchodni-podminky" },
     ],
   },
   { type: "link", labelKey: "chrome.header.nav.faq", href: "/#faq" },

@@ -642,6 +642,83 @@
       "note": "Správce: euromotors corporation s.r.o."
     }
   },
+  "termsPage": {
+    "hero": {
+      "badge": "Podmínky",
+      "title": "Všeobecné obchodní podmínky",
+      "description": "Kompletní přehled práv a povinností při nákupu zboží a využívání služeb euromotors corporation s.r.o."
+    },
+    "meta": {
+      "effectiveDate": "Účinnost od 4. října 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Úvodní ustanovení",
+        "body": "Tyto všeobecné obchodní podmínky (dále jen \"VOP\") upravují smluvní vztah mezi prodávajícím provozujícím internetový obchod na www.euromotors.cz a kupujícím – spotřebitelem či podnikatelem – prostřednictvím webového rozhraní.\n\nProdávajícím je euromotors corporation s.r.o., IČ 08580405, se sídlem V Pitkovičkách 351, 104 00 Praha 10, zapsaná u Městského soudu v Praze, oddíl C, vložka 321387.\n\nSpotřebitel je fyzická osoba, která při uzavírání a plnění kupní smlouvy jedná mimo rámec své podnikatelské činnosti. Podnikatel je osoba samostatně vykonávající výdělečnou činnost na vlastní účet a odpovědnost.\n\nVOP stanovují vzájemná práva a povinnosti prodávajícího a kupujícího vznikající na základě kupní smlouvy uzavírané online. Pokud smlouva nestanoví jinak, řídí se vztahy občanským zákoníkem a zákonem o ochraně spotřebitele.\n\nV případě rozporu mezi VOP a individuální smlouvou má přednost text smlouvy. Odesláním objednávky kupující potvrzuje, že se s VOP seznámil a že s nimi souhlasí; platí vždy znění účinné v okamžiku odeslání objednávky. Kopie VOP je zaslána jako příloha potvrzení objednávky a prodávající je oprávněn podmínky měnit." 
+      },
+      "contract": {
+        "title": "II. Kupní smlouva",
+        "body": "Předmětem kupní smlouvy je zásilkový prodej zboží nabízeného na webovém rozhraní prodávajícího. Prezentace zboží je nezávazná a prodávající není povinen smlouvu uzavřít. Ceny jsou uváděny včetně DPH a případných poplatků, přičemž nabídka platí po dobu zobrazení na webu. Prodávající si vyhrazuje dodání zboží v libovolném barevném provedení. Objednávkový proces probíhá prostřednictvím elektronického košíku a zahrnuje výběr zboží, způsob úhrady a doručení.\n\nObjednávku kupující odesílá kliknutím na tlačítko \"Dokončit objednávku\" a prodávající neprodleně potvrdí přijetí e-mailem. Podle povahy objednávky si může prodávající vyžádat dodatečné potvrzení. Smluvní vztah vzniká odesláním objednávky; vlastnické právo přechází až zaplacením kupní ceny. Kupující může před úhradou objednávku stornovat elektronicky nebo telefonicky.\n\nKupující souhlasí s použitím prostředků komunikace na dálku a náklady na ně nese sám.",
+        "listTitle": "Obsah objednávky zahrnuje zejména:",
+        "list": "- výběr objednávaného zboží vložením do košíku\n- zvolený způsob úhrady a doručení\n- informace o nákladech na dodání"
+      },
+      "pricing": {
+        "title": "III. Cena zboží a platební podmínky",
+        "body": "Kupní cenu lze hradit v hotovosti při osobním odběru či dobírkou, bezhotovostně převodem, online kartou nebo prostřednictvím platebního systému. S cenou jsou spojeny náklady na balení a doručení, pokud není uvedeno jinak. Při platbě v hotovosti je cena splatná při převzetí, při bezhotovostní platbě do 48 hodin od odeslání objednávky. Neuhrazení v této lhůtě opravňuje prodávajícího odstoupit od smlouvy; zboží je vydáno až po úplném zaplacení. Prodávající potvrzuje přijetí platby e-mailem.\n\nKupující uvádí variabilní symbol platby, slevy nelze kombinovat. Prodávající vystavuje daňový doklad a je povinen evidovat tržby dle zákona o evidenci tržeb. Zboží zůstává ve vlastnictví prodávajícího do úplného zaplacení a převzetí.",
+        "listTitle": "Dostupné platební metody:",
+        "list": "- hotově při osobním odběru\n- dobírkou u dopravce\n- bezhotovostně převodem na účet prodávajícího\n- prostřednictvím platební brány\n- online platbou kartou"
+      },
+      "delivery": {
+        "title": "IV. Dodání zboží",
+        "body": "Zboží je dodáváno na adresu uvedenou kupujícím nebo lze využít osobní odběr na adrese Edisonova 15/8, Praha 10 – Petrovice. Způsob dopravy volí kupující při objednávce; v případě individuálních požadavků nese riziko i dodatečné náklady. Kupující je povinen zboží při doručení převzít a poskytnout součinnost, zejména uvést správnou adresu a být k dispozici.\n\nNutnost opakovaného doručení z důvodů na straně kupujícího zakládá povinnost uhradit dodatečné náklady. Při převzetí je kupující povinen zkontrolovat neporušenost obalu a případné závady okamžitě oznámit dopravci; porušenou zásilku není povinen převzít. Odpovědnost za náhodnou zkázu přechází převzetím zboží. Standardní dodací lhůta je maximálně 14 dní, obvykle do 10 pracovních dnů po úhradě ceny.",
+        "listTitle": "Možnosti doručení:",
+        "list": "- doručení na adresu kupujícího\n- osobní odběr na pobočce Edisonova 15/8, Praha 10\n- individuální doprava dle dohody"
+      },
+      "withdrawal": {
+        "title": "V. Odstoupení od kupní smlouvy",
+        "body": "Kupující – spotřebitel má právo odstoupit od smlouvy do 14 dnů od převzetí zboží či poslední části dodávky. Odstoupení lze zaslat elektronicky nebo poštou a prodávající jej potvrdí. Lhůta je zachována, odešle-li kupující oznámení včas. Využít lze vzorový formulář uvedený na webu.\n\nZboží musí být vráceno do 14 dnů od odstoupení, nepoškozené, neopotřebené a nejlépe v původním obalu; náklady na vrácení nese kupující. Prodávající vrátí přijaté platby do 14 dnů stejným způsobem, avšak až po vrácení zboží nebo doložení odeslání. V případě snížení hodnoty zboží může prodávající uplatnit náhradu škody. Prodávající může od smlouvy odstoupit do doby převzetí zboží kupujícím a vrátí uhrazenou cenu bez zbytečného odkladu.\n\nKupující není oprávněn odstoupit v případech uvedených v § 1837 občanského zákoníku (např. upravené zboží na míru či zboží rychle se kazící).",
+        "listTitle": "Při odstoupení kupující zejména:",
+        "list": "- uvede identifikační údaje a specifikaci zboží\n- uhradí náklady na vrácení zboží\n- vrátí zboží v původním stavu\n- obdrží peněžní prostředky po vrácení zboží\n- nese odpovědnost za snížení hodnoty způsobené nevhodným zacházením"
+      },
+      "defects": {
+        "title": "VI. Práva z vadného plnění",
+        "body": "Prodávající odpovídá za to, že zboží při převzetí nemá vady a má vlastnosti stanovené ve smlouvě či obvyklé. Odpovědnost se vztahuje na množství, kvalitu, provedení i soulad s právními předpisy. Projeví-li se vada do šesti měsíců, má se za to, že existovala už při převzetí. Právo z vadného plnění zakládá jak vada vzniklá při přechodu nebezpečí škody, tak vada způsobená porušením povinností prodávajícího.",
+        "listTitle": "Kupující může podle povahy vady požadovat:",
+        "list": "- dodání nového zboží bez vad nebo dodání chybějící části\n- bezplatnou opravu\n- přiměřenou slevu z ceny\n- odstoupení od smlouvy při podstatném porušení\n- vrácení kupní ceny, není-li oprava či výměna možná\n- úhradu účelně vynaložených nákladů při reklamaci"
+      },
+      "privacy": {
+        "title": "VII. Ochrana osobních údajů",
+        "body": "Veškeré údaje poskytnuté kupujícím jsou považovány za důvěrné a jsou zpracovávány výhradně za účelem plnění kupní smlouvy, pokud kupující neudělí souhlas s jiným využitím. Podrobnosti stanovují Zásady ochrany osobních údajů dostupné na webu prodávajícího, jimiž je splněna informační povinnost dle GDPR. Dozor vykonává Úřad pro ochranu osobních údajů, dohled nad ochranou spotřebitele Česká obchodní inspekce.",
+        "list": ""
+      },
+      "communication": {
+        "title": "VIII. Doručování",
+        "body": "Kupujícímu mohou být dokumenty doručovány na e-mailovou adresu, kterou prodávajícímu poskytl."
+      },
+      "disputes": {
+        "title": "IX. Mimosoudní řešení sporů",
+        "body": "Kupující má právo na mimosoudní řešení spotřebitelských sporů vzniklých z kupní smlouvy. K jejich řešení je příslušná Česká obchodní inspekce, Štěpánská 567/15, 120 00 Praha 2, IČ 00020869, www.coi.cz. Lze využít také platformu pro řešení sporů online na adrese ec.europa.eu/consumers/odr. Kontaktním místem je Evropské spotřebitelské centrum Česká republika.",
+        "list": ""
+      },
+      "supervision": {
+        "title": "X. Kontrolní orgán",
+        "body": "Činnost prodávajícího podléhá dozoru České obchodní inspekce, Štěpánská 567/15, 120 00 Praha 2, telefon +420 222 703 404, e-mail podatelna@coi.cz, www.coi.cz. Odpovědnou osobou vůči České obchodní inspekci je prodávající."
+      },
+      "conclusion": {
+        "title": "XI. Závěrečná ustanovení",
+        "body": "Tyto VOP jsou platné od 4. 10. 2021. Vztahy mezi prodávajícím a kupujícím se řídí právem České republiky; v případě mezinárodního prvku se volí české právo, aniž by byla dotčena ochrana spotřebitele podle čl. 6 nařízení Řím I. Veškerá práva k webu prodávajícího, včetně obsahu a loga, náleží prodávajícímu a jejich kopírování je zakázáno bez souhlasu.\n\nPokud je některé ustanovení VOP neplatné či neúčinné, nahradí je ustanovení smyslem nejbližší; tím není dotčena platnost ostatních ustanovení. Kupní smlouva včetně VOP je archivována elektronicky a není veřejně přístupná. Prodávající je oprávněn znění VOP měnit či doplňovat; tím nejsou dotčena práva a povinnosti vzniklé během účinnosti předchozího znění." 
+      }
+    },
+    "cta": {
+      "title": "Potřebujete vyjasnit smluvní podmínky?",
+      "description": "Spojte se s námi – vysvětlíme vám jednotlivé články VOP nebo pomůžeme s konkrétním případem.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "addressLabel": "Adresa",
+      "addressValue": "V Pitkovičkách 351, 104 00 Praha 10",
+      "note": "Prodávající: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Ceník autoservisu",
@@ -941,7 +1018,8 @@
         "aboutItems": {
           "workshop": "O autoservisu",
           "career": "Kariéra",
-          "privacy": "Zásady ochrany osobních údajů"
+          "privacy": "Zásady ochrany osobních údajů",
+          "terms": "Všeobecné obchodní podmínky"
         }
       },
       "badge": "15 let praxe",

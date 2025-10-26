@@ -642,6 +642,83 @@
       "note": "Controller: euromotors corporation s.r.o."
     }
   },
+  "termsPage": {
+    "hero": {
+      "badge": "Terms",
+      "title": "Terms & Conditions",
+      "description": "A complete overview of the contractual rights and obligations when buying goods or using the services of euromotors corporation s.r.o."
+    },
+    "meta": {
+      "effectiveDate": "Effective as of 4 October 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Introductory Provisions",
+        "body": "These Terms & Conditions (\"Terms\") govern the contractual relationship between the Seller operating the online store at www.euromotors.cz and the Buyer – consumer or business customer – through the web interface.\n\nThe Seller is euromotors corporation s.r.o., Company ID 08580405, registered office at V Pitkovičkách 351, 104 00 Prague 10, entered in the Commercial Register maintained by the Municipal Court in Prague, Section C, Insert 321387.\n\nA consumer is a natural person who concludes and fulfils the contract outside the scope of their business activity. A business customer is a person performing a gainful activity independently on their own account and responsibility.\n\nThe Terms set out the mutual rights and obligations arising from purchase agreements concluded online. Unless stipulated otherwise, the relationship is governed by the Czech Civil Code and the Act on Consumer Protection.\n\nIf the Terms conflict with an individually agreed contract, the contract prevails. By submitting an order, the Buyer confirms that they have read and accepted the Terms; the version effective at the time of ordering always applies. A copy of the Terms is attached to the order confirmation and the Seller may amend the Terms in the future." 
+      },
+      "contract": {
+        "title": "II. Purchase Agreement",
+        "body": "The purchase agreement covers the distance sale of goods offered on the Seller's web interface. Product presentation is non-binding and the Seller is not obliged to conclude a contract. Prices include VAT and applicable fees, remaining valid while displayed on the website. The Seller may deliver goods in any colour variation. Ordering is completed via the online basket, including the selection of goods, payment method and delivery option.\n\nThe Buyer sends the order by clicking \"Complete order\" and the Seller confirms receipt by e-mail without undue delay. Depending on the order, the Seller may request additional confirmation. The contractual relationship arises once the order is submitted; title transfers only after the purchase price is fully paid. The Buyer may cancel the order before payment electronically or by phone.\n\nThe Buyer agrees to the use of distance communication means and bears the related costs.",
+        "listTitle": "Each order contains in particular:",
+        "list": "- selected goods placed in the basket\n- the chosen payment method and delivery option\n- information on delivery costs"
+      },
+      "pricing": {
+        "title": "III. Price and Payment Terms",
+        "body": "The purchase price may be paid in cash upon personal collection or cash on delivery, by bank transfer, via payment gateway, or by online card payment. Unless stated otherwise, the price also includes packaging and delivery costs. For cash or cash-on-delivery payments the price is due on collection; for cashless payments it is due within 48 hours of submitting the order. Failure to pay within this period entitles the Seller to withdraw from the contract; goods are released only after full payment. The Seller confirms receipt of payment by e-mail.\n\nThe Buyer must state the variable symbol; discounts cannot be combined. The Seller issues a tax document and is obliged to record sales pursuant to the Czech Sales Records Act. Goods remain the property of the Seller until fully paid and collected.",
+        "listTitle": "Accepted payment methods:",
+        "list": "- cash on personal pickup\n- cash on delivery\n- bank transfer to the Seller's account\n- payment via online gateway\n- online card payment"
+      },
+      "delivery": {
+        "title": "IV. Delivery of Goods",
+        "body": "Goods are delivered to the address specified by the Buyer or can be collected in person at Edisonova 15/8, Prague 10 – Petrovice. The delivery option is selected during checkout; if a special request is made, the Buyer bears the risk and extra costs. The Buyer must cooperate, provide correct delivery details and accept the goods on delivery.\n\nIf re-delivery or alternative delivery is required due to the Buyer, they must cover the additional costs. Upon receipt the Buyer must check the packaging and report any defects to the carrier immediately; damaged consignments may be refused. Liability for accidental destruction passes upon acceptance. The standard delivery time is up to 14 days, usually within 10 business days after payment.",
+        "listTitle": "Delivery options:",
+        "list": "- delivery to the Buyer's address\n- personal pickup at Edisonova 15/8, Prague 10\n- individual transport based on agreement"
+      },
+      "withdrawal": {
+        "title": "V. Withdrawal from the Agreement",
+        "body": "A consumer Buyer may withdraw from the contract within 14 days of receiving the goods or the final part of the delivery. Withdrawal can be sent electronically or by post and will be confirmed by the Seller. The deadline is met if the notification is sent in time. A template withdrawal form is available on the Seller's website.\n\nGoods must be returned within 14 days of withdrawing, undamaged, unused and preferably in the original packaging; return shipping costs are borne by the Buyer. The Seller refunds payments within 14 days using the original payment method but may wait until goods are returned or dispatch is proven. If the value decreases due to improper handling, the Seller may claim compensation. The Seller may withdraw from the contract before the goods are accepted and refunds payments without delay.\n\nWithdrawal is excluded in cases listed in Section 1837 of the Czech Civil Code (e.g. customised goods or perishable items).",
+        "listTitle": "When withdrawing, the Buyer should:",
+        "list": "- provide identification details and product specification\n- cover the costs of returning the goods\n- return items in their original condition\n- expect reimbursement once the goods are returned\n- take responsibility for any loss of value caused by improper handling"
+      },
+      "defects": {
+        "title": "VI. Rights Arising from Defective Performance",
+        "body": "The Seller warrants that goods are defect-free upon receipt and possess the properties agreed or customary. Liability covers quantity, quality, workmanship and compliance with legal requirements. If a defect appears within six months, it is presumed to have existed upon receipt. Rights from defective performance arise both from defects present at the transfer of risk and defects caused by the Seller's breach of duty.",
+        "listTitle": "Depending on the defect, the Buyer may request:",
+        "list": "- delivery of new goods free from defects or missing parts\n- a free repair\n- a reasonable price reduction\n- withdrawal from the contract in case of a material breach\n- a refund if repair or replacement is impossible\n- reimbursement of reasonable costs incurred when making a claim"
+      },
+      "privacy": {
+        "title": "VII. Personal Data Protection",
+        "body": "All information provided by the Buyer is treated as confidential and processed solely to perform the contract unless the Buyer grants consent for other use. Details are set out in the Privacy Policy published on the Seller's website, fulfilling the GDPR information obligation. Supervision is exercised by the Czech Office for Personal Data Protection and, regarding consumer protection, by the Czech Trade Inspection Authority.",
+        "list": ""
+      },
+      "communication": {
+        "title": "VIII. Communication",
+        "body": "Notices may be delivered to the Buyer via the e-mail address provided to the Seller."
+      },
+      "disputes": {
+        "title": "IX. Alternative Dispute Resolution",
+        "body": "The Buyer is entitled to out-of-court resolution of consumer disputes arising from the purchase agreement. The competent authority is the Czech Trade Inspection Authority, Štěpánská 567/15, 120 00 Prague 2, Company ID 00020869, www.coi.cz. The EU online dispute resolution platform at ec.europa.eu/consumers/odr may also be used. The European Consumer Centre Czech Republic acts as the contact point.",
+        "list": ""
+      },
+      "supervision": {
+        "title": "X. Supervisory Authority",
+        "body": "The Seller's activities are supervised by the Czech Trade Inspection Authority, Štěpánská 567/15, 120 00 Prague 2, phone +420 222 703 404, e-mail podatelna@coi.cz, www.coi.cz. The Seller is the responsible contact person towards the authority."
+      },
+      "conclusion": {
+        "title": "XI. Final Provisions",
+        "body": "These Terms have been valid since 4 October 2021. Relations between the Seller and Buyer are governed by Czech law; if an international element is involved, Czech law is chosen without prejudice to consumer protection under Article 6 of the Rome I Regulation. All rights to the Seller's website, including content and logo, belong to the Seller and may not be copied without consent.\n\nIf any provision becomes invalid or ineffective, it is replaced by a provision closest in meaning; the validity of the remaining provisions remains unaffected. The purchase agreement, including the Terms, is archived electronically and is not publicly accessible. The Seller may amend the Terms while keeping rights and obligations arising under earlier versions unaffected." 
+      }
+    },
+    "cta": {
+      "title": "Need clarity on the Terms?",
+      "description": "Get in touch – we will explain any section of the Terms or assist with your specific case.",
+      "phoneLabel": "Phone",
+      "emailLabel": "E-mail",
+      "addressLabel": "Address",
+      "addressValue": "V Pitkovičkách 351, 104 00 Praha 10",
+      "note": "Seller: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Workshop pricing",
@@ -941,7 +1018,8 @@
         "aboutItems": {
           "workshop": "About the workshop",
           "career": "Careers",
-          "privacy": "Privacy policy"
+          "privacy": "Privacy Policy",
+          "terms": "Terms & Conditions"
         }
       },
       "badge": "15 years of experience",
