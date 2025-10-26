@@ -1101,6 +1101,42 @@
       }
     }
   },
+  "cookieConsent": {
+    "settingsButton": "Nastavení cookies",
+    "banner": {
+      "title": "Používáme cookies",
+      "description": "Cookies nám pomáhají přizpůsobit obsah, analyzovat návštěvnost a zlepšovat naše služby. Některé cookies jsou nezbytné pro správné fungování webu.",
+      "acceptAll": "Přijmout vše",
+      "reject": "Odmítnout nepovinné",
+      "settings": "Upravit nastavení"
+    },
+    "modal": {
+      "title": "Nastavení cookies",
+      "description": "Vyberte, které typy cookies můžeme používat. Nezbytné cookies jsou aktivní vždy, protože umožňují správné fungování webu.",
+      "close": "Zavřít nastavení",
+      "save": "Uložit výběr",
+      "cancel": "Zrušit",
+      "toggle": {
+        "on": "Povoleno",
+        "off": "Zakázáno"
+      },
+      "sections": {
+        "necessary": {
+          "title": "Nezbytné cookies",
+          "description": "Zajišťují základní funkce webu, například bezpečné přihlášení nebo uložení preferovaného jazyka.",
+          "alwaysOn": "Vždy aktivní"
+        },
+        "analytics": {
+          "title": "Analytické cookies",
+          "description": "Pomáhají nám porozumět, jak návštěvníci používají náš web, a zlepšovat jeho výkon a obsah."
+        },
+        "marketing": {
+          "title": "Marketingové cookies",
+          "description": "Umožňují zobrazovat relevantní nabídky a měřit úspěšnost marketingových kampaní."
+        }
+      }
+    }
+  },
   "notFoundPage": {
     "badge": "404 Chyba",
     "title": "404",

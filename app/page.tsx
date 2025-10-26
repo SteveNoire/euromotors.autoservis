@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/accordion";
 import { CurrentAvailability } from "@/components/current-availability";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+import { CookieConsent } from "@/components/cookie-consent";
 import { getServices } from "@/lib/services";
 import { getTranslator, resolveLocale, type Locale } from "@/lib/i18n";
 import { extractLocale, type RouteSearchParams } from "@/lib/i18n/routing";
@@ -258,7 +259,8 @@ export default function Home({ searchParams }: { searchParams?: HomeSearchParams
           <Faq locale={locale} />
           <Contact locale={locale} />
         </main>
-  <SiteFooter locale={locale} />
+        <SiteFooter locale={locale} />
+        <CookieConsent locale={locale} />
       </div>
     </>
   );

@@ -1101,6 +1101,42 @@
       }
     }
   },
+  "cookieConsent": {
+    "settingsButton": "Cookie settings",
+    "banner": {
+      "title": "We use cookies",
+      "description": "Cookies help us personalise content, analyse traffic, and improve our services. Some cookies are essential for the website to work properly.",
+      "acceptAll": "Accept all",
+      "reject": "Reject non-essential",
+      "settings": "Customise settings"
+    },
+    "modal": {
+      "title": "Cookie preferences",
+      "description": "Choose which types of cookies we may use. Essential cookies are always on because they keep the site running reliably.",
+      "close": "Close settings",
+      "save": "Save selection",
+      "cancel": "Cancel",
+      "toggle": {
+        "on": "Enabled",
+        "off": "Disabled"
+      },
+      "sections": {
+        "necessary": {
+          "title": "Essential cookies",
+          "description": "Enable core website functions such as secure login or saving your language preferences.",
+          "alwaysOn": "Always active"
+        },
+        "analytics": {
+          "title": "Analytics cookies",
+          "description": "Help us understand how visitors use the website so we can improve its performance and content."
+        },
+        "marketing": {
+          "title": "Marketing cookies",
+          "description": "Allow us to show relevant offers and measure the effectiveness of our marketing campaigns."
+        }
+      }
+    }
+  },
   "notFoundPage": {
     "badge": "404 Error",
     "title": "404",
