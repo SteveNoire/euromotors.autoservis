@@ -719,6 +719,61 @@
       "note": "Verkäufer: euromotors corporation s.r.o."
     }
   },
+  "claimsPage": {
+    "hero": {
+      "badge": "Reklamationen",
+      "title": "Reklamationsordnung",
+      "description": "Wie Sie Gewährleistungsansprüche geltend machen, Fristen und Pflichten nach tschechischem Recht."
+    },
+    "meta": {
+      "effectiveDate": "Gültig seit 4. Oktober 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Einleitende Bestimmungen",
+        "body": "Die euromotors corporation s.r.o. (IČ 08580405) informiert Verbraucher mit dieser Reklamationsordnung über Umfang, Bedingungen und Ablauf der Geltendmachung von Rechten aus mangelhafter Leistung. Für Unternehmer gelten ausschließlich die Bestimmungen des tschechischen Bürgerlichen Gesetzbuches; diese Ordnung findet auf sie keine Anwendung. Das Dokument stützt sich auf das Bürgerliche Gesetzbuch, das Verbraucherschutzgesetz und weitere tschechische Vorschriften und ist Bestandteil der Allgemeinen Geschäftsbedingungen. Mit Abschluss des Kaufvertrags bestätigt der Käufer, dass er die Reklamationsordnung gelesen hat und sie gemeinsam mit den geltenden Rechtsvorschriften einhält."
+      },
+      "liability": {
+        "title": "II. Haftung für Sachmängel",
+        "body": "Der Verkäufer gewährleistet, dass die Ware bei der Übernahme frei von Mängeln ist und die erwarteten Eigenschaften, den vorgesehenen Zweck, die Qualität, Menge sowie die gesetzlichen Anforderungen erfüllt. Der Lieferung liegt ein Steuerbeleg und gegebenenfalls eine Garantiekarte bei; die Gewährleistungsfrist beginnt mit der Übernahme oder Zustellung an die vereinbarte Adresse. Ansprüche können nicht auf Mängel gestützt werden, auf die der Käufer vorab hingewiesen wurde, oder auf normalen Verschleiß. Der Verkäufer kann eine erweiterte Haltbarkeitsgarantie gewähren, deren Umfang im Garantieversprechen beschrieben ist. Während der Bearbeitung einer Reklamation ruhen die Fristen, der Verkäufer teilt deren genauen Verlauf auf Anfrage mit.",
+        "listTitle": "Ausgeschlossen sind insbesondere Mängel durch:",
+        "list": "- mechanische Beschädigung oder unbefugte Eingriffe\n- höhere Gewalt, Stromüberspannung oder sonstige äußere Einflüsse\n- Nutzung entgegen Anleitung, üblichen Gepflogenheiten oder Herstellervorgaben\n- Einsatz unter ungeeigneten Bedingungen (Temperatur, Staub, Feuchtigkeit, chemische oder mechanische Belastung)\n- unsachgemäße Installation, Bedienung oder Wartung\n- entfernte oder beschädigte Garantiesiegel, sofern vorhanden\n- nachweislich falsche Anwendung oder mangelnde Pflege\n- vorsätzliche Beschädigung oder normalen Verschleiß"
+      },
+      "filing": {
+        "title": "III. Geltendmachung von Ansprüchen",
+        "body": "Der Käufer hat bei Übernahme die Menge, den Verpackungszustand und die Vollständigkeit der Lieferung zu prüfen und den Verkäufer unverzüglich über festgestellte Abweichungen zu informieren. Sofern nicht anders angegeben, können Mängel binnen 24 Monaten ab Übernahme angezeigt werden.",
+        "listTitle": "Bei einer Reklamation ist der Käufer verpflichtet:",
+        "list": "- den Kaufbeleg vorzulegen oder den Erwerb beim Verkäufer anderweitig glaubhaft zu machen\n- die reklamierte Ware zu übergeben, sofern nichts anderes vereinbart ist\n- die Bedingungen der Garantiekarte einzuhalten\n- das Original der Garantiekarte vorzulegen, sofern Rechte aus einer erweiterten Garantie geltend gemacht werden\n- die Ware samt Zubehör vorzulegen, wenn ein Austausch oder Vertragsrücktritt verlangt wird\n- bei der Feststellung des Mangels mitzuwirken, das Reklamationsprotokoll zu unterschreiben und dessen Inhalt zu bestätigen"
+      },
+      "resolution": {
+        "title": "IV. Abwicklung der Reklamation",
+        "body": "Reklamationen können persönlich unter der Adresse Edisonova 15/8, 109 00 Praha-Petrovice oder durch Zusendung der Ware dorthin eingereicht werden. Der Verkäufer entscheidet unverzüglich, in komplizierten Fällen innerhalb von drei Arbeitstagen; die Zeit für eine fachliche Begutachtung wird nicht mitgerechnet. Bei Annahme wird ein Reklamationsprotokoll mit Fehlerbeschreibung und gewünschter Lösung erstellt. Die Reklamation ist ohne unnötigen Aufschub, spätestens binnen 30 Tagen zu erledigen, sofern keine längere Frist vereinbart wurde. Stark verschmutzte Ware oder Ware entgegen hygienischen Vorschriften darf abgelehnt werden. Der Käufer wird auf dem vereinbarten Weg über das Ergebnis informiert und erhält eine schriftliche Bestätigung der Abwicklung."
+      },
+      "rights": {
+        "title": "V. Rechte bei Mängeln",
+        "body": "Bei behebbaren Mängeln, die rechtzeitig gerügt werden, hat der Käufer Anspruch auf kostenlose Reparatur. Anstelle der Reparatur kann er den Austausch der Ware oder von Zubehör verlangen, oder – bei wiederholtem Auftreten bzw. mehreren Mängeln gleichzeitig – vom Vertrag zurücktreten. Liegt eine wesentliche Vertragsverletzung vor, kann der Käufer eine angemessene Minderung oder den Rücktritt vom Vertrag verlangen. Rechte bestehen nicht, wenn der Käufer den Mangel kannte oder ihn selbst verursacht hat.",
+        "listTitle": "Je nach Situation kann der Käufer verlangen:",
+        "list": "- unentgeltliche Beseitigung des Mangels\n- Ersatz der Ware oder fehlender Komponenten\n- angemessene Minderung des Kaufpreises\n- Rücktritt vom Kaufvertrag bei wesentlicher Vertragsverletzung\n- Erstattung angemessener Aufwendungen im Zusammenhang mit der Reklamation"
+      },
+      "settlement": {
+        "title": "VI. Kostenerstattung und Streitbeilegung",
+        "body": "Wird eine Reklamation anerkannt, kann der Käufer Ersatz der zweckmäßig aufgewendeten Kosten verlangen. Wird sie abgelehnt, kann der Käufer ein unabhängiges Gutachten einholen. Bleibt der Streit ungelöst, kann sich der Käufer an die Tschechische Handelsinspektion (Česká obchodní inspekce, Štěpánská 567/15, 120 00 Prag 2, www.coi.cz) als zuständige Stelle für außergerichtliche Verbraucherstreitbeilegung wenden oder die EU-Plattform für Online-Streitbeilegung nutzen."
+      },
+      "effectiveness": {
+        "title": "VII. Wirksamkeit der Reklamationsordnung",
+        "body": "Diese Reklamationsordnung gilt seit dem 4. Oktober 2021. Der Verkäufer behält sich Änderungen oder Ergänzungen vor; eine aktualisierte Fassung tritt am Tag nach ihrer Veröffentlichung in Kraft, ohne bereits entstandene Rechte und Pflichten zu beeinträchtigen."
+      }
+    },
+    "cta": {
+      "title": "Sie benötigen Hilfe bei einer Reklamation?",
+      "description": "Kontaktieren Sie uns – wir erklären den Ablauf, prüfen den Status oder vereinbaren die Übergabe der Ware.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse",
+      "addressValue": "Edisonova 15/8, 109 00 Praha-Petrovice",
+      "note": "Reklamationen: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Werkstattpreise",
@@ -1019,7 +1074,8 @@
           "workshop": "Über die Werkstatt",
           "career": "Karriere",
           "privacy": "Datenschutzerklärung",
-          "terms": "Allgemeine Geschäftsbedingungen"
+          "terms": "Allgemeine Geschäftsbedingungen",
+          "claims": "Reklamationsordnung"
         }
       },
       "badge": "15 Jahre Erfahrung",

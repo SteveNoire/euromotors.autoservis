@@ -719,6 +719,61 @@
       "note": "Prodávající: euromotors corporation s.r.o."
     }
   },
+  "claimsPage": {
+    "hero": {
+      "badge": "Reklamace",
+      "title": "Reklamační řád",
+      "description": "Postup pro uplatnění reklamací, odpovědnost za vady a lhůty podle platné legislativy."
+    },
+    "meta": {
+      "effectiveDate": "Účinnost od 4. října 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Úvodní ustanovení",
+        "body": "Společnost euromotors corporation s.r.o., IČ 08580405, tímto reklamačním řádem informuje spotřebitele o rozsahu, podmínkách a způsobu uplatnění práv z odpovědnosti za vady. Práva podnikatelů se řídí výhradně občanským zákoníkem, tento reklamační řád se na ně nevztahuje. Dokument vychází z občanského zákoníku, zákona o ochraně spotřebitele a dalších právních předpisů České republiky a tvoří nedílnou součást všeobecných obchodních podmínek. Uzavřením kupní smlouvy kupující potvrzuje, že se s reklamačním řádem seznámil a že se jím bude řídit spolu s platnými právními předpisy."
+      },
+      "liability": {
+        "title": "II. Odpovědnost za vady zboží",
+        "body": "Prodávající odpovídá za to, že zboží při převzetí nemá vady a splňuje očekávané vlastnosti, účel, kvalitu, množství i soulad s právními předpisy. Ke zboží je přikládán daňový doklad a případně záruční list, doba záruky běží od okamžiku převzetí nebo doručení na sjednané místo. Práva z vad nelze uplatnit na nedostatky, na které byl kupující předem upozorněn, ani na vady způsobené běžným opotřebením. Prodávající může poskytnout záruku za jakost přesahující zákonný rámec, jejíž rozsah je uveden v záručním prohlášení. Po dobu vyřizování reklamace se lhůty pro uplatnění práv staví a na vyžádání prodávající sdělí jejich přesný rozsah.",
+        "listTitle": "Reklamace se nevztahuje na vady způsobené zejména:",
+        "list": "- mechanickým poškozením nebo neodborným zásahem\n- živelnou událostí, elektrickým přepětím či jinými vnějšími vlivy\n- používáním v rozporu s návodem, obvyklými pravidly nebo podmínkami stanovenými výrobcem\n- provozem v nevhodných podmínkách (teplota, prašnost, vlhkost, chemické či mechanické vlivy)\n- neodbornou instalací, obsluhou nebo údržbou\n- odstraněním či poškozením plomb, pokud jimi bylo zboží opatřeno\n- prokazatelným nesprávným užíváním či zanedbanou péčí\n- úmyslným poškozením nebo běžným opotřebením"
+      },
+      "filing": {
+        "title": "III. Uplatnění práv z odpovědnosti za vady (reklamace)",
+        "body": "Kupující je při převzetí povinen zkontrolovat množství, stav obalu a úplnost dodávky a bez zbytečného odkladu informovat prodávajícího o zjištěných vadách. Právo z vady lze uplatnit do 24 měsíců od převzetí zboží, není-li stanoveno jinak.",
+        "listTitle": "Při reklamaci je kupující povinen:",
+        "list": "- předložit doklad o nákupu nebo jinak prokázat pořízení u prodávajícího\n- předat reklamované zboží, není-li sjednáno jinak\n- splnit podmínky uvedené v záručním listu\n- přiložit originál záručního listu, pokud uplatňuje práva ze záruky\n- odevzdat zboží včetně příslušenství při požadavku na výměnu nebo odstoupení od smlouvy\n- poskytnout součinnost při ověření vady, vyplnění reklamačního protokolu a svým podpisem potvrdit jeho obsah"
+      },
+      "resolution": {
+        "title": "IV. Vyřízení reklamace",
+        "body": "Reklamaci lze uplatnit osobně na adrese Edisonova 15/8, 109 00 Praha-Petrovice nebo zasláním zboží na tuto adresu. Prodávající rozhodne o reklamaci ihned, ve složitých případech do tří pracovních dnů; do této lhůty se nezapočítává doba nutná k odbornému posouzení. O přijetí vystaví reklamační protokol s popisem vady a zvoleným způsobem vyřízení. Reklamace musí být vyřízena bez zbytečného odkladu, nejpozději do 30 dnů, pokud není dohodnuta delší lhůta. Prodávající může odmítnout znečištěné zboží nebo zboží předané v rozporu s hygienickými předpisy. O výsledku reklamace informuje kupujícího dohodnutým způsobem a předá písemné potvrzení o způsobu vyřízení."
+      },
+      "rights": {
+        "title": "V. Práva z vad",
+        "body": "Je-li vada odstranitelná a reklamace byla uplatněna včas, má kupující právo na její bezplatné odstranění. Místo opravy může požadovat výměnu zboží nebo příslušenství, případně odstoupit od smlouvy, opakuje-li se vada nebo se vyskytuje více vad současně. V případě podstatného porušení smlouvy může kupující žádat přiměřenou slevu nebo odstoupit od smlouvy. Práva z vad nevznikají, pokud kupující o vadě věděl nebo ji sám způsobil.",
+        "listTitle": "Kupující může podle situace požadovat:",
+        "list": "- bezplatnou opravu vady\n- výměnu zboží nebo chybějící součásti\n- přiměřenou slevu z kupní ceny\n- odstoupení od kupní smlouvy při podstatném porušení\n- náhradu účelně vynaložených nákladů spojených s reklamací"
+      },
+      "settlement": {
+        "title": "VI. Náhrady a řešení sporu",
+        "body": "Je-li reklamace uznána, má kupující právo na náhradu účelně vynaložených nákladů spojených s jejím uplatněním. Pokud je reklamace zamítnuta, může si kupující vyžádat znalecký posudek. Nebude-li spor vyřešen dohodou, může se kupující obrátit na Českou obchodní inspekci (Štěpánská 567/15, 120 00 Praha 2, www.coi.cz), která je příslušným orgánem pro mimosoudní řešení spotřebitelských sporů, nebo využít platformu EU pro online řešení sporů."
+      },
+      "effectiveness": {
+        "title": "VII. Účinnost reklamačního řádu",
+        "body": "Tento reklamační řád je platný a účinný od 4. října 2021. Prodávající si vyhrazuje právo jej měnit či doplňovat; nové znění nabývá účinnosti dnem následujícím po jeho zveřejnění, aniž by byla dotčena práva a povinnosti vzniklé podle předchozí verze."
+      }
+    },
+    "cta": {
+      "title": "Potřebujete poradit s reklamací?",
+      "description": "Kontaktujte nás – pomůžeme s postupem, ověříme stav reklamace nebo domluvíme předání zboží.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "addressLabel": "Adresa",
+      "addressValue": "Edisonova 15/8, 109 00 Praha-Petrovice",
+      "note": "Reklamace: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Ceník autoservisu",
@@ -1019,7 +1074,8 @@
           "workshop": "O autoservisu",
           "career": "Kariéra",
           "privacy": "Zásady ochrany osobních údajů",
-          "terms": "Všeobecné obchodní podmínky"
+          "terms": "Všeobecné obchodní podmínky",
+          "claims": "Reklamační řád"
         }
       },
       "badge": "15 let praxe",

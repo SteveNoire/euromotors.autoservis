@@ -719,6 +719,61 @@
       "note": "Seller: euromotors corporation s.r.o."
     }
   },
+  "claimsPage": {
+    "hero": {
+      "badge": "Complaints",
+      "title": "Returns & Complaints Policy",
+      "description": "How to raise a warranty claim, statutory deadlines and responsibilities in line with Czech law."
+    },
+    "meta": {
+      "effectiveDate": "Effective from 4 October 2021"
+    },
+    "sections": {
+      "introduction": {
+        "title": "I. Introductory provisions",
+        "body": "euromotors corporation s.r.o. (ID 08580405) uses this complaints policy to inform consumers about the scope, conditions and process of asserting rights arising from defective performance. Business customers are governed exclusively by the Czech Civil Code; this policy does not apply to them. The document is based on the Civil Code, the Consumer Protection Act and other Czech legislation and forms an integral part of the general terms and conditions. By concluding a purchase contract, the customer confirms that they have read this policy and will follow it together with all applicable law."
+      },
+      "liability": {
+        "title": "II. Liability for product defects",
+        "body": "The seller guarantees that the goods are free from defects at the time of takeover and that they meet the expected characteristics, purpose, quality, quantity and statutory requirements. A tax document and, where applicable, a warranty certificate are supplied with the goods; the warranty period starts on collection or delivery to the agreed address. Claims cannot be made for shortcomings the customer was informed about in advance, nor for wear and tear. The seller may provide an extended quality guarantee described in the relevant warranty statement. Claim deadlines are suspended while a claim is being processed and the seller will provide details on request.",
+        "listTitle": "Claims do not cover defects caused by:",
+        "list": "- mechanical damage or unauthorised interference\n- force majeure, electrical surges or other external influences\n- use contrary to the instructions, common practice or manufacturer requirements\n- operation in unsuitable conditions (temperature, dust, humidity, chemical or mechanical exposure)\n- improper installation, handling or maintenance\n- tampered or removed warranty seals, where applicable\n- clearly incorrect use or neglected care\n- intentional damage or normal wear and tear"
+      },
+      "filing": {
+        "title": "III. Filing a claim",
+        "body": "On delivery the customer must check the quantity, packaging and completeness of the goods and notify the seller of any discrepancies without undue delay. Unless stated otherwise, defects can be reported within 24 months of takeover.",
+        "listTitle": "When submitting a claim, the customer must:",
+        "list": "- present proof of purchase or otherwise demonstrate that the goods were bought from the seller\n- hand over the product being claimed unless agreed otherwise\n- comply with the conditions stated in the warranty certificate\n- provide the original warranty certificate when claiming under an extended warranty\n- include all accessories when requesting a replacement or contract withdrawal\n- cooperate in verifying the defect, completing the claim report and confirm it with their signature"
+      },
+      "resolution": {
+        "title": "IV. Claim handling",
+        "body": "Claims can be submitted in person at Edisonova 15/8, 109 00 Prague-Petrovice or by shipping the goods to that address. The seller will decide on the claim immediately, or within three working days for complex cases; the time needed for expert assessment is excluded from this period. A written claim report describing the defect and requested resolution is issued upon receipt. Claims must be resolved without undue delay and no later than 30 days unless a longer period is agreed. The seller may refuse products that are excessively dirty or delivered in breach of hygiene regulations. Customers are informed of the outcome via the agreed channel and receive written confirmation of the resolution."
+      },
+      "rights": {
+        "title": "V. Rights arising from defects",
+        "body": "If the defect is remediable and the claim is filed in time, the customer is entitled to free repair. Instead of repair they may request replacement of the goods or accessories, or withdraw from the contract if the defect recurs or multiple defects appear simultaneously. In the event of a material breach of contract the customer may demand an appropriate discount or withdraw from the contract. No rights arise if the customer knew about the defect before takeover or caused it themselves.",
+        "listTitle": "Depending on the situation, the customer may request:",
+        "list": "- free repair of the defect\n- replacement of the product or missing component\n- an appropriate discount on the purchase price\n- withdrawal from the purchase contract in case of a material breach\n- reimbursement of reasonable expenses related to the claim"
+      },
+      "settlement": {
+        "title": "VI. Compensation and dispute resolution",
+        "body": "Where a claim is accepted, the customer may claim reimbursement of reasonable costs incurred while exercising their rights. If a claim is rejected, the customer may obtain an independent expert opinion. Should a dispute remain unresolved, the customer can contact the Czech Trade Inspection Authority (Štěpánská 567/15, 120 00 Prague 2, www.coi.cz), the competent body for out-of-court consumer dispute resolution, or use the EU online dispute resolution platform."
+      },
+      "effectiveness": {
+        "title": "VII. Effectiveness of this policy",
+        "body": "This complaints policy has been valid and effective since 4 October 2021. The seller reserves the right to amend it; updated versions take effect on the day following publication without affecting rights and obligations that arose under previous versions."
+      }
+    },
+    "cta": {
+      "title": "Need help with a claim?",
+      "description": "Get in touch – we will guide you through the process, check claim status or arrange handover of the product.",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressValue": "Edisonova 15/8, 109 00 Prague-Petrovice",
+      "note": "Complaints: euromotors corporation s.r.o."
+    }
+  },
   "pricingPage": {
     "hero": {
       "badge": "Workshop pricing",
@@ -1019,7 +1074,8 @@
           "workshop": "About the workshop",
           "career": "Careers",
           "privacy": "Privacy Policy",
-          "terms": "Terms & Conditions"
+          "terms": "Terms & Conditions",
+          "claims": "Complaints Procedure"
         }
       },
       "badge": "15 years of experience",
